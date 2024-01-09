@@ -1,0 +1,16 @@
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+	width: 60px;
+	height: auto;
+}
+
+.nav-right {
+	justify-content: right;
+}
+
+.navbar {
+	background-color: rgb(0, 0, 0, 0.2);
+}
