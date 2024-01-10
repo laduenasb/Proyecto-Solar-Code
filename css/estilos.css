@@ -14,3 +14,47 @@ body {
 .navbar {
 	background-color: rgb(0, 0, 0, 0.2);
 }
+
+
+/*-----------------Estilo Pagina de contactenos ---------------------------*/
+h6{
+	text-align: center;
+	font-size: 100%;
+	margin-bottom: 10%;
+}
+.section-contactenos{
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-bottom: 10% ;
+}
+.form-outline{
+	border-radius: 6px;
+	background-color: rgba(102, 98, 98, 0.664);
+}
+
+.button-12 {
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 30%;
+	padding: 6px 14px;
+	border-radius: 6px;
+	border: none;
+	background:rgba(102, 98, 98, 0.664);
+	color: black;
+	user-select: none;
+	-webkit-user-select: none;
+}
+/*-----------------Estilo de Pie de Página ---------------------------*/
+footer{
+	text-align: center;
+	background-color: rgba(102, 98, 98, 0.664);
+}
+p{
+	font-size: 85%;
+}
+.btn1 svg{
+	font-size: small;
+}
+.copy{
+	font-size: 65%;
+}
