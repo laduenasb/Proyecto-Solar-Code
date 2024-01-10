@@ -1,9 +1,12 @@
 body {
 	font-family: 'Poppins', sans-serif;
+	text-align: center;
 }
 
+/* Estilos encabezado */
+
 .logo {
-	width: 60px;
+	width: 80px;
 	height: auto;
 }
 
@@ -12,5 +15,31 @@ body {
 }
 
 .navbar {
-	background-color: rgb(0, 0, 0, 0.2);
+	background-color: rgb(0, 0, 0, 0.8);
+}
+
+.encabezado section .logo-encabezado {
+	max-width: 600px;
+}
+
+.encabezado {
+	background-image: url("../img/solar-panels-encabezado.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.encabezado section {
+	/* color: rgb(34, 34, 34); */
+	background-color: rgb(34, 34, 34, 0.8);
+}
+
+.encabezado section p {
+	color: #FFFFFF;
+	max-width: 400px;
+	margin: 10px auto;
+}
+
+.navbar div button {
+	color: white;
 }
