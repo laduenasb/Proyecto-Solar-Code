@@ -1,3 +1,6 @@
+html {
+	font-size: 62.5%;
+}
 body {
 	font-family: 'Poppins', sans-serif;
 	text-align: center;
@@ -36,10 +39,41 @@ body {
 
 .encabezado section p {
 	color: #FFFFFF;
-	max-width: 400px;
+	max-width: 500px;
 	margin: 10px auto;
 }
 
 .navbar div button {
 	color: white;
+}
+
+.dropdown .fa-user {
+	color: white;
+	font-size: 2.5rem;
+}
+
+.container .usuario {
+	justify-content: center;
+}
+
+.navbar-collapse .navegacion button {
+	font-size: 2.5rem;
+}
+
+.dropdown-menu li a {
+	font-size: 1.6rem;
+}
+
+.parrafo-encabezado {
+	font-size: 2rem;
+}
+
+.container button .fa-bars{
+	font-size: 2rem;
+}
+
+@media(max-width: 768px){
+	.encabezado section .logo-encabezado {
+		max-width: 300px;
+	}
 }
