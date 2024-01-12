@@ -14,3 +14,56 @@ body {
 .navbar {
 	background-color: rgb(0, 0, 0, 0.2);
 }
+
+/*Parte Blog*/
+
+.BologTitulo {
+	text-align: center;
+	box-sizing: border-box;
+	background-color: rgba(0, 0, 0, 0.4);
+	padding: 4px;
+}
+  
+  .contenedorBlog {
+	flex: 0 0 48%;
+	margin: 15px;
+  }
+  
+  .imgBlog {
+	max-width: 100%; 
+	border-radius: 8px;
+  }
+  
+  .articulosBlog {
+	background-color: rgba(0, 0, 0, 0.4);
+	text-align: left;
+	padding: 15px;
+	border-radius: 8px;
+	box-sizing: border-box;
+  }
+  
+  @media only screen and (min-width: 800px) {
+	.blogyarticuloContenedor {
+	  flex: 0 0 48%;
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	  margin-bottom: 15px;
+	  padding: 15px;
+	  border-radius: 8px;
+	  box-sizing: border-box;
+	  
+	}
+	.imgBlog {
+		width: 500px;
+	}
+  }
+
+  .pBlog {
+	background-color: rgba(0, 0, 0, 0.4);
+	text-align: center;
+	padding: 15px;
+	border-radius: 8px;
+	box-sizing: border-box;
+  }
+
