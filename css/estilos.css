@@ -27,6 +27,9 @@ h6{
 	margin-right: 30%;
 	margin-bottom: 10% ;
 }
+p{
+	margin: 0;
+}
 .form-outline{
 	border-radius: 6px;
 	background-color: rgba(102, 98, 98, 0.664);
@@ -57,4 +60,12 @@ p{
 }
 .copy{
 	font-size: 65%;
+}
+/*----------------------------------------------Responsive de contactenos-------------------*/
+/*-------Desing Responsive Ipad 13Pro-------*/
+@media only screen and (max-width: 420px) {
+	.section-contactenos{
+		margin-left: 10%;
+		margin-right: 10%;
+	}
 }
