@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 
 html{
 	font-size: 62.5%;
@@ -23,6 +23,241 @@ body {
 .navbar {
 		background-color: rgb(0, 0, 0, 0.8);
 }
+
+.encabezado section .logo-encabezado {
+	max-width: 600px;
+}
+
+.encabezado {
+	background-image: url("../img/solar-panels-encabezado.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.encabezado section {
+	/* color: rgb(34, 34, 34); */
+	background-color: rgb(34, 34, 34, 0.8);
+}
+
+.encabezado section p {
+	color: #FFFFFF;
+	max-width: 500px;
+	margin: 10px auto;
+}
+
+.navbar div button {
+	color: white;
+}
+
+.dropdown .fa-user {
+	color: white;
+	font-size: 2.5rem;
+}
+
+.container .usuario {
+	justify-content: center;
+}
+
+.navbar-collapse .navegacion button {
+	font-size: 2.5rem;
+}
+
+.dropdown-menu li a {
+	font-size: 1.6rem;
+}
+
+.parrafo-encabezado {
+	font-size: 2rem;
+}
+
+.container button .fa-bars{
+	font-size: 2rem;
+}
+
+@media(max-width: 768px){
+	.encabezado section .logo-encabezado {
+		max-width: 300px;
+	}
+}
+
+/* Estilos encabezado */
+
+
+/* ESTILOS SECCION MISION VISION VALORES*/
+
+.section-Title{
+	text-align: center;
+	padding: 40px;
+}
+#icon{
+	color: #52819B;
+	font-size: 437.5%;
+	margin: auto;
+}
+.card-text-content{
+	font-size: 1.6rem;
+	text-align: justify;
+}
+.card-title-content{
+	font-size: 2rem;
+	text-align: center;
+}
+.section-project{
+	background-color: #33373D;
+	color: white;
+	padding-top: 20px;
+	text-align: center;
+}
+.titulo-principal{
+	font-size: 2rem;
+}
+.container-proyectos{
+	display: flex;
+}
+.container-proyecto-img{
+	margin: 20px;
+	justify-content: center;
+}
+.img-proyecto1{
+	width: 400px;
+	height: auto;
+	border-radius: 5%;
+	text-align: center;
+}
+.img-proyecto2{
+	width: 395px;
+	height: auto;
+	border-radius: 5%;
+}
+.container-proyectos-cont{
+	font-size: 1.6rem;
+}
+.titulo-proyecto{
+	font-size: 2rem;
+	text-align: center;
+	margin:10px;
+	font-weight: lighter;
+}
+.container-parrafos{
+	text-align: justify;
+	font-weight: lighter;
+
+}
+.btn-primary{
+	color: white;
+	align-items: center;
+	border: #8D8C8C 0.5px solid;
+	padding: 5px 40px;
+	border-radius: 10px;
+	outline: none;
+	margin-top: 20px;
+	font-weight: lighter;
+}
+
+@media only screen and (min-width: 768px) and (max-width:1023px){
+	.section-project{
+		max-width: 100%; 
+	}
+	.container-proyectos{
+		max-width: 100%;
+	}
+	.img-proyecto1{
+		max-width: 80%;
+	}
+	.img-proyecto2{
+		max-width: 80%;
+	}
+	}
+
+@media only screen and (max-width: 768px){
+.section-project{
+	max-width: 100%; 
+}
+.container-proyectos{
+	max-width: 100%;
+	display: flex;
+	flex-direction: column; 
+}
+.container-proyecto-img{
+	max-width: 100%;
+}
+.img-proyecto1{
+	max-width: 80%;
+}
+.img-proyecto2{
+	max-width: 80%;
+}
+}
+
+/* ESTILOS SECCION MISION VISION VALORES*/
+
+/*Parte Blog*/
+
+.BologTitulo {
+
+	text-align: center;
+	box-sizing: border-box;
+	background-color: white;
+	padding: 4px;
+}
+
+.BologTitulo h2 {
+	font-size: 2.5rem;
+}
+
+.contenedorBlog {
+	flex: 0 0 48%;
+	margin: 15px;
+}
+
+.imgBlog {
+	max-width: 150%; 
+	border-radius: 8px;
+}
+
+.articulosBlog {
+	background-color: white;
+	text-align: left;
+	font-size: 2rem;
+	margin: 15px;
+	padding: 15px;
+	border-radius: 8px;
+	box-sizing: border-box;
+}
+
+.articulosBlog h3 {
+	font-size: 2.5rem;
+}
+
+@media only screen and (min-width: 800px) {
+	.blogyarticuloContenedor {
+		flex: 0 0 48%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 15px;
+		padding: 15px;
+		border-radius: 8px;
+		box-sizing: border-box;
+
+	}
+	.imgBlog {
+			width: 750px;
+			height: 500px;
+	}
+}
+
+.pBlog {
+	background-color: white;
+	text-align: justify;
+	font-size: 1.6rem;
+	padding: 15px;
+	border-radius: 8px;
+	box-sizing: border-box;
+}
+
+/*Parte Blog*/
 
 /*-------------------Estilo de pagina nosotros-------------------------------*/
 .sectionNosotros{
@@ -181,233 +416,4 @@ footer{
 		margin: 0;
 		padding: 0;
 	}	
-}
-
-
-/*Parte Blog*/
-
-.BologTitulo {
-
-    text-align: center;
-    box-sizing: border-box;
-    background-color: white;
-    padding: 4px;
-}
-
-.BologTitulo h2 {
-    font-size: 2.5rem;
-}
-
-  .contenedorBlog {
-    flex: 0 0 48%;
-    margin: 15px;
-  }
-
-  .imgBlog {
-    max-width: 150%; 
-    border-radius: 8px;
-  }
-
-  .articulosBlog {
-    background-color: white;
-    text-align: left;
-    font-size: 2rem;
-    margin: 15px;
-    padding: 15px;
-    border-radius: 8px;
-    box-sizing: border-box;
-  }
-
-  .articulosBlog h3 {
-    font-size: 2.5rem;
-  }
-
-  @media only screen and (min-width: 800px) {
-    .blogyarticuloContenedor {
-      flex: 0 0 48%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 15px;
-      padding: 15px;
-      border-radius: 8px;
-      box-sizing: border-box;
-
-    }
-    .imgBlog {
-        width: 750px;
-        height: 500px;
-    }
-  }
-
-  .pBlog {
-    background-color: white;
-    text-align: justify;
-    font-size: 1.6rem;
-    padding: 15px;
-    border-radius: 8px;
-    box-sizing: border-box;
-  }
-
-.encabezado section .logo-encabezado {
-	max-width: 600px;
-}
-
-.encabezado {
-	background-image: url("../img/solar-panels-encabezado.png");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.encabezado section {
-	/* color: rgb(34, 34, 34); */
-	background-color: rgb(34, 34, 34, 0.8);
-}
-
-.encabezado section p {
-	color: #FFFFFF;
-	max-width: 500px;
-	margin: 10px auto;
-}
-
-.navbar div button {
-	color: white;
-}
-
-.dropdown .fa-user {
-	color: white;
-	font-size: 2.5rem;
-}
-
-.container .usuario {
-	justify-content: center;
-}
-
-.navbar-collapse .navegacion button {
-	font-size: 2.5rem;
-}
-
-.dropdown-menu li a {
-	font-size: 1.6rem;
-}
-
-.parrafo-encabezado {
-	font-size: 2rem;
-}
-
-.container button .fa-bars{
-	font-size: 2rem;
-}
-
-@media(max-width: 768px){
-	.encabezado section .logo-encabezado {
-		max-width: 300px;
-	}
-}
-}
-
-/* ESTILOS SECCION MISION VISION VALORES*/
-.section-Title{
-	text-align: center;
-	padding: 40px;
-}
-#icon{
-	color: #52819B;
-	font-size: 437.5%;
-	margin: auto;
-}
-.card-text-content{
-	font-size: 1.6rem;
-	text-align: justify;
-}
-.card-title-content{
-	font-size: 2rem;
-	text-align: center;
-}
-.section-project{
-	background-color: #33373D;
-	color: white;
-	padding-top: 20px;
-	text-align: center;
-}
-.titulo-principal{
-	font-size: 2rem;
-}
-.container-proyectos{
-	display: flex;
-}
-.container-proyecto-img{
-	margin: 20px;
-	justify-content: center;
-}
-.img-proyecto1{
-	width: 400px;
-	height: auto;
-	border-radius: 5%;
-	text-align: center;
-}
-.img-proyecto2{
-	width: 395px;
-	height: auto;
-	border-radius: 5%;
-}
-.container-proyectos-cont{
-	font-size: 1.6rem;
-}
-.titulo-proyecto{
-	font-size: 2rem;
-	text-align: center;
-	margin:10px;
-	font-weight: lighter;
-}
-.container-parrafos{
-	text-align: justify;
-	font-weight: lighter;
-
-}
-.btn-primary{
-	color: white;
-	align-items: center;
-	border: #8D8C8C 0.5px solid;
-	padding: 5px 40px;
-	border-radius: 10px;
-	outline: none;
-	margin-top: 20px;
-	font-weight: lighter;
-}
-
-@media only screen and (min-width: 768px) and (max-width:1023px){
-	.section-project{
-		max-width: 100%; 
-	}
-	.container-proyectos{
-		max-width: 100%;
-	}
-	.img-proyecto1{
-		max-width: 80%;
-	}
-	.img-proyecto2{
-		max-width: 80%;
-	}
-	}
-
-@media only screen and (max-width: 768px){
-.section-project{
-	max-width: 100%; 
-}
-.container-proyectos{
-	max-width: 100%;
-	display: flex;
-	flex-direction: column; 
-}
-.container-proyecto-img{
-	max-width: 100%;
-}
-.img-proyecto1{
-	max-width: 80%;
-}
-.img-proyecto2{
-	max-width: 80%;
-}
 }
