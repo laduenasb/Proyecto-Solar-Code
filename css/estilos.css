@@ -60,7 +60,7 @@ body {
 }
 
 .navbar-collapse .navegacion button {
-	font-size: 2.5rem;
+	font-size: 2rem;
 }
 
 .dropdown-menu li a {
@@ -90,9 +90,14 @@ body {
 	text-align: center;
 	padding: 40px;
 }
+
+.section-Title h5 {
+	font-size: 1.6rem;
+}
+
 #icon{
 	color: #52819B;
-	font-size: 437.5%;
+	font-size: 7rem;
 	margin: auto;
 }
 .card-text-content{
@@ -203,7 +208,8 @@ body {
 }
 
 .BologTitulo h2 {
-	font-size: 2.5rem;
+	font-size: 2rem;
+	margin-top: 30px;
 }
 
 .contenedorBlog {
@@ -212,7 +218,7 @@ body {
 }
 
 .imgBlog {
-	max-width: 150%; 
+	width: 800px; 
 	border-radius: 8px;
 }
 
@@ -222,12 +228,13 @@ body {
 	font-size: 2rem;
 	margin: 15px;
 	padding: 15px;
+	padding-left: 100px;
 	border-radius: 8px;
 	box-sizing: border-box;
 }
 
 .articulosBlog h3 {
-	font-size: 2.5rem;
+	font-size: 2rem;
 }
 
 @media only screen and (min-width: 800px) {
@@ -243,9 +250,16 @@ body {
 
 	}
 	.imgBlog {
-			width: 750px;
-			height: 500px;
+			max-width: 100%;
+			height: auto;
 	}
+}
+
+@media only screen and (max-width: 800px) {
+ .imgBlog{
+	width: 350px;
+	height: auto;
+ }
 }
 
 .pBlog {
@@ -263,7 +277,7 @@ body {
 .sectionNosotros{
 	background-color:rgb(51, 55, 61) ;
 }
-h5{
+.sectionNosotros h5{
 	padding-top: 5%;
 	margin-bottom: 5%;
 	text-align: center;
@@ -274,9 +288,11 @@ h5{
 	display: grid;
 	grid-template-columns: 25% 25% 25% 25%;
 	gap:0.2rem ;
-	height: 25rem;
+	height: auto;
 	flex-wrap: wrap;
 }
+
+
 .perfil {
 	margin: 5%;
 	text-align: center;
@@ -285,14 +301,24 @@ h5{
 .perfil img{
 	padding: 3%;
 	align-items: center;
-	height: 30%;
+	height: 220px;
+	/* width: 220px; */
 	border-radius: 50%;
 }
 .perfil p{
 	margin: 2%;
+	font-size: 1.6rem;
 }
 /*-----------------Estilo Pagina de contactenos ---------------------------*/
-h6{
+.section-contactenos form p {
+	font-size: 1.6rem;
+}
+
+.section-contactenos form input {
+	height: 35px;
+}
+
+.section-contactenos h6{
 	text-align: center;
 	font-size: 2.5rem;
 	margin-top: 10%;
@@ -326,6 +352,7 @@ h6{
 	color: black;
 	user-select: none;
 	-webkit-user-select: none;
+	font-size: 1.6rem;
 }
 /*-----------------Estilo de Pie de Página ---------------------------*/
 footer{
@@ -333,7 +360,7 @@ footer{
 	background-color: rgba(102, 98, 98, 0.664);
 }
 .footerParrafo{
-	font-size: 0.9rem;
+	font-size: 1.6rem;
 	padding-top: 2%;
 	margin-bottom: 5%;
 }
@@ -342,8 +369,12 @@ footer{
 	margin: 2%;
 }
 .copy{
-	font-size: 0.9rem;
+	font-size: 1.6rem;
 	margin-top: 5%;
+}
+
+footer .containerFooter i {
+	font-size: 4rem;
 }
 /*----------------------------------------------Responsive de contactenos-------------------*/
 
@@ -357,7 +388,7 @@ footer{
 		align-items: center;
 	}
 	.perfil img{
-		width: 70%;
+		width: auto;
 	}
 	.section-contactenos{
 		margin-left: 8%;
@@ -385,12 +416,12 @@ footer{
 @media only screen and (max-width: 390px) {
 	.gridNosotros{
 		display: flex;
-		height: auto;
+		/* height: auto; */
 		align-items: center;
 	}
-	.perfil img{
-		width: 50%;
-	}
+	/* .perfil img{
+		width: auto;
+	} */
 	.section-contactenos{
 		text-align: center;
 	}
