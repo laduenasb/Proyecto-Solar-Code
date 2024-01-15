@@ -5,10 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Solar Code</title>
 	<!-- Font Awesome -->
-	<link
-	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-	rel="stylesheet"
-	/>
+	<script src="https://kit.fontawesome.com/531ac7ac07.js" crossorigin="anonymous"></script>
 	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +16,8 @@
 	rel="stylesheet"
 	/>
 	<link rel="stylesheet" href="./css/estilos.css">
+  <script src="js/script.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
   <!-- Encabezado Alejandro-->
@@ -245,12 +244,121 @@
   <!-- Blog y sobre nosotros Sergio-->
 
   <!-- Contactenos y pie de pagina Lizeth-->
-  <div> Contactenos prueba</div>
+    <!-- Pagina de nosotros-->
+  <section class="sectionNosotros">
+    <h5>Nosotros</h5>
+    <div class="gridNosotros">
+      <div class="perfil">
+        <img src="img/perfilAlejo.png" alt="Alejandro">
+        <p>Alejandro Dueñas Bulla</p>
+        <p>Profesional en Física y Desarrolador Web, con énfasis en Back-end.</p>
+      </div>
+      <div class="perfil">
+        <img src="img/perfilSergio.png" alt="Sergio">
+        <p>Sergio Ferreira Mateus</p>
+        <p>CEO de Full Solar Energy, eléctrico, Desarrollador Web con énfasis en Back-end.</p>
+      </div>
+      <div class="perfil">
+        <img src="img/perfilLau.png" alt="Laura">
+        <p>Laura Salamanca</p>
+        <p>Arquitecta  y Desarrolladora Web, con énfasis en Front-end.</p>
+      </div>
+      <div class="perfil">
+        <img src="img/perfilLiz.png" alt="Lizeth">
+        <p>Lizeth Vega </p>
+        <p>Ingeniera química y Desarrolladora Web, con énfasis en Front-end.</p>
+      </div>
+    
+    </div>
+  </section>
+  <!-- Contactenos y pie de pagina Lizeth-->
+  <section class="section-contactenos">
+    <h6>Contáctenos</h6>
+    <form action="https://formspree.io/f/mvoegapk"
+    method="POST" target="_blank">
+      <!-- 2 column grid layout with text inputs for the first and last names -->
+      <div class="divContactos">
+        <div class="col">
+          <p>Nombre:</p>
+          <div data-mdb-input-init class="form-outline">
+            <input id="name" type="text" name="name" class="form-control" />
+          </div>
+        </div>
+        <div class="col">
+          <p>Telefono:</p>
+          <div data-mdb-input-init class="form-outline">
+            <input id="phone" type="number" class="form-control" name="phone" />
+          </div>
+        </div>
+      </div>
+      <!-- Email input -->
+      <p>Email:</p>
+      <div data-mdb-input-init class="form-outline mb-4">
+        <input id="email" type="email" name="email" class="form-control" />
+      </div>  
+      <p>Mensaje:</p>  
+      <!-- Message input -->
+      <div data-mdb-input-init class="form-outline mb-4">
+        <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+      </div>
+    
+      <!-- Submit button -->
+      <button class="button-12" type="submit" onclick="submitForm()">ENVIAR</button>
+    </form>
+  </section>
+  <!-- Pie de pagina Lizeth-->
+  <footer>
+    <p class="footerParrafo">Siguenos</p>
+    <!-- Grid container -->
+    <div class="containerFooter">
+      <!-- Section: Social media -->
+      <section>
+        <!-- Facebook -->
+        <a class="boton" target="_blank" href="https://www.facebook.com/profile.php?id=100086610886425&locale=es_LA"><i class="fab fa-facebook-f fa-2xl"></i></a>
+  
+        <!-- Instagram -->
+        <a
+        target="_blank"
+          class="boton"
+          href="https://www.instagram.com/fullsolarenergyco/"
+          role="button"
+          ><i class="fab fa-instagram fa-2xl"></i
+        ></a>
+  
+        <!-- Twitter-->
+        <a
+        target="_blank"
+          data-mdb-ripple-init
+          class="boton"
+          href="#!""
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fa-brands fa-x-twitter fa-2xl"></i>
+        </a>
+      
+        <!-- WhatsApp-->
+        <a
+        target="_blank"
+          data-mdb-ripple-init
+          class="boton "
+          href="https://wa.me/message/JNGSGM5ZSTTRG1"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fa-brands fa-whatsapp fa-2xl"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="copy">
+      Copyright  © 2024
+    
+    </div>
+    <!-- Copyright -->
+  </footer>
   <!-- Contactenos y pie de pagina Lizeth-->
 	<!-- MDB -->
-	<script
-	type="text/javascript"
-	src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"
-	></script>
 </body>
 </html>

@@ -24,6 +24,166 @@ body {
 		background-color: rgb(0, 0, 0, 0.8);
 }
 
+/*-------------------Estilo de pagina nosotros-------------------------------*/
+.sectionNosotros{
+	background-color:rgb(51, 55, 61) ;
+}
+h5{
+	padding-top: 5%;
+	margin-bottom: 5%;
+	text-align: center;
+	font-size: 2.5rem;
+	color: white;
+}
+.gridNosotros{
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	gap:0.2rem ;
+	height: 25rem;
+	flex-wrap: wrap;
+}
+.perfil {
+	margin: 5%;
+	text-align: center;
+	color: white;
+}
+.perfil img{
+	padding: 3%;
+	align-items: center;
+	height: 30%;
+	border-radius: 50%;
+}
+.perfil p{
+	margin: 2%;
+}
+/*-----------------Estilo Pagina de contactenos ---------------------------*/
+h6{
+	text-align: center;
+	font-size: 2.5rem;
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+.section-contactenos{
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-bottom: 10% ;
+}
+
+.divContactos{
+	display: grid;
+	grid-template-columns: 45% 45%;
+	gap: 10%;
+	margin-bottom: 2%;
+}
+.form-outline{
+	border-radius: 6px;
+	background-color: rgba(102, 98, 98, 0.664);
+}
+
+.button-12 {
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 30%;
+	padding: 6px 14px;
+	border-radius: 6px;
+	border: none;
+	background:rgba(102, 98, 98, 0.664);
+	color: black;
+	user-select: none;
+	-webkit-user-select: none;
+}
+/*-----------------Estilo de Pie de Página ---------------------------*/
+footer{
+	text-align: center;
+	background-color: rgba(102, 98, 98, 0.664);
+}
+.footerParrafo{
+	font-size: 0.9rem;
+	padding-top: 2%;
+	margin-bottom: 5%;
+}
+.boton{
+	color: black;
+	margin: 2%;
+}
+.copy{
+	font-size: 0.9rem;
+	margin-top: 5%;
+}
+/*----------------------------------------------Responsive de contactenos-------------------*/
+
+/*-------Desing Responsive Ipad 11Pro-------*/
+@media only screen and (max-width: 834px) {
+	.gridNosotros{
+		margin: 2%;
+		display: grid;
+		grid-template-columns: 50% 50%;
+		height: auto;
+		align-items: center;
+	}
+	.perfil img{
+		width: 70%;
+	}
+	.section-contactenos{
+		margin-left: 8%;
+		margin-right: 8%;
+		text-align: center;
+	}
+	.divContactos{
+		display: grid;
+		grid-template-columns: 100%;
+		margin-bottom: 10%;
+	}
+	#name,
+	#email,
+	#phone{
+	height: 70px;
+	}
+	
+	.section-contactenos p,
+	.divContactos p{
+		font-size: 1.6rem;
+	}
+	
+}
+/*-------Desing Responsive Iphone 13Pro-------*/
+@media only screen and (max-width: 390px) {
+	.gridNosotros{
+		display: flex;
+		height: auto;
+		align-items: center;
+	}
+	.perfil img{
+		width: 50%;
+	}
+	.section-contactenos{
+		text-align: center;
+	}
+	h6{
+		text-align: center;
+		margin-top: 10%;
+	}
+	.divContactos{
+		display: grid;
+		grid-template-columns: 100%;
+		margin-bottom: 10%;
+	}
+	form{
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-bottom: 5%;
+	}
+	.section-contactenos p,
+	.divContactos p{
+		font-size: 1.6rem;
+	}
+	.containerFooter{
+		margin: 0;
+		padding: 0;
+	}	
+}
+
+
 /*Parte Blog*/
 
 .BologTitulo {
