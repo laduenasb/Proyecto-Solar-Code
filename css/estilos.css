@@ -1,6 +1,9 @@
-html {
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+html{
 	font-size: 62.5%;
 }
+
 body {
 	font-family: 'Poppins', sans-serif;
 	text-align: center;
@@ -76,4 +79,110 @@ body {
 	.encabezado section .logo-encabezado {
 		max-width: 300px;
 	}
+}
+}
+
+/* ESTILOS SECCION MISION VISION VALORES*/
+.section-Title{
+	text-align: center;
+	padding: 40px;
+}
+#icon{
+	color: #52819B;
+	font-size: 437.5%;
+	margin: auto;
+}
+.card-text-content{
+	font-size: 1.6rem;
+	text-align: justify;
+}
+.card-title-content{
+	font-size: 2rem;
+	text-align: center;
+}
+.section-project{
+	background-color: #33373D;
+	color: white;
+	padding-top: 20px;
+	text-align: center;
+}
+.titulo-principal{
+	font-size: 2rem;
+}
+.container-proyectos{
+	display: flex;
+}
+.container-proyecto-img{
+	margin: 20px;
+	justify-content: center;
+}
+.img-proyecto1{
+	width: 400px;
+	height: auto;
+	border-radius: 5%;
+	text-align: center;
+}
+.img-proyecto2{
+	width: 395px;
+	height: auto;
+	border-radius: 5%;
+}
+.container-proyectos-cont{
+	font-size: 1.6rem;
+}
+.titulo-proyecto{
+	font-size: 2rem;
+	text-align: center;
+	margin:10px;
+	font-weight: lighter;
+}
+.container-parrafos{
+	text-align: justify;
+	font-weight: lighter;
+
+}
+.btn-primary{
+	color: white;
+	align-items: center;
+	border: #8D8C8C 0.5px solid;
+	padding: 5px 40px;
+	border-radius: 10px;
+	outline: none;
+	margin-top: 20px;
+	font-weight: lighter;
+}
+
+@media only screen and (min-width: 768px) and (max-width:1023px){
+	.section-project{
+		max-width: 100%; 
+	}
+	.container-proyectos{
+		max-width: 100%;
+	}
+	.img-proyecto1{
+		max-width: 80%;
+	}
+	.img-proyecto2{
+		max-width: 80%;
+	}
+	}
+
+@media only screen and (max-width: 768px){
+.section-project{
+	max-width: 100%; 
+}
+.container-proyectos{
+	max-width: 100%;
+	display: flex;
+	flex-direction: column; 
+}
+.container-proyecto-img{
+	max-width: 100%;
+}
+.img-proyecto1{
+	max-width: 80%;
+}
+.img-proyecto2{
+	max-width: 80%;
+}
 }
