@@ -20,6 +20,9 @@ function submitForm()  {
             text: 'Formulario enviado con éxito!',
             
         });
+        // Envía el formulario
+        document.getElementById('formulario').submit();
+        // Limpiar campos
         document.getElementById('name').value = "";
         document.getElementById('phone').value = "";
         document.getElementById('email').value = "";
