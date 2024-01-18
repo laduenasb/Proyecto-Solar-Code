@@ -60,7 +60,10 @@
             </button>
             <button onclick="window.location.href='#contactenos';" data-mdb-ripple-init type="button" class="btn btn-link px-3 me-2">
               Contactenos
-            </button> <!-- Cambiar #contactenos por el id de contactenos al hacer merge-->
+            </button>
+            <button onclick="window.location.href='#acercade';" data-mdb-ripple-init type="button" class="btn btn-link px-3 me-2">
+              Acerca de
+            </button>
 
             <!-- <button data-mdb-ripple-init type="button" class="btn btn-primary me-3">
               Iniciar sesión
@@ -154,8 +157,80 @@
       <!-- Container wrapper -->
     </nav>
     <section>
-      <img src="./img/logo-encabezado.svg" alt="imagen grande del logo salr code" class="logo-encabezado">
-      <p id="parrafo" class="parrafo-encabezado">Encendiendo el Futuro con Energía Solar: Innovamos Sostenibilidad, Iluminamos Tu Mundo.</p>
+      <!-- <img src="./img/logo-encabezado.svg" alt="imagen grande del logo solar code" class="logo-encabezado">
+      <p id="parrafo" class="parrafo-encabezado">Encendiendo el Futuro con Energía Solar: Innovamos Sostenibilidad, Iluminamos Tu Mundo.</p> -->
+      <!-- Carousel wrapper -->
+      <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel" data-mdb-carousel-init>
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-mdb-target="#carouselBasicExample"
+            data-mdb-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-mdb-target="#carouselBasicExample"
+            data-mdb-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-mdb-target="#carouselBasicExample"
+            data-mdb-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <!-- Inner -->
+        <div class="carousel-inner">
+          <!-- Single item -->
+          <div class="carousel-item active">
+            <img src="img/Carrusel_1.png" class="d-block w-100" alt="Sunset Over the City"/>
+            <!-- <div class="carousel-caption d-none d-md-block"> -->
+            <div class="carousel-caption d-md-block">
+              <!-- <h5>First slide label</h5> -->
+              <img src="./img/logo-encabezado.svg" alt="imagen grande del logo solar code" class="logo-encabezado">
+              <p id="parrafo" class="parrafo-encabezado">Encendiendo el Futuro con Energía Solar: Innovamos Sostenibilidad, Iluminamos Tu Mundo.</p>
+            </div>
+          </div>
+
+          <!-- Single item -->
+          <div class="carousel-item">
+            <img src="img/Carrusel_2.png" class="d-block w-100" alt="Canyon at Nigh"/>
+            <div class="carousel-caption d-md-block">
+              <!-- <h5>Second slide label</h5> -->
+              <img src="./img/logo-encabezado.svg" alt="imagen grande del logo solar code" class="logo-encabezado">
+              <p id="parrafo" class="parrafo-encabezado">Encendiendo el Futuro con Energía Solar: Innovamos Sostenibilidad, Iluminamos Tu Mundo.</p>
+            </div>
+          </div>
+
+          <!-- Single item -->
+          <div class="carousel-item">
+            <img src="img/Carrusel_3.png" class="d-block w-100" alt="Cliff Above a Stormy Sea"/>
+            <div class="carousel-caption d-md-block">
+              <!-- <h5>Third slide label</h5> -->
+              <img src="./img/logo-encabezado.svg" alt="imagen grande del logo solar code" class="logo-encabezado">
+              <p id="parrafo" class="parrafo-encabezado">Encendiendo el Futuro con Energía Solar: Innovamos Sostenibilidad, Iluminamos Tu Mundo.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Inner -->
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Carousel wrapper -->
     </section>
   </header>
 	<!-- Navbar -->
@@ -245,7 +320,7 @@
 
   <!-- Contactenos y pie de pagina Lizeth-->
     <!-- Pagina de nosotros-->
-  <section class="sectionNosotros">
+  <section id="acercade" class="sectionNosotros">
     <h5>Nosotros</h5>
     <div class="gridNosotros">
       <div class="perfil">
