@@ -12,7 +12,7 @@ body {
 /* Estilos encabezado */
 
 .logo {
-	width: 80px;
+	width: 40px;
 	height: auto;
 }
 
@@ -76,7 +76,7 @@ body {
 }
 
 .navbar-collapse .navegacion button {
-	font-size: 2rem;
+	font-size: 1.6rem;
 }
 
 .dropdown-menu li a {
@@ -84,7 +84,7 @@ body {
 }
 
 .parrafo-encabezado {
-	font-size: 2rem;
+	font-size: 1.3rem;
 }
 
 .container button .fa-bars{
@@ -94,6 +94,9 @@ body {
 @media(max-width: 768px){
 	.encabezado section .logo-encabezado {
 		max-width: 300px;
+	}
+	.parrafo-encabezado{
+		display: none;
 	}
 }
 
