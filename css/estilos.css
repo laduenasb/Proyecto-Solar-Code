@@ -229,11 +229,14 @@ body {
 .BologTitulo h2 {
 	font-size: 2rem;
 	margin-top: 30px;
+	text-shadow: 5px 5px 6px rgba(0, 0, 0, 1);
 }
 
 .contenedorBlog {
-	flex: 0 0 48%;
+	padding: 50px;
+	flex: 0 0 55%;
 	margin: 15px;
+	margin-bottom: 5px;
 }
 
 .imgBlog {
@@ -245,15 +248,32 @@ body {
 	background-color: white;
 	text-align: left;
 	font-size: 2rem;
-	margin: 15px;
+	margin-right: 100px;
 	padding: 15px;
 	padding-left: 100px;
 	border-radius: 8px;
 	box-sizing: border-box;
+	text-shadow: 5px 5px 6px rgba(0, 0, 0, 1);
 }
 
 .articulosBlog h3 {
-	font-size: 2rem;
+	font-size: 1.3rem;
+}
+  
+.botonLeer {
+	text-align: center;
+	justify-content: center;
+	font-size: 1.3rem;
+	margin: auto;
+	padding-bottom: 2px;
+	height: 20px;
+	border-radius: 8px;
+	transition: transform 0.6s ease-in-out;
+	
+	
+} 
+.botonLeer:hover {
+	transform: scale(1.02);
 }
 
 @media only screen and (min-width: 800px) {
@@ -263,7 +283,7 @@ body {
 		justify-content: space-between;
 		align-items: center;
 		margin-bottom: 15px;
-		padding: 15px;
+		
 		border-radius: 8px;
 		box-sizing: border-box;
 
@@ -271,23 +291,31 @@ body {
 	.imgBlog {
 			max-width: 100%;
 			height: auto;
+			margin-left: 40px;
+	}
+	.pBlog {
+		margin-top: 5px;
+		margin-left: 50px;
+		margin-right: 50px;
 	}
 }
 
 @media only screen and (max-width: 800px) {
  .imgBlog{
-	width: 350px;
-	height: auto;
+	width: 250px;
+	height: 200px;
  }
 }
 
 .pBlog {
 	background-color: white;
 	text-align: justify;
-	font-size: 1.6rem;
+	font-size: 1.3rem;
 	padding: 15px;
+	margin: 50px;
 	border-radius: 8px;
 	box-sizing: border-box;
+	text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
 }
 
 /*Parte Blog*/
