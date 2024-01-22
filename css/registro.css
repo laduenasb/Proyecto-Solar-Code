@@ -59,15 +59,15 @@ body {
 
 /* Estilos login */
 
-main .login, main .registro-r {
+main .registro, main .login-r {
 	width: 50%;
 }
 
-main .registro-r {
+main .login-r {
 	background-color: #33373D;
 }
 
-/* Parte izquierda */
+/* Parte derecha */
 
 main {
 	margin-top: 50px;
@@ -76,21 +76,21 @@ main {
 	justify-content: space-around;
 }
 
-main .login label {
+main .registro label {
 	font-size: 1.3rem;
 }
 
-main .login h2 {
+main .registro h2 {
 	padding-top: 60px;
 	font-weight: 700;
 }
 
-.login form {
+.registro form {
 	display: flex;
 	flex-direction: column;
 }
 
-.login form .campo {
+.registro form .campo {
 	min-width: 300px;
 	margin: 10px auto;
 	padding-left: 15px;
@@ -99,7 +99,7 @@ main .login h2 {
 	font-size: 1.3rem;
 }
 
-main .login .btn-login {
+main .registro .btn-registro {
 	min-width: 150px;
 	height: 40px;
 	margin: 20px auto;
@@ -109,14 +109,19 @@ main .login .btn-login {
 	font-size: 1.3rem;
 }
 
-/* Parte derecha */
+/* Parte izquierda */
 
-.registro-r {
+.login-r p{
+	font-size: 1.3rem;
+	color: white;
+}
+
+.login-r {
 	display: flex;
 	flex-direction: column;
 }
 
-main .registro-r .btn-registro {
+main .login-r .btn-login {
 	min-width: 150px;
 	height: 40px;
 	margin: 20px auto;
@@ -124,7 +129,7 @@ main .registro-r .btn-registro {
 	font-size: 1.3rem;
 }
 
-main .registro-r h2 {
+main .login-r h2 {
 	margin-top: 60px;
 	color: #ffff;
 	font-weight: 700;
