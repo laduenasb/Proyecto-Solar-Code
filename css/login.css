@@ -1,0 +1,154 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 62.5%;
+}
+/* Estilos nav-bar */
+body {
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+}
+
+.logo {
+	width: 40px;
+	height: auto;
+}
+
+.navbar {
+	background-color: rgb(0, 0, 0, 0.8);
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	top: 0;
+	left: 0;
+}
+
+.navbar div button {
+	color: white;
+}
+
+.dropdown .fa-user {
+	color: white;
+	font-size: 2.5rem;
+}
+
+.nav-right {
+	justify-content: right;
+}
+
+.container .usuario {
+	justify-content: center;
+}
+
+.container button .fa-bars{
+	font-size: 2rem;
+}
+
+.navbar-collapse .navegacion button {
+	font-size: 1.6rem;
+}
+
+.dropdown-menu li a {
+	font-size: 1.6rem;
+}
+
+/* Estilos login */
+
+main .login, main .registro-r {
+	width: 50%;
+}
+
+main .registro-r {
+	background-color: #33373D;
+}
+
+/* Parte izquierda */
+
+main {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+main .login label {
+	font-size: 1.3rem;
+}
+
+main .login h2 {
+	padding-top: 60px;
+	font-weight: 700;
+}
+
+.login form {
+	display: flex;
+	flex-direction: column;
+}
+
+.login form .campo {
+	min-width: 300px;
+	margin: 10px auto;
+	padding-left: 15px;
+	height: 40px;
+	border-radius: 15px;
+	font-size: 1.3rem;
+}
+
+main .login .btn-login {
+	min-width: 150px;
+	height: 40px;
+	margin: 20px auto;
+	border-radius: 15px;
+	background-color: #252627;
+	color: #ffff;
+	font-size: 1.3rem;
+}
+
+/* Parte derecha */
+
+.registro-r {
+	display: flex;
+	flex-direction: column;
+}
+
+main .registro-r .btn-registro {
+	min-width: 150px;
+	height: 40px;
+	margin: 20px auto;
+	border-radius: 15px;
+	font-size: 1.3rem;
+}
+
+main .registro-r h2 {
+	margin-top: 60px;
+	color: #ffff;
+}
+
+/* Estilos footer */
+
+footer{
+	text-align: center;
+	background-color: rgba(102, 98, 98, 0.664);
+}
+.footerParrafo{
+	font-size: 1.6rem;
+	padding-top: 2%;
+	margin-bottom: 5%;
+}
+.boton{
+	color: black;
+	margin: 2%;
+}
+.copy{
+	font-size: 1.6rem;
+	margin-top: 5%;
+}
+
+footer .containerFooter i {
+	font-size: 4rem;
+}
