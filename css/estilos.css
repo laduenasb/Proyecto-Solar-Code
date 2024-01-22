@@ -301,10 +301,10 @@ body {
 }
 
 @media only screen and (max-width: 800px) {
- .imgBlog{
-	width: 250px;
-	height: 200px;
- }
+	.imgBlog{
+		width: 250px;
+		height: 200px;
+	}
 }
 
 .pBlog {

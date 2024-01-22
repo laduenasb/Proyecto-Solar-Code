@@ -130,26 +130,98 @@ main .registro-r h2 {
 	font-weight: 700;
 }
 
-/* Estilos footer */
-
+/*-----------------Estilo de Pie de Página ---------------------------*/
 footer{
-	text-align: center;
 	background-color: rgba(102, 98, 98, 0.664);
+	font-size: 1.3rem;
 }
-.footerParrafo{
-	font-size: 1.6rem;
-	padding-top: 2%;
-	margin-bottom: 5%;
+h5{
+	margin-top: 2%;
+	font-size: 1rem;
 }
-.boton{
+.parrafo{
+	font-size: 1rem;
+}
+#ComtainerI a i{
 	color: black;
-	margin: 2%;
+	font-size: 2rem;
+	margin-right: 6%;
+	margin-top: 6%;
 }
-.copy{
-	font-size: 1.6rem;
-	margin-top: 5%;
-}
+/*----------------------------------------------Responsive de contactenos-------------------*/
 
-footer .containerFooter i {
-	font-size: 4rem;
+/*-------Desing Responsive Ipad 11Pro-------*/
+@media only screen and (max-width: 834px) {
+	.gridNosotros{
+		margin: 2%;
+		display: grid;
+		grid-template-columns: 50% 50%;
+		height: auto;
+		align-items: center;
+	}
+	.perfil img{
+		width: auto;
+	}
+	.section-contactenos{
+		margin-left: 2%;
+		margin-right: 2%;
+		text-align: center;
+	}
+	.divContactos{
+		display: grid;
+		grid-template-columns: 100%;
+		margin-bottom: 10%;
+	}
+	#name,
+	#email,
+	#phone{
+	height: 40px;
+	}
+	
+	.section-contactenos p,
+	.divContactos p{
+		font-size: 1.6rem;
+	}
+	#ComtainerI a i{
+		margin-bottom: 2%;
+	}
+
+}
+/*-------Desing Responsive Iphone 13Pro-------*/
+@media only screen and (max-width: 390px) {
+	.gridNosotros{
+		display: grid;
+		grid-template-columns: 100%;
+		align-items: center;
+	}
+	.containerGrid{
+		display: grid;
+		grid-template-columns: 100%;
+	}
+	.section-contactenos{
+		font-size: 1rem;
+		margin: 20px;
+		padding: 50px;
+	}
+	.section-contactenos h6{
+		text-align: center;
+		font-size: 1.5rem;
+	}
+
+	.divContactos{
+		display: grid;
+		grid-template-columns: 100%;
+	}
+	.section-contactenos p{
+		font-size: 1.3rem;
+	}
+	#name,
+	#phone,
+	#email {
+	width: 200px;
+	height: 30px;
+	}
+	#ComtainerI a i{
+		margin-bottom: 8%;
+	}
 }
