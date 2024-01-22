@@ -16,6 +16,7 @@
 	rel="stylesheet"
 	/>
 	<link rel="stylesheet" href="./css/estilos.css">
+  <link rel="shortcut icon" href="img/logo.svg" />
   <script src="js/script.js" ></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
@@ -346,89 +347,110 @@
     </div>
   </section>
   <!-- Contactenos y pie de pagina Lizeth-->
-  <section id="contactenos" class="section-contactenos">
-    <h6>Contáctenos</h6>
-    <form id="formulario" action="https://formspree.io/f/xpzvwobw"
-    method="POST" target="_blank">
-      <!-- 2 column grid layout with text inputs for the first and last names -->
-      <div class="divContactos">
-        <div class="col">
-          <p>Nombre:</p>
-          <div data-mdb-input-init class="form-outline">
-            <input id="name" type="text" name="name" class="form-control" required/>
-          </div>
+  <section class="section-contactenos">
+    <div class="containerGrid">
+        <div> 
+            <h6>¡Contáctenos para impulsar su transición hacia la energía solar! </h6>
+            <p>Complete el formulario a continuación o utilice la información de contacto proporcionada, y uno de nuestros especialistas en energía solar se pondrá en contacto con usted rápidamente. ¡Únase a la revolución solar y hagamos juntos una contribución significativa al futuro sostenible!</p>
         </div>
-        <div class="col">
-          <p>Telefono:</p>
-          <div data-mdb-input-init class="form-outline">
-            <input id="phone" type="number" class="form-control" name="phone" required/>
-          </div>
-        </div>
-      </div>
-      <!-- Email input -->
-      <p>Email:</p>
-      <div data-mdb-input-init class="form-outline mb-4">
-        <input id="email" type="email" name="email" class="form-control" required/>
-      </div>  
-      <p>Mensaje:</p>  
-      <!-- Message input -->
-      <div data-mdb-input-init class="form-outline mb-4">
-        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-      </div>
-    
-      <!-- Submit button -->
-      <button class="button-12" type="submit" onclick="submitForm()">ENVIAR</button>
-    </form>
+        <div class="gridContactenos">
+            <form id="formulario" action="https://formspree.io/f/xpzvwobw"
+            method="POST" target="_blank">
+            <!-- 2 column grid layout with text inputs for the first and last names -->
+            <div class="divContactos">
+                <div class="col">
+                <p>Nombre</p>
+                <div data-mdb-input-init class="form-outline">
+                    <input id="name" type="text" name="name" placeholder="Escribe tu nombre" class="form-control" required/>
+                </div>
+                </div>
+                <div class="col">
+                <p>Teléfono</p>
+                <div data-mdb-input-init class="form-outline">
+                    <input id="phone" type="number" placeholder="Escribe tu número teléfono" class="form-control" name="phone" required/>
+                </div>
+                </div>
+            </div>
+            <!-- Email input -->
+            <p>Email</p>
+            <div data-mdb-input-init class="form-outline mb-4">
+                <input id="email" type="email" placeholder="Escribe tu correo electronico" name="email" class="form-control" required/>
+            </div>  
+            <p>Mensaje</p>  
+            <!-- Message input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+                <textarea class="form-control" placeholder="Escribe tu mensaje" id="message" name="message" rows="4" required></textarea>
+            </div>
+            
+            <!-- Submit button -->
+            <button class="button-12" type="submit" onclick="submitForm()">ENVIAR</button>
+            </form>
+        </div>    
+    </div>
   </section>
   <!-- Pie de pagina Lizeth-->
   <footer>
-    <p class="footerParrafo">Siguenos</p>
     <!-- Grid container -->
-    <div class="containerFooter">
-      <!-- Section: Social media -->
-      <section>
-        <!-- Facebook -->
-        <a class="boton" target="_blank" href="https://www.facebook.com/profile.php?id=100086610886425&locale=es_LA"><i class="fab fa-facebook-f fa-2xl"></i></a>
+    <div class="container">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6">
+          <h5 class="text-uppercase">Full Solar Energy</h5>
   
-        <!-- Instagram -->
-        <a
-        target="_blank"
-          class="boton"
-          href="https://www.instagram.com/fullsolarenergyco/"
-          role="button"
-          ><i class="fab fa-instagram fa-2xl"></i
-        ></a>
+          <p class="parrafo">
+            En nuestro equipo de expertos en fotovoltaicos, estamos comprometidos a brindarle soluciones personalizadas y sostenibles para sus necesidades energéticas.
+          </p>
+        </div>
+        <!--Grid column-->
   
-        <!-- Twitter-->
-        <a
-        target="_blank"
-          data-mdb-ripple-init
-          class="boton"
-          href="https://twitter.com/FullsolarenerG"
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><i class="fa-brands fa-x-twitter fa-2xl"></i>
-        </a>
+        <!--Grid column-->
+        <div id="ComtainerI" class="col-lg-6">
+          <h5 class="text-uppercase">Siguenos</h5>
+          <section class="parrafo">
+            <!-- Facebook -->
+            <a class="boton" target="_blank" href="https://www.facebook.com/profile.php?id=100086610886425&locale=es_LA"><i class="fab fa-facebook-f fa-2xl"></i></a>
       
-        <!-- WhatsApp-->
-        <a
-        target="_blank"
-          data-mdb-ripple-init
-          class="boton"
-          href="https://wa.me/message/JNGSGM5ZSTTRG1"
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><i class="fa-brands fa-whatsapp fa-2xl"></i
-        ></a>
-      </section>
-      <!-- Section: Social media -->
+            <!-- Instagram -->
+            <a
+            target="_blank"
+              class="boton"
+              href="https://www.instagram.com/fullsolarenergyco/"
+              role="button"
+              ><i class="fab fa-instagram fa-2xl"></i
+            ></a>
+      
+            <!-- Twitter-->
+            <a
+            target="_blank"
+              class="boton"
+              href="https://twitter.com/FullsolarenerG"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fa-brands fa-x-twitter fa-2xl"></i>
+            </a>
+          
+            <!-- WhatsApp-->
+            <a
+            target="_blank"
+              class="boton"
+              href="https://wa.me/message/JNGSGM5ZSTTRG1"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fa-brands fa-whatsapp fa-2xl"></i
+            ></a>
+          </section>
+          
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
     </div>
     <!-- Grid container -->
   
     <!-- Copyright -->
-    <div class="copy">
-      Copyright  © 2024
-    
+    <div class="parrafo">
+      © 2024 Copyright: Solar Code
     </div>
     <!-- Copyright -->
   </footer>
