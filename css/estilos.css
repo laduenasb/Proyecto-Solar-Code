@@ -297,8 +297,8 @@ body {
 	background-color:rgb(51, 55, 61) ;
 }
 .sectionNosotros h5{
-	padding-top: 5%;
-	margin-bottom: 5%;
+	padding-top: 30px;
+	margin-bottom: 1%;
 	text-align: center;
 	font-size: 2.5rem;
 	color: white;
@@ -308,29 +308,62 @@ body {
 	grid-template-columns: 25% 25% 25% 25%;
 	gap:0.2rem ;
 	height: auto;
-	flex-wrap: wrap;
+	margin-left: 50px;
+	margin-right: 50px;
 }
-
-
 .perfil {
-	margin: 5%;
-	text-align: center;
 	color: white;
 }
 .perfil img{
-	padding: 3%;
+	margin-bottom: 2%;
 	align-items: center;
 	height: 220px;
-	/* width: 220px; */
 	border-radius: 50%;
 }
 .perfil p{
-	margin: 2%;
-	font-size: 1.6rem;
+	padding-left:15%;
+	padding-right: 15%;
+	margin-top: 1%;
+	font-size: 1.3rem;
+	justify-content: center;
 }
 /*-----------------Estilo Pagina de contactenos ---------------------------*/
+
+.containerGrid{
+	color: black;
+	align-items: center;
+	display: grid;
+    grid-template-columns: 45% 50%;
+	gap: 5%;
+    
+}
+.section-contactenos {
+    position: relative;
+    border-radius: 20px;
+    padding: 2%;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    overflow: hidden; /* Asegura que la opacidad no afecte al contenido */
+}
+
+.section-contactenos::before {
+    content: "";
+    background-image: url('../img/footer.png');
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.2; /* Ajusta según tus necesidades (0 = transparente, 1 = opaco) */
+}
+
+
 .section-contactenos form p {
-	font-size: 1.6rem;
+	font-size: 1.3rem;
 }
 
 .section-contactenos form input {
@@ -339,14 +372,8 @@ body {
 
 .section-contactenos h6{
 	text-align: center;
-	font-size: 2.5rem;
-	margin-top: 10%;
-	margin-bottom: 10%;
-}
-.section-contactenos{
-	margin-left: 30%;
-	margin-right: 30%;
-	margin-bottom: 10% ;
+	font-size: 1.6rem;
+	margin-bottom: 5%;
 }
 
 .divContactos{
@@ -357,17 +384,22 @@ body {
 }
 .form-outline{
 	border-radius: 6px;
-	background-color: rgba(102, 98, 98, 0.664);
+	background-color: rgba(102, 98, 98, 0.349);
 }
-
+#name::placeholder,
+#phone::placeholder,
+#email::placeholder,
+#message::placeholder{
+	color:rgb(102, 98, 98);
+}
 .button-12 {
-	width: 60%;
-	margin-left: 20%;
+	width: 100px;
+	margin-left: 30%;
 	margin-right: 30%;
 	padding: 6px 14px;
 	border-radius: 6px;
 	border: none;
-	background:rgba(102, 98, 98, 0.664);
+	background:rgba(102, 98, 98, 0.829);
 	color: black;
 	user-select: none;
 	-webkit-user-select: none;
@@ -375,25 +407,21 @@ body {
 }
 /*-----------------Estilo de Pie de Página ---------------------------*/
 footer{
-	text-align: center;
 	background-color: rgba(102, 98, 98, 0.664);
+	font-size: 1.3rem;
 }
-.footerParrafo{
-	font-size: 1.6rem;
-	padding-top: 2%;
-	margin-bottom: 5%;
+h5{
+	margin-top: 2%;
+	font-size: 1rem;
 }
-.boton{
+.parrafo{
+	font-size: 1rem;
+}
+#ComtainerI a i{
 	color: black;
-	margin: 2%;
-}
-.copy{
-	font-size: 1.6rem;
-	margin-top: 5%;
-}
-
-footer .containerFooter i {
-	font-size: 4rem;
+	font-size: 2rem;
+	margin-right: 6%;
+	margin-top: 6%;
 }
 /*----------------------------------------------Responsive de contactenos-------------------*/
 
@@ -410,8 +438,8 @@ footer .containerFooter i {
 		width: auto;
 	}
 	.section-contactenos{
-		margin-left: 8%;
-		margin-right: 8%;
+		margin-left: 2%;
+		margin-right: 2%;
 		text-align: center;
 	}
 	.divContactos{
@@ -422,48 +450,53 @@ footer .containerFooter i {
 	#name,
 	#email,
 	#phone{
-	height: 70px;
+	height: 40px;
 	}
 	
 	.section-contactenos p,
 	.divContactos p{
 		font-size: 1.6rem;
 	}
-	
+	#ComtainerI a i{
+		margin-bottom: 2%;
+	}
+
 }
 /*-------Desing Responsive Iphone 13Pro-------*/
 @media only screen and (max-width: 390px) {
 	.gridNosotros{
-		display: flex;
-		/* height: auto; */
+		display: grid;
+		grid-template-columns: 100%;
 		align-items: center;
 	}
-	/* .perfil img{
-		width: auto;
-	} */
+	.containerGrid{
+		display: grid;
+		grid-template-columns: 100%;
+	}
 	.section-contactenos{
-		text-align: center;
+		font-size: 1rem;
+		margin: 20px;
+		padding: 50px;
 	}
-	h6{
+	.section-contactenos h6{
 		text-align: center;
-		margin-top: 10%;
+		font-size: 1.5rem;
 	}
+
 	.divContactos{
 		display: grid;
 		grid-template-columns: 100%;
-		margin-bottom: 10%;
 	}
-	form{
-		margin-left: 5%;
-		margin-right: 5%;
-		margin-bottom: 5%;
+	.section-contactenos p{
+		font-size: 1.3rem;
 	}
-	.section-contactenos p,
-	.divContactos p{
-		font-size: 1.6rem;
+	#name,
+	#phone,
+	#email {
+	width: 200px;
+	height: 30px;
 	}
-	.containerFooter{
-		margin: 0;
-		padding: 0;
-	}	
+	#ComtainerI a i{
+		margin-bottom: 8%;
+	}
 }
