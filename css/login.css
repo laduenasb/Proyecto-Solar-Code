@@ -130,6 +130,17 @@ main .registro-r h2 {
 	font-weight: 700;
 }
 
+
+@media(max-width: 768px){
+	main {
+		flex-direction: column;
+	}
+	
+	main .login, main .registro-r {
+		width: 100%;
+	}
+}
+
 /*-----------------Estilo de Pie de Página ---------------------------*/
 footer{
 	background-color: rgba(102, 98, 98, 0.664);
@@ -147,6 +158,15 @@ h5{
 	font-size: 2rem;
 	margin-right: 6%;
 	margin-top: 6%;
+}
+
+@media(min-width: 768px){
+	footer{
+		/* Dejar el footer al final de la pagina */
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
 }
 /*----------------------------------------------Responsive de contactenos-------------------*/
 
