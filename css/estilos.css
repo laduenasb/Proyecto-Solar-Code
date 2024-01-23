@@ -107,94 +107,181 @@ body {
 
 .section-Title{
 	text-align: center;
-	padding: 40px;
+	padding: 30px;
 }
-
 .section-Title h5 {
 	font-size: 1.6rem;
+	font-weight: 600;
+}
+.card{
+	padding: 40px;
+
+}
+.card-group{
+	padding: 0 50px;
+	gap:20px;
 }
 
 #icon{
 	color: #52819B;
-	font-size: 7rem;
+	font-size: 6rem;
 	margin: auto;
 }
+
 .card-text-content{
-	font-size: 1.6rem;
+	font-size: 1.3rem;
 	text-align: justify;
 }
 .card-title-content{
-	font-size: 2rem;
+	font-size: 1.6rem;
 	text-align: center;
 }
 .section-project{
 	background-color: #33373D;
 	color: white;
-	padding-top: 20px;
+	margin-top: 30px;
+	padding: 20px 0;
 	text-align: center;
+	width: 100%;
 }
 .titulo-principal{
 	font-size: 2rem;
 }
 .container-proyectos{
 	display: flex;
+	padding: 0 50px;
+	gap:40px;
+}
+.container-proyecto-img1{
+	text-align: center;
 }
 .container-proyecto-img{
-	margin: 20px;
-	justify-content: center;
+	text-align: center;
+}
+.container-iconos{
+	width: 100%;
+	padding: 0px 45px;
+	text-align: center;
 }
 .img-proyecto1{
-	width: 400px;
+	width: 460px;
 	height: auto;
 	border-radius: 5%;
-	text-align: center;
+	align-items: left;
 }
 .img-proyecto2{
-	width: 395px;
+	width: 460px;
 	height: auto;
 	border-radius: 5%;
 }
-.container-proyectos-cont{
+
+.container-iconos h5{
 	font-size: 1.6rem;
+	font-weight: lighter;
+	padding-top: 6px;
 }
-.titulo-proyecto{
-	font-size: 2rem;
+.container-iconos p{
+	font-size: 1.3rem;
+	font-weight: lighter;
+	text-align: justify;
+	padding-top: 8px;
+}
+#icon-cont{
+	font-size: 7rem;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	padding-top: 4px;
+}
+.container-proyectos-cont{
+	font-size: 1.3rem;
+}
+.titulo-proyecto-Choco{
+	font-size: 1.6rem;
 	text-align: center;
-	margin:10px;
+	margin: 10px;
 	font-weight: lighter;
 }
-.container-parrafos{
+.titulo-proyecto-Soacha{
+	font-size: 1.6rem;
+	text-align: center;
+	margin: 10px;
+	font-weight: lighter;
+}
+.container-parrafos-Soacha{
 	text-align: justify;
 	font-weight: lighter;
-
+	width: 100%;	
 }
-.btn-primary{
-	color: white;
-	align-items: center;
-	border: #8D8C8C 0.5px solid;
+.container-parrafos-Choco{
+	text-align: justify;
+	font-weight: lighter;
+	width: 100%;
+}
+.btn-primary-project{
+	text-align: center;
+	color: #ffffff;
+	border: #ffffff 0.5px solid;
 	padding: 5px 40px;
 	border-radius: 10px;
-	outline: none;
 	margin-top: 20px;
 	font-weight: lighter;
 }
 
+@media only screen and (min-width: 1023px){
+	.img-proyecto1{
+		width: 320px;
+		height: auto;
+		border-radius: 5%;
+		align-items: left;
+	}
+	.img-proyecto2{
+		width: 320px;
+		height: auto;
+		border-radius: 5%;
+	}
+	.container-iconos {
+		min-width: 250px;
+		padding: 0px 5px;
+	}
+}
+
 @media only screen and (min-width: 768px) and (max-width:1023px){
-	.section-project{
-		max-width: 100%; 
+	.card-group{
+		max-width: 90%;
+		display: flex;
+		flex-direction: column; 
+		padding-left: 17%;
 	}
 	.container-proyectos{
 		max-width: 100%;
+		display: flex;
+		flex-direction: column; 
+		text-align: center;
 	}
-	.img-proyecto1{
-		max-width: 80%;
+.container-proyecto-img{
+	max-width: 100%;
 	}
-	.img-proyecto2{
-		max-width: 80%;
+.container-parrafos-Soacha{
+	padding: 0 17%;
 	}
+.container-parrafos-Choco{
+	padding: 0 17%;
 	}
-
-@media only screen and (max-width: 768px){
+.container-iconos{
+	padding: 0 17%;
+	}
+.img-proyecto1{
+	max-width: 100%;
+	}
+.img-proyecto2{
+	max-width: 100%;
+	}
+}
+@media only screen and (max-width: 767px){
+.card{
+	padding: 3%;
+}
 .section-project{
 	max-width: 100%; 
 }
@@ -202,15 +289,26 @@ body {
 	max-width: 100%;
 	display: flex;
 	flex-direction: column; 
+	text-align: center;
 }
 .container-proyecto-img{
 	max-width: 100%;
 }
+.container-parrafos-Soacha{
+	max-width: 100%;
+}
+.container-parrafos-Choco{
+	max-width: 100%;
+}
+.container-iconos{
+	max-width: 100%;
+	padding: 0;
+}
 .img-proyecto1{
-	max-width: 80%;
+	max-width: 100%;
 }
 .img-proyecto2{
-	max-width: 80%;
+	max-width: 100%;
 }
 }
 
