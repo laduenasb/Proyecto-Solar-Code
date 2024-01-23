@@ -135,10 +135,28 @@ main .login-r h2 {
 	font-weight: 700;
 }
 
+@media(max-width: 768px){
+	main {
+		flex-direction: column;
+	}
+	
+	main .registro, main .login-r {
+		width: 100%;
+	}
+}
+
 /*-----------------Estilo de Pie de Página ---------------------------*/
 footer{
 	background-color: rgba(102, 98, 98, 0.664);
 	font-size: 1.3rem;
+}
+@media(min-width: 768px){
+	footer{
+		/* Dejar el footer al final de la pagina */
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
 }
 h5{
 	margin-top: 2%;
