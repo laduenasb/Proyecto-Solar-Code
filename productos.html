@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Solar Code</title>
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/531ac7ac07.js" crossorigin="anonymous"></script>
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+	<!-- MDB -->
+	<link
+	href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css"
+	rel="stylesheet"
+	/>
+	<link rel="stylesheet" href="css/productos.css">
+    <link rel="shortcut icon" href="img/logo.svg" />
+    <script src="js/productos.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <!-- Encabezado Alejandro-->
+    <header class="encabezado">
+    <nav class="navbar navbar-expand-lg">
+        <!-- Container wrapper -->
+        <div class="container">
+            <!-- Navbar brand -->
+            <a class="navbar-brand me-2" href="./index.html">
+            <img class="logo"
+                src="./img/logo.svg"
+                alt="Logo solar code"
+            />
+            </a>
+        
+            <!-- Toggle button -->
+            <button
+            data-mdb-collapse-init
+            class="navbar-toggler"
+            type="button"
+            data-mdb-target="#navbarButtonsExample"
+            aria-controls="navbarButtonsExample"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+            <i class="fas fa-bars"></i>
+            </button>
+        
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse nav-right" id="navbarButtonsExample">
+            <div class="navegacion">
+                <button onclick="window.location.href='./index.html';" data-mdb-ripple-init type="button" class="btn btn-link px-3 me-2">
+                Inicio
+                </button>
+                <button onclick="window.location.href='./productos.html';" data-mdb-ripple-init type="button" class="btn btn-link px-3 me-2">
+                Productos
+                </button>
+                <button onclick="window.location.href='./servicios.html';" data-mdb-ripple-init type="button" class="btn btn-link px-3 me-2">
+                Servicios
+                </button>
+                <button onclick="window.location.href='./index.html#contactenos';" data-mdb-ripple-init type="button" class="btn btn-link px-3 me-2">
+                Contactenos
+                </button>
+                <button onclick="window.location.href='#acercade';" data-mdb-ripple-init type="button" class="btn btn-link px-3 me-2">
+                Acerca de
+                </button>
+
+                <!-- <button data-mdb-ripple-init type="button" class="btn btn-primary me-3">
+                Iniciar sesión
+                </button> -->
+                <!-- <a
+                data-mdb-ripple-init
+                class="btn btn-dark px-3"
+                href="https://github.com/mdbootstrap/mdb-ui-kit"
+                role="button"
+                ><i class="fab fa-github"></i
+                ></a> -->
+            </div>
+            <!-- test -->
+            <!-- Right elements -->
+            <div class="d-flex align-items-center usuario">
+                <!-- Icon -->
+                <!-- <a class="text-reset me-3" href="#">
+                    <i class="fas fa-shopping-cart"></i>
+                </a> -->
+
+                <!-- Notifications -->
+                <div class="dropdown">
+                    <!-- <a
+                    data-mdb-dropdown-init
+                    class="text-reset me-3 dropdown-toggle hidden-arrow"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    aria-expanded="false"
+                    >
+                    <i class="fas fa-bell"></i>
+                    <span class="badge rounded-pill badge-notification bg-danger">1</span>
+                    </a>
+                    <ul
+                    class="dropdown-menu dropdown-menu-end"
+                    aria-labelledby="navbarDropdownMenuLink"
+                    >
+                    <li>
+                        <a class="dropdown-item" href="#">Some news</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">Another news</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                    </ul>
+                    -->
+                </div>
+                <!-- Avatar -->
+                <div class="dropdown">
+                    <a
+                    data-mdb-dropdown-init
+                    class="dropdown-toggle d-flex align-items-center hidden-arrow"
+                    href="#"
+                    id="navbarDropdownMenuAvatar"
+                    role="button"
+                    aria-expanded="false"
+                    >
+                    <!-- <img
+                        src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                        class="rounded-circle"
+                        height="25"
+                        alt="Black and White Portrait of a Man"
+                        loading="lazy"
+                    /> -->
+                    <i class="fa-solid fa-user"></i>
+                    </a>
+                    <ul
+                    class="dropdown-menu dropdown-menu-end"
+                    aria-labelledby="navbarDropdownMenuAvatar"
+                    >
+                    <li>
+                        <a class="dropdown-item" href="./login.html">Iniciar sesión</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="./registro.html">Registrarse</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" id="salir">Cerrar sesión</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Right elements -->
+            <!-- test -->
+
+            </div>
+            <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+        </nav>
+        <section>
+        <!-- <img src="./img/logo-encabezado.svg" alt="imagen grande del logo solar code" class="logo-encabezado">
+        <p id="parrafo" class="parrafo-encabezado">Encendiendo el Futuro con Energía Solar: Innovamos Sostenibilidad, Iluminamos Tu Mundo.</p> -->
+        <!-- Carousel wrapper -->
+        <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel" data-mdb-carousel-init>
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+            <button
+                type="button"
+                data-mdb-target="#carouselBasicExample"
+                data-mdb-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+            ></button>
+            <button
+                type="button"
+                data-mdb-target="#carouselBasicExample"
+                data-mdb-slide-to="1"
+                aria-label="Slide 2"
+            ></button>
+            <button
+                type="button"
+                data-mdb-target="#carouselBasicExample"
+                data-mdb-slide-to="2"
+                aria-label="Slide 3"
+            ></button>
+            </div>
+
+            <!-- Inner -->
+            <div class="carousel-inner">
+            <!-- Single item -->
+            <div class="carousel-item active">
+                <img src="img/Carrusel_1.png" class="d-block w-100" alt="Sunset Over the City"/>
+                <!-- <div class="carousel-caption d-none d-md-block"> -->
+                <div class="carousel-caption d-md-block">
+                <!-- <h5>First slide label</h5> -->
+                <img src="./img/logo-encabezado.svg" alt="imagen grande del logo solar code" class="logo-encabezado">
+                <p id="parrafo" class="parrafo-encabezado">Encendiendo el Futuro con Energía Solar: Innovamos Sostenibilidad, Iluminamos Tu Mundo.</p>
+                </div>
+            </div>
+
+            <!-- Single item -->
+            <div class="carousel-item">
+                <img src="img/Carrusel_2.png" class="d-block w-100" alt="Canyon at Nigh"/>
+                <div class="carousel-caption d-md-block">
+                <!-- <h5>Second slide label</h5> -->
+                <img src="./img/logo-encabezado.svg" alt="imagen grande del logo solar code" class="logo-encabezado">
+                <p id="parrafo" class="parrafo-encabezado">Encendiendo el Futuro con Energía Solar: Innovamos Sostenibilidad, Iluminamos Tu Mundo.</p>
+                </div>
+            </div>
+
+            <!-- Single item -->
+            <div class="carousel-item">
+                <img src="img/Carrusel_3.png" class="d-block w-100" alt="Cliff Above a Stormy Sea"/>
+                <div class="carousel-caption d-md-block">
+                <!-- <h5>Third slide label</h5> -->
+                <img src="./img/logo-encabezado.svg" alt="imagen grande del logo solar code" class="logo-encabezado">
+                <p id="parrafo" class="parrafo-encabezado">Encendiendo el Futuro con Energía Solar: Innovamos Sostenibilidad, Iluminamos Tu Mundo.</p>
+                </div>
+            </div>
+            </div>
+            <!-- Inner -->
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- Carousel wrapper -->
+        </section>
+    </header>
+	<!-- Navbar -->
+
+        <section> 
+            <h1>Productos</h1>
+            <nav class="navProductos">
+                <ul class="listProductos">
+                    <li><a href="#paneles">Paneles</a></li>
+                    <li><a href="#baterias">Baterías</a></li>
+                    <li><a href="#controladores">Controladores</a></li>
+                    <li><a href="#inversores">Inversores</a></li>
+                    <li><a href="#kitsolar">KitSolar</a></li>
+                    <li><a href="#hogar">Hogar</a></li>
+                    <li><a href="#industrial">Industrial</a></li>
+                    <li><a href="#carrito"><i class="fa-solid fa-cart-shopping" style="color: #d9d9d9;"></i></a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="contenedor">
+            <div>
+                <h2 id="paneles" class="categorias">Paneles<a href="">Ver más</a></h2> 
+                <!-- Contenedor de elementos -->
+                <div class="contenedor-items">
+                    <!-- Inicio de un elemento en el contenedor.-->
+                    <div class="item">
+                        <img src="img/Panel1.jpg" alt="" class="img-item">
+                        <span class="titulo-item">Panel Solar 500W Deep Blue 3.0</span>
+                        <!--Un elemento de texto con la clase "precio-item" que muestra el precio "$15.000".-->
+                        <span class="precio-item">$701.724</span>
+                        <!-- Un botón con la clase "boton-item" que muestra el texto "Agregar al Carrito".-->
+                        <button class="boton-item">Agregar al Carrito <i class="fa-solid fa-cart-shopping" style="color: black"></i></button>
+                    </div>
+                    <div class="item">
+                        <img src="img/Panel2.jpg" alt="" class="img-item">
+                        <span class="titulo-item">Panel Solar 550W 24V Monocristalin</span>
+                        <!--Un elemento de texto con la clase "precio-item" que muestra el precio "$15.000".-->
+                        <span class="precio-item">$790.375</span>
+                        <!-- Un botón con la clase "boton-item" que muestra el texto "Agregar al Carrito".-->
+                        <button class="boton-item">Agregar al Carrito <i class="fa-solid fa-cart-shopping" style="color: black"></i></button>
+                    </div>
+                    <div class="item">
+                        <img src="img/Panel3.jpg" alt="" class="img-item">
+                        <span class="titulo-item">Panel Solar JA SOLAR 455W</span>
+                        <!--Un elemento de texto con la clase "precio-item" que muestra el precio "$15.000".-->
+                        <span class="precio-item">$769.602</span>
+                        <!-- Un botón con la clase "boton-item" que muestra el texto "Agregar al Carrito".-->
+                        <button class="boton-item">Agregar al Carrito <i class="fa-solid fa-cart-shopping" style="color: black"></i></button>
+                    </div>
+                    <div class="item">
+                        <img src="img/Panel4.jpg" alt="" class="img-item">
+                        <span class="titulo-item">Panel Solar 210W 12V Monocristalino</span>
+                        <!--Un elemento de texto con la clase "precio-item" que muestra el precio "$15.000".-->
+                        <span class="precio-item">$415.221</span>
+                        <!-- Un botón con la clase "boton-item" que muestra el texto "Agregar al Carrito".-->
+                        <button class="boton-item">Agregar al Carrito <i class="fa-solid fa-cart-shopping" style="color: black"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 id="baterias" class="categorias">Baterías<a href="">Ver más</a></h2> 
+                <!-- Contenedor de elementos -->
+                <div class="contenedor-items mySwiper">
+                    <!-- Inicio de un elemento en el contenedor.-->
+                    <div class="item">
+                        <img src="img/Bateria1.jpg" alt="" class="img-item">
+                        <span class="titulo-item">Rack 19" hasta 10 uds </span>
+                        <!--Un elemento de texto con la clase "precio-item" que muestra el precio "$15.000".-->
+                        <span class="precio-item">$2.442.780</span>
+                        <!-- Un botón con la clase "boton-item" que muestra el texto "Agregar al Carrito".-->
+                        <button class="boton-item">Agregar al Carrito <i class="fa-solid fa-cart-shopping" style="color: black"></i></button>
+                    </div>
+                    <div class="item">
+                        <img src="img/Bateria2.jpg" alt="" class="img-item">
+                        <span class="titulo-item">Batería GEL 12V 250Ah</span>
+                        <!--Un elemento de texto con la clase "precio-item" que muestra el precio "$15.000".-->
+                        <span class="precio-item">$1.798.367</span>
+                        <!-- Un botón con la clase "boton-item" que muestra el texto "Agregar al Carrito".-->
+                        <button class="boton-item">Agregar al Carrito <i class="fa-solid fa-cart-shopping" style="color: black"></i></button>
+                    </div>
+                    <div class="item">
+                        <img src="img/Bateria3.jpg" alt="" class="img-item">
+                        <span class="titulo-item">Batería AGM 12V 8Ah</span>
+                        <!--Un elemento de texto con la clase "precio-item" que muestra el precio "$15.000".-->
+                        <span class="precio-item">$88.145</span>
+                        <!-- Un botón con la clase "boton-item" que muestra el texto "Agregar al Carrito".-->
+                        <button class="boton-item">Agregar al Carrito <i class="fa-solid fa-cart-shopping" style="color: black"></i></button>
+                    </div>
+                    <div class="item">
+                        <img src="img/Bateria4.jpg" alt="" class="img-item">
+                        <span class="titulo-item">Batería AGM 12V 18Ah</span>
+                        <!--Un elemento de texto con la clase "precio-item" que muestra el precio "$15.000".-->
+                        <span class="precio-item">$170.559</span>
+                        <!-- Un botón con la clase "boton-item" que muestra el texto "Agregar al Carrito".-->
+                        <button class="boton-item">Agregar al Carrito <i class="fa-solid fa-cart-shopping" style="color: black"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 id="controladores" class="categorias">Controladores<a href="">Ver más</a></h2> 
+                <!-- Contenedor de elementos -->
+                <div class="contenedor-items">
+                    <!-- Inicio de un elemento en el contenedor.-->
+                    <div class="item">
+                        <img src="img/Controlador1.jpg" alt="" class="img-item">
+                        <span class="titulo-item">Controlador Carga MPPT 40A ML2440 12/24V</span>
+                        <!--Un elemento de texto con la clase "precio-item" que muestra el precio "$15.000".-->
+                        <span class="precio-item">$513.975</span>
+                        <!-- Un botón con la clase "boton-item" que muestra el texto "Agregar al Carrito".-->
+                        <button class="boton-item">Agregar al Carrito <i class="fa-solid fa-cart-shopping" style="color: black"></i></button>
+                    </div>
+                    <div class="item">
+                        <img src="img/Controlador2.jpg" alt="" class="img-item">
+                        <span class="titulo-item">Controlador Carga SmartSolar MPPT 100/20</span>
+                        <!--Un elemento de texto con la clase "precio-item" que muestra el precio "$15.000".-->
+                        <span class="precio-item">$ 1.007.800</span>
+                        <!-- Un botón con la clase "boton-item" que muestra el texto "Agregar al Carrito".-->
+                        <button class="boton-item">Agregar al Carrito <i class="fa-solid fa-cart-shopping" style="color: black"></i></button>
+                    </div>
+                    <div class="item">
+                        <img src="img/Controlador3.jpg" alt="" class="img-item">
+                        <span class="titulo-item">Controlador Carga MPPT 100A 12/24/48 150V LCD 
+                        </span>
+                        <!--Un elemento de texto con la clase "precio-item" que muestra el precio "$15.000".-->
+                        <span class="precio-item">$ $ 2.267.400 
+                        </span>
+                        <!-- Un botón con la clase "boton-item" que muestra el texto "Agregar al Carrito".-->
+                        <button class="boton-item">Agregar al Carrito <i class="fa-solid fa-cart-shopping" style="color: black"></i></button>
+                    </div>
+                    <div class="item">
+                        <img src="img/Controlador4.jpg" alt="" class="img-item">
+                        <span class="titulo-item">Controlador Growatt MPPT SC4880 80A
+                        </span>
+                        <!--Un elemento de texto con la clase "precio-item" que muestra el precio "$15.000".-->
+                        <span class="precio-item"> $ 1.327.300</span>
+                        <!-- Un botón con la clase "boton-item" que muestra el texto "Agregar al Carrito".-->
+                        <button class="boton-item">Agregar al Carrito <i class="fa-solid fa-cart-shopping" style="color: black"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 id="inversores" class="categorias">Inversores<a href="">Ver más</a></h2> 
+                <!-- Contenedor de elementos -->
+                <div class="contenedor-items mySwiper">
+                    <!-- Inicio de un elemento en el contenedor.-->
+                    <div class="item">
+                        <img src="img/Inversor1.jpg" alt="" class="img-item">
+                        <span class="titulo-item">Inversor On Grid MAC 36KTL3-XL
+                        </span>
+                        <!--Un elemento de texto con la clase "precio-item" que muestra el precio "$15.000".-->
+                        <span class="precio-item"> $ 18.332.956 
+                        </span>
+                        <!-- Un botón con la clase "boton-item" que muestra el texto "Agregar al Carrito".-->
+                        <button class="boton-item">Agregar al Carrito <i class="fa-solid fa-cart-shopping" style="color: black"></i></button>
+                    </div>
+                    <div class="item">
+                        <img src="img/Inversor2.jpg" alt="" class="img-item">
+                        <span class="titulo-item">Inversor Cargador SPF 6000T</span>
+                        <!--Un elemento de texto con la clase "precio-item" que muestra el precio "$15.000".-->
+                        <span class="precio-item"> $ 6.170.753</span>
+                        <!-- Un botón con la clase "boton-item" que muestra el texto "Agregar al Carrito".-->
+                        <button class="boton-item">Agregar al Carrito <i class="fa-solid fa-cart-shopping" style="color: black"></i></button>
+                    </div>
+                    <div class="item">
+                        <img src="img/Inversor3.jpg" alt="" class="img-item">
+                        <span class="titulo-item">Vatimetro Smart Meter TPM-E
+                        </span>
+                        <!--Un elemento de texto con la clase "precio-item" que muestra el precio "$15.000".-->
+                        <span class="precio-item"> $ 1.109.912 
+                        </span>
+                        <!-- Un botón con la clase "boton-item" que muestra el texto "Agregar al Carrito".-->
+                        <button class="boton-item">Agregar al Carrito <i class="fa-solid fa-cart-shopping" style="color: black"></i></button>
+                    </div>
+                    <div class="item">
+                        <img src="img/Inversor4.jpg" alt="" class="img-item">
+                        <span class="titulo-item">Inversor Cargador 4000W 48V</span>
+                        <!--Un elemento de texto con la clase "precio-item" que muestra el precio "$15.000".-->
+                        <span class="precio-item"> $ 3.199.166                         </span>
+                        <!-- Un botón con la clase "boton-item" que muestra el texto "Agregar al Carrito".-->
+                        <button class="boton-item">Agregar al Carrito <i class="fa-solid fa-cart-shopping" style="color: black"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 id="kitsolar" class="categorias">Kit Solar<a href="">Ver más</a></h2> 
+                <!-- Contenedor de elementos -->
+                <div class="contenedor-items">
+                    <!-- Inicio de un elemento en el contenedor.-->
+                    <div class="item">
+                        <img src="img/Kitsolar1.jpg" alt="" class="img-item">
+                        <span class="titulo-item">Kit Solar 6000W 48V 12800Whdía
+                        </span>
+                        <!--Un elemento de texto con la clase "precio-item" que muestra el precio "$15.000".-->
+                        <span class="precio-item"> $ 39.504.825 
+                        </span>
+                        <!-- Un botón con la clase "boton-item" que muestra el texto "Agregar al Carrito".-->
+                        <button class="boton-item">Agregar al Carrito <i class="fa-solid fa-cart-shopping" style="color: black"></i></button>
+                    </div>
+                    <div class="item">
+                        <img src="img/Kitsolar2.jpg" alt="" class="img-item">
+                        <span class="titulo-item">Kit Solar Basico 24V 1600Whdía
+                        </span>
+                        <!--Un elemento de texto con la clase "precio-item" que muestra el precio "$15.000".-->
+                        <span class="precio-item"> $ 5.364.777 
+                        </span>
+                        <!-- Un botón con la clase "boton-item" que muestra el texto "Agregar al Carrito".-->
+                        <button class="boton-item">Agregar al Carrito <i class="fa-solid fa-cart-shopping" style="color: black"></i></button>
+                    </div>
+                    <div class="item">
+                        <img src="img/Kitsolar3.jpg" alt="" class="img-item">
+                        <span class="titulo-item">Kit Solar OnGrid 3000W 13800Whdía
+                        </span>
+                        <!--Un elemento de texto con la clase "precio-item" que muestra el precio "$15.000".-->
+                        <span class="precio-item"> $ 13.620.518 
+                        </span>
+                        <!-- Un botón con la clase "boton-item" que muestra el texto "Agregar al Carrito".-->
+                        <button class="boton-item">Agregar al Carrito <i class="fa-solid fa-cart-shopping" style="color: black"></i></button>
+                    </div>
+                    <div class="item">
+                        <img src="img/Kitsolar4.jpg" alt="" class="img-item">
+                        <span class="titulo-item">Kit Solar 3400Whdía con Batería de Gel
+                        </span>
+                        <!--Un elemento de texto con la clase "precio-item" que muestra el precio "$15.000".-->
+                        <span class="precio-item"> $ 7.544.103 
+                        </span>
+                        <!-- Un botón con la clase "boton-item" que muestra el texto "Agregar al Carrito".-->
+                        <button class="boton-item">Agregar al Carrito <i class="fa-solid fa-cart-shopping" style="color: black"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 id="hogar" class="categorias">Hogar<a href="">Ver más</a></h2> 
+                <!-- Contenedor de elementos -->
+                <div class="contenedor-items mySwiper">
+                    <!-- Inicio de un elemento en el contenedor.-->
+                    <div class="item">
+                        <img src="img/Hogar1.jpg" alt="" class="img-item">
+                        <span class="titulo-item">Power Boost Clamp monofásico
+                        </span>
+                        <!--Un elemento de texto con la clase "precio-item" que muestra el precio "$15.000".-->
+                        <span class="precio-item"> $ 701.664 
+                        </span>
+                        <!-- Un botón con la clase "boton-item" que muestra el texto "Agregar al Carrito".-->
+                        <button class="boton-item">Agregar al Carrito <i class="fa-solid fa-cart-shopping" style="color: black"></i></button>
+                    </div>
+                    <div class="item">
+                        <img src="img/Hogar2.jpg" alt="" class="img-item">
+                        <span class="titulo-item">Pedestal Wallbox Estándar
+                        </span>
+                        <!--Un elemento de texto con la clase "precio-item" que muestra el precio "$15.000".-->
+                        <span class="precio-item"> $ 2.956.587 
+                        </span>
+                        <!-- Un botón con la clase "boton-item" que muestra el texto "Agregar al Carrito".-->
+                        <button class="boton-item">Agregar al Carrito <i class="fa-solid fa-cart-shopping" style="color: black"></i></button>
+                    </div>
+                    <div class="item">
+                        <img src="img/Hogar3.jpg" alt="" class="img-item">
+                        <span class="titulo-item">Cargador Pulsar Plus Type 2 - 7.4kW
+                        </span>
+                        <!--Un elemento de texto con la clase "precio-item" que muestra el precio "$15.000".-->
+                        <span class="precio-item"> $ 6.915.405 
+                        </span>
+                        <!-- Un botón con la clase "boton-item" que muestra el texto "Agregar al Carrito".-->
+                        <button class="boton-item">Agregar al Carrito <i class="fa-solid fa-cart-shopping" style="color: black"></i></button>
+                    </div>
+                    <div class="item">
+                        <img src="img/Hogar4.jpg" alt="" class="img-item">
+                        <span class="titulo-item">Caja de Proteccion IP65 20x15x10<
+                        </span>
+                        <!--Un elemento de texto con la clase "precio-item" que muestra el precio "$15.000".-->
+                        <span class="precio-item"> $ 79.359 
+                        </span>
+                        <!-- Un botón con la clase "boton-item" que muestra el texto "Agregar al Carrito".-->
+                        <button class="boton-item">Agregar al Carrito <i class="fa-solid fa-cart-shopping" style="color: black"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 id="industrial" class="categorias">Industrial<a href="">Ver más</a></h2> 
+                <!-- Contenedor de elementos -->
+                <div class="contenedor-items">
+                    <!-- Inicio de un elemento en el contenedor.-->
+                    <div class="item">
+                        <img src="img/Industrial1.jpg" alt="" class="img-item">
+                        <span class="titulo-item">Inversor On Grid MAC 10KTL3-XL
+                        </span>
+                        <!--Un elemento de texto con la clase "precio-item" que muestra el precio "$15.000".-->
+                        <span class="precio-item"> $ 10.472.546 
+                        </span>
+                        <!-- Un botón con la clase "boton-item" que muestra el texto "Agregar al Carrito".-->
+                        <button class="boton-item">Agregar al Carrito <i class="fa-solid fa-cart-shopping" style="color: black"></i></button>
+                    </div>
+                    <div class="item">
+                        <img src="img/Industrial2.jpg" alt="" class="img-item">
+                        <span class="titulo-item">Batería Estacionaria OPzV 2V</span>
+                        <!--Un elemento de texto con la clase "precio-item" que muestra el precio "$15.000".-->
+                        <span class="precio-item"> $ 3.708.834 
+                        </span>
+                        <!-- Un botón con la clase "boton-item" que muestra el texto "Agregar al Carrito".-->
+                        <button class="boton-item">Agregar al Carrito <i class="fa-solid fa-cart-shopping" style="color: black"></i></button>
+                    </div>
+                    <div class="item">
+                        <img src="img/Industrial3.jpg" alt="" class="img-item">
+                        <span class="titulo-item">Inversor  Trifásico 100kW
+                        </span>
+                        <!--Un elemento de texto con la clase "precio-item" que muestra el precio "$15.000".-->
+                        <span class="precio-item"> $ 51.562.500 
+                        </span>
+                        <!-- Un botón con la clase "boton-item" que muestra el texto "Agregar al Carrito".-->
+                        <button class="boton-item">Agregar al Carrito <i class="fa-solid fa-cart-shopping" style="color: black"></i></button>
+                    </div>
+                    <div class="item">
+                        <img src="img/Industrial4.jpg" alt="" class="img-item">
+                        <span class="titulo-item">Batería de litio  AXE LV 5.0L</span>
+                        <!--Un elemento de texto con la clase "precio-item" que muestra el precio "$15.000".-->
+                        <span class="precio-item"> $ 15.954.320 
+                        </span>
+                        <!-- Un botón con la clase "boton-item" que muestra el texto "Agregar al Carrito".-->
+                        <button class="boton-item">Agregar al Carrito <i class="fa-solid fa-cart-shopping" style="color: black"></i></button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
+            
+            <div class="carrito-items"> 
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total</strong>
+                    <span class="carrito-precio-total">
+                        $120.000,00
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
+        </div>
+</main>
+<footer>
+    <!-- Grid container -->
+    <div class="container">
+        <!--Grid row-->
+        <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6">
+            <h5 class="text-uppercase">Full Solar Energy</h5>
+
+            <p class="parrafo">
+            En nuestro equipo de expertos en fotovoltaicos, estamos comprometidos a brindarle soluciones personalizadas y sostenibles para sus necesidades energéticas.
+            </p>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div id="ComtainerI" class="col-lg-6">
+            <h5 class="text-uppercase">Siguenos</h5>
+            <section class="parrafo">
+            <!-- Facebook -->
+            <a class="boton" target="_blank" href="https://www.facebook.com/profile.php?id=100086610886425&locale=es_LA"><i class="fab fa-facebook-f fa-2xl"></i></a>
+        
+            <!-- Instagram -->
+            <a
+            target="_blank"
+                class="boton"
+                href="https://www.instagram.com/fullsolarenergyco/"
+                role="button"
+                ><i class="fab fa-instagram fa-2xl"></i
+            ></a>
+        
+            <!-- Twitter-->
+            <a
+            target="_blank"
+                class="boton"
+                href="https://twitter.com/FullsolarenerG"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fa-brands fa-x-twitter fa-2xl"></i>
+            </a>
+            
+            <!-- WhatsApp-->
+            <a
+            target="_blank"
+                class="boton"
+                href="https://wa.me/message/JNGSGM5ZSTTRG1"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fa-brands fa-whatsapp fa-2xl"></i
+            ></a>
+            </section>
+            
+        </div>
+        <!--Grid column-->
+        </div>
+        <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="parrafo">
+        © 2024 Copyright: Solar Code
+    </div>
+    <!-- Copyright -->
+</footer>
+</body>
+</html>
