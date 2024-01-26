@@ -303,6 +303,7 @@ body {
 .carrito .carrito-item .carrito-item-precio{
     font-weight: bold;
     display: inline-block;
+    align-items: center;
     font-size: 18px;
     margin-bottom: 5px;
 }
