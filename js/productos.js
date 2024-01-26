@@ -184,8 +184,8 @@ function actualizarTotalCarrito(){
     for(let i=0; i< carritoItems.length;i++){
         let item = carritoItems[i];
         let precioElemento = item.getElementsByClassName('carrito-item-precio')[0];
-        //quitamos el simobolo peso y el punto de milesimos.
-        let precio = parseFloat(precioElemento.innerText.replace('$','').replace('.',''));
+        //quitamos el simobolo peso y el punto de milesimos y millonesimo :D.
+        let precio = parseFloat(precioElemento.innerText.replace('$','').replace('.','').replace('.',''));
         let cantidadItem = item.getElementsByClassName('carrito-item-cantidad')[0];
         console.log(precio);
         let cantidad = cantidadItem.value;
@@ -196,12 +196,3 @@ function actualizarTotalCarrito(){
     document.getElementsByClassName('carrito-precio-total')[0].innerText = '$'+total.toLocaleString("es") + ",00";
 
 }
-
-
-
-
-
-
-
-
-
