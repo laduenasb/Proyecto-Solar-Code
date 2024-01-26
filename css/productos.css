@@ -360,18 +360,6 @@ body {
 }
 
 /* SECCION RESPONSIVE */
-@media screen and (max-width: 850px) {
-    .contenedor {
-      display: block;
-    }
-    .contenedor-items{
-        width: 100% !important;
-    }
-    .carrito{
-        width: 100%;
-    }
-  }
-
 /*-----------------Estilo de Pie de Página ---------------------------*/
 footer{
 	background-color: rgba(102, 98, 98, 0.664);
@@ -390,4 +378,46 @@ h5{
 	margin-right: 6%;
 	margin-top: 6%;
 }
-/*-
+/*-----REsponsive-----*/
+@media screen and (max-width: 1023px){
+    .contenedor .contenedor-items {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding-left: 10%;
+        justify-content: center;
+    }
+    .carrito{
+        display: inline-block;
+        width: 80%;
+    }
+}
+@media screen and (max-width: 768px){
+    .navProductos ul {
+        flex-direction: column;
+    }
+    .contenedor .contenedor-items {
+        height: 1700px;
+        display: grid;
+        grid-template-columns: 100%;
+        padding-left: 20%;
+        align-items: center;
+        justify-content: center;
+    }
+    .carrito .carrito-item .btn-eliminar{
+        position: absolute;
+        right: 15px;
+        top: 68px;
+        color: #000;
+        font-size: 1.3rem;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 50%;
+        border: 1px solid #000;
+        cursor: pointer;
+        display: block;
+        background: transparent;
+        z-index: 20;
+    }
+}
