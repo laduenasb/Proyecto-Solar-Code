@@ -73,8 +73,9 @@ function hacerVisibleCarrito(){
     var carrito = document.getElementsByClassName('carrito')[0];
     carrito.style.marginRight = '0';
     carrito.style.opacity = '1';
-    var items =document.getElementsByClassName('contenedor-item',)[0];
-    items.style.width = '50%';
+    /* Por el momento el carrito de compras no se pasa a la derecha y esto causa error */
+    // let items =document.getElementsByClassName('contenedor-items',)[0];
+    // items.style.width = '50%';
 }
 
 //Funciòn que agrega un item al carrito
@@ -113,7 +114,7 @@ function agregarItemAlCarrito(titulo, precio, imagenSrc){
     itemsCarrito.append(item);
 
     //Agregamos la funcionalidad eliminar al nuevo item
-     item.getElementsByClassName('btn-eliminar')[0].addEventListener('click', eliminarItemCarrito);
+    item.getElementsByClassName('btn-eliminar')[0].addEventListener('click', eliminarItemCarrito);
 
     //Agregmos al funcionalidad restar cantidad del nuevo item
     let botonRestarCantidad = item.getElementsByClassName('restar-cantidad')[0];
