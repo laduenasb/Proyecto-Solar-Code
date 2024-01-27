@@ -44,7 +44,7 @@ function mostrar_productos(productos,id_categoria) {
 async function main(){
 
 	let uri_productos="https://33064686-b113-4a3c-8957-be5683d5cdc3.mock.pstmn.io/obtenerProductos";
-	// Enviar petición de tipo Get
+	//Enviar petición de tipo Get
 	const productos_resp = await fetch(uri_productos)
 	// console.log(productos_resp)
 	const productos_json = await productos_resp.json()
