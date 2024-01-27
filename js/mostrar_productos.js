@@ -1,8 +1,4 @@
-async function obtener_productos (uri_productos,categoria) {
-	// Enviar petición de tipo Get
-	const productos_resp = await fetch(uri_productos)
-	// console.log(productos_resp)
-	const productos_json = await productos_resp.json()
+async function obtener_productos (productos_json,categoria) {
 	let productos_categoria=[];
 	for(i=0;i<productos_json.length;i++){
 		if(productos_json[i].categoria.sku==categoria){
@@ -48,14 +44,17 @@ function mostrar_productos(productos,id_categoria) {
 async function main(){
 
 	let uri_productos="https://33064686-b113-4a3c-8957-be5683d5cdc3.mock.pstmn.io/obtenerProductos";
-
-	const productos_categoria_1 = await obtener_productos(uri_productos,"PX"); // Paneles
-	const productos_categoria_2 = await obtener_productos(uri_productos,"BS"); // Baterias
-	const productos_categoria_3 = await obtener_productos(uri_productos,"CX"); // Controladores
-	const productos_categoria_4 = await obtener_productos(uri_productos,"IS"); // Inversores
-	const productos_categoria_5 = await obtener_productos(uri_productos,"KS"); // Kit Solar
-	const productos_categoria_6 = await obtener_productos(uri_productos,"HR"); // Hogar
-	const productos_categoria_7 = await obtener_productos(uri_productos,"IL"); // Industrial}
+	// Enviar petición de tipo Get
+	const productos_resp = await fetch(uri_productos)
+	// console.log(productos_resp)
+	const productos_json = await productos_resp.json()
+	const productos_categoria_1 = await obtener_productos(productos_json,"PX"); // Paneles
+	const productos_categoria_2 = await obtener_productos(productos_json,"BS"); // Baterias
+	const productos_categoria_3 = await obtener_productos(productos_json,"CX"); // Controladores
+	const productos_categoria_4 = await obtener_productos(productos_json,"IS"); // Inversores
+	const productos_categoria_5 = await obtener_productos(productos_json,"KS"); // Kit Solar
+	const productos_categoria_6 = await obtener_productos(productos_json,"HR"); // Hogar
+	const productos_categoria_7 = await obtener_productos(productos_json,"IL"); // Industrial}
 	mostrar_productos(productos_categoria_1,"PX");
 	mostrar_productos(productos_categoria_2,"BS");
 	mostrar_productos(productos_categoria_3,"CX");
