@@ -1,0 +1,478 @@
+[
+	{
+			"producto_id": 1,
+			"categoria": {
+					"categoria_id": 1,
+					"nombre": "Paneles",
+					"descripcion": "Paneles solares.",
+					"sku": "PX"
+			},
+			"precio": 701724.0,
+			"nombre": "Panel Solar 500W Deep Blue 3.0",
+			"marca": "JA Solar.",
+			"descripcion": "El panel solar azul oscuro de 500 W es de Ja Solar, uno de los mejores fabricantes de la industria en la actualidad. Utilizando celdas monocristalinas del tipo PERC, esta serie ofrece paneles con excelentes características técnicas, ya que estas celdas son capaces de producir mayores rendimientos y eficiencias con el mismo número de celdas que los paneles convencionales.",
+			"imagen": "Panel1.jpg",
+			"ficha_tecnica": "https://cdn.autosolar.co/pdf/Ficha-tecnica-Panel-Solar-500W.pdf",
+			"sku": "PX100",
+			"stock": 5
+	},
+	{
+			"producto_id": 2,
+			"categoria": {
+					"categoria_id": 1,
+					"nombre": "Paneles",
+					"descripcion": "Paneles solares.",
+					"sku": "PX"
+			},
+			"precio": 790375.0,
+			"nombre": "Panel Solar 550W 24V Monocristalino",
+			"marca": "JA Solar.",
+			"descripcion": "La panel solar 550W 24V monocristalino JA Solar es uno de los paneles solares más eficientes del mercado. Estos paneles están diseñados para ofrecer una alta eficiencia y un rendimiento fiable en los sistemas de energía solar. Estos paneles están construidos con celdas solares monocristalinas de alta calidad de JA Solar y están equipados con marcos de aluminio anodizado para una larga vida útil. Estos paneles tienen una potencia máxima de 550W y un voltaje de trabajo de 24V para satisfacer una amplia variedad de necesidades de energía. Estos paneles ofrecen una alta eficiencia y un rendimiento fiable, lo que los hace ideales para sistemas de energía solar en los hogares, negocios y aplicaciones industriales.",
+			"imagen": "Panel2.jpg",
+			"ficha_tecnica": "https://cdn.autosolar.co/pdf/Ficha-545W-JASOLAR.pdf",
+			"sku": "PX101",
+			"stock": 7
+	},
+	{
+			"producto_id": 3,
+			"categoria": {
+					"categoria_id": 1,
+					"nombre": "Paneles",
+					"descripcion": "Paneles solares.",
+					"sku": "PX"
+			},
+			"precio": 769602.0,
+			"nombre": "Panel Solar 550W 24V Monocristalino",
+			"marca": "JA Solar.",
+			"descripcion": "El Panel Solar JA SOLAR 455W 24V Monocristalino Perc es una placa fotovoltaica del fabricante Ja Solar. La gama JAM72S20 455/MR ofrece unas inmejorables prestaciones técnicas como sus medias células monocristalinas de tipo PERC que le proporcionan una alta eficiencia y generación con la misma área de captación solar que en un panel que habitualmente se alimenta de 72 células.",
+			"imagen": "Panel3.jpg",
+			"ficha_tecnica": "https://cdn.autosolar.co/pdf/JaSolar-M72S20-MR440-465W.pdf",
+			"sku": "PX102",
+			"stock": 4
+	},
+	{
+			"producto_id": 4,
+			"categoria": {
+					"categoria_id": 1,
+					"nombre": "Paneles",
+					"descripcion": "Paneles solares.",
+					"sku": "PX"
+			},
+			"precio": 415221.0,
+			"nombre": "Panel Solar 210W 12V Monocristalino",
+			"marca": "Restar Solar",
+			"descripcion": "Este Panel Solar 210W 12V Monocristalino Restar Solar tiene la máxima potencia de 12V de células monocristalinas. Puede ser utilizado en pequeñas instalaciones o caravanas que funcionen a 12V. Resulta muy beneficioso en domicilios que se utilizan de manera esporádica pudiendo ofrecer consumos como iluminación, nevera, tv, etc.",
+			"imagen": "Panel4.jpg",
+			"ficha_tecnica": "https://cdn.autosolar.co/pdf/ficha-tecnica-1002115.pdf",
+			"sku": "PX103",
+			"stock": 8
+	},
+	{
+			"producto_id": 5,
+			"categoria": {
+					"categoria_id": 2,
+					"nombre": "Baterias",
+					"descripcion": "Baterias que almacenan electricidad.",
+					"sku": "BS"
+			},
+			"precio": 2442780.0,
+			"nombre": "Rack 19\" hasta 10 uds",
+			"marca": "Pylontech",
+			"descripcion": "El Rack 19 Pylontech DC EM-S 6627 se trata de una estructura robusta que permite la correcta sujeción, conexión y ubicación de los módulos de baterías Pylontech y para cualquier tipo de batería con un formato estándar de 19 pulgadas. Cuenta con ranuras que facilitan la correcta ventilación de las baterías instaladas en su interior y ruedas o patas para mover el sistema en el caso de que sea necesario o mantenerlo fijo a donde se desee. En este rack no se incluyen bandejas para el apoyo de las baterías.",
+			"imagen": "Bateria1.jpg",
+			"ficha_tecnica": "https://cdn.autosolar.co/pdf/1881074%20ficha.pdf",
+			"sku": "BS100",
+			"stock": 3
+	},
+	{
+			"producto_id": 6,
+			"categoria": {
+					"categoria_id": 2,
+					"nombre": "Baterias",
+					"descripcion": "Baterias que almacenan electricidad.",
+					"sku": "BS"
+			},
+			"precio": 1798367.0,
+			"nombre": "Batería GEL 12V 250Ah",
+			"marca": "Tensite",
+			"descripcion": "Es una batería sellada monoblock por lo que estamos exentos de realizar cualquier tipo de mantenimiento. Al no requerir de mantenimiento periódico puede hacer la instalación en sitios más escondidos o de difícil acceso, aunque por ello cuenten con poca ventilación pues no tiene emisiones de gas durante su vida útil. Cuenta con unas asas que facilitan su manipulación durante la instalación. Su fabricación con ABS permite que pueda funcionar en circunstancias muy exigentes. Se caracteriza por su resistencia, versatilidad y calidad haciéndola altamente competitiva respecto a la competencia en el sector fotovoltaico y de baterías.",
+			"imagen": "Bateria2.jpg",
+			"ficha_tecnica": "https://cdn.autosolar.co/pdf/Ficha-tecnica-Tensite-bateria-GEL-12-250.pdf",
+			"sku": "BS101",
+			"stock": 12
+	},
+	{
+			"producto_id": 7,
+			"categoria": {
+					"categoria_id": 2,
+					"nombre": "Baterias",
+					"descripcion": "Baterias que almacenan electricidad.",
+					"sku": "BS"
+			},
+			"precio": 88145.0,
+			"nombre": "Batería AGM 12V 8Ah",
+			"marca": "Ultracell",
+			"descripcion": "La Batería AGM 12V 8Ah Ultracell UC-8-12, es de los modelos más manejables de Ultracell, cuenta con garantía de fabricante de un año desde su compra y no requiere de mantenimiento ni emite gases. La Batería AGM 12V 8Ah Ultracell UC-8-12 cuenta con una excelente relación calidad-precio, competitivas características técnicas y versatilidad de uso.",
+			"imagen": "Bateria3.jpg",
+			"ficha_tecnica": "https://cdn.autosolar.co/pdf/Ultracell-UC8-12.pdf",
+			"sku": "BS102",
+			"stock": 14
+	},
+	{
+			"producto_id": 8,
+			"categoria": {
+					"categoria_id": 2,
+					"nombre": "Baterias",
+					"descripcion": "Baterias que almacenan electricidad.",
+					"sku": "BS"
+			},
+			"precio": 170559.0,
+			"nombre": "Batería AGM 12V 18Ah",
+			"marca": "Tensite",
+			"descripcion": "En primer lugar, cabe decir que la Batería AGM 12V 18Ah Tensite consiste en un acumulador de pequeña magnitud y que no requiere de mantenimiento. Es el más idóneo para llevar a cabo su instalación en pequeños recintos y que no dispongan de ventilación, suministrando un rendimiento muy acertado para esa modalidad de pequeñas baterías gracias a su gran polivalencia. Sus indicaciones técnicas consiguen que esta batería sea muy competitiva frente a otros diseños de diferentes marcas, como consecuencia de su magnífica relación calidad - precio.",
+			"imagen": "Bateria4.jpg",
+			"ficha_tecnica": "https://cdn.autosolar.co/pdf/Ficha-tecnica-bateria-AGM-12-18Ah.pdf",
+			"sku": "BS103",
+			"stock": 16
+	},
+	{
+			"producto_id": 9,
+			"categoria": {
+					"categoria_id": 3,
+					"nombre": "Controladores",
+					"descripcion": "Dispositivo encargado de gestionar la carga y descarga de las baterías solares.",
+					"sku": "CX"
+			},
+			"precio": 513975.0,
+			"nombre": "Controlador Carga MPPT 40A ML2440 12/24V",
+			"marca": "SRNE",
+			"descripcion": "El Controlador Carga MPPT 40A ML2440 12/24V SRNE es un avanzado controlador de carga solar con maximizador MPPT. Permite conectar cualquier tipo de panel solar para realizar la carga de nuestra batería de 12 o 24V a un máximo de 40A de intensidad. Tiene pantalla LCD integrada gracias a la cual podremos visualizar el funcionamiento de la instalación y realizar una configuración ajustada a las características de nuestro sistema directamente desde el propio controlador de un modo visual y sencillo. Cuenta con unas excelentes características técnicas a un precio muy competitivo y con garantía de fabricante de 2 años.",
+			"imagen": "Controlador1.jpg",
+			"ficha_tecnica": "https://cdn.autosolar.co/pdf/Ficha_tecnica_Controlador_MPPT_sr_ml_12_24-LCD.pdf",
+			"sku": "CX100",
+			"stock": 17
+	},
+	{
+			"producto_id": 10,
+			"categoria": {
+					"categoria_id": 3,
+					"nombre": "Controladores",
+					"descripcion": "Dispositivo encargado de gestionar la carga y descarga de las baterías solares.",
+					"sku": "CX"
+			},
+			"precio": 1007800.0,
+			"nombre": "Controlador Carga SmartSolar MPPT 100/20",
+			"marca": "Victron Energy",
+			"descripcion": "El Controlador Carga SmartSolar MPPT 100/20 Retail Victron Energy es un controlador de carga solar maximizador que nos proporciona el máximo rendimiento de cualquier tipo de panel para nuestra instalación de energía solar. Todos los modelos Smart incorporan Bluetooth interno para poder conectarnos a configurar y monitorizar nuestro Controlador desde nuestro teléfono, tablet o pc con la aplicación de Victron. Este modelo Controlador Carga SmartSolar MPPT 100/20 Retail Victron Energy trabaja con baterías de 12V y 24V y soporta un máximo de 100V en la entrada de paneles y puede cargar la batería a una intensidad máxima de 20A.",
+			"imagen": "Controlador2.jpg",
+			"ficha_tecnica": "https://cdn.autosolar.co/pdf/Victron-MPPT-Smart-75-10-a-100-20.pdf",
+			"sku": "CX101",
+			"stock": 18
+	},
+	{
+			"producto_id": 11,
+			"categoria": {
+					"categoria_id": 3,
+					"nombre": "Controladores",
+					"descripcion": "Dispositivo encargado de gestionar la carga y descarga de las baterías solares.",
+					"sku": "CX"
+			},
+			"precio": 2267400.0,
+			"nombre": "Controlador Carga MPPT 100A LCD 12/24/48V",
+			"marca": "SRNE",
+			"descripcion": "El Controlador Carga MPPT 100A LCD 12/24/48V SRNE es un controlador de carga solar que permite recargar las baterías a partir de la energía que producen los paneles solares fotovoltaicos. Este controlador de carga, al disponer de tecnología MPPT, obtiene hasta un 30% más de producción que si utilizáramos uno de tecnología PWM. Este regulador admite una tensión máxima de trabajo desde paneles de 150V y aporta una carga máxima hacia baterías de 100A.",
+			"imagen": "Controlador3.jpg",
+			"ficha_tecnica": "https://cdn.autosolar.co/pdf/MPPT-MC48-Ficha.pdf",
+			"sku": "CX102",
+			"stock": 19
+	},
+	{
+			"producto_id": 12,
+			"categoria": {
+					"categoria_id": 3,
+					"nombre": "Controladores",
+					"descripcion": "Dispositivo encargado de gestionar la carga y descarga de las baterías solares.",
+					"sku": "CX"
+			},
+			"precio": 1327300.0,
+			"nombre": "Controlador MPPT SC4880 80A 12/24/48V",
+			"marca": "Growatt",
+			"descripcion": "El Controlador MPPT SC4880 80A 12/24/48V Growatt, el modelo más destacado de Growatt, la calidad precio de este controlador de carga es perfecto, además de proporcionar un estricto control de la carga de la batería a través de los algoritmos de la reconocida marca Growatt. Trabaja con baterías de 12, 24 y 48V.",
+			"imagen": "Controlador4.jpg",
+			"ficha_tecnica": "https://cdn.autosolar.co/pdf/ficha-tecnica-growatt-sc48120.pdf",
+			"sku": "CX103",
+			"stock": 20
+	},
+	{
+			"producto_id": 13,
+			"categoria": {
+					"categoria_id": 4,
+					"nombre": "Inversores",
+					"descripcion": "Se encarga de transformar la corriente continua que proviene de los paneles solares en corriente alterna.",
+					"sku": "IS"
+			},
+			"precio": 1.8332956E7,
+			"nombre": "Inversor On Grid MAC 36KTL3-XL",
+			"marca": "Growatt",
+			"descripcion": "El Inversor On Grid Growatt MAC 36KTL3-XL es un nuevo modelo de inversor de uno de los mayores fabricantes de inversores a nivel mundial, Growatt. Es un producto de gran calidad y con un diseño muy compacto y moderno. Toda esta familia de inversores dispone de 3 seguidores MPPT y un amplísimo rango de funcionamiento. Estos inversores se conectan a la red eléctrica del lugar donde estén instalados para inyectar la energía que producen los paneles y ahorrar en la factura de electricidad. Ofrecen unas excelentes características para un plazo de amortización corto gracias a su ajustado precio.",
+			"imagen": "Inversor1.jpg",
+			"ficha_tecnica": "https://cdn.autosolar.co/pdf/ficha-tecnica-3004294.pdf",
+			"sku": "IS100",
+			"stock": 21
+	},
+	{
+			"producto_id": 14,
+			"categoria": {
+					"categoria_id": 4,
+					"nombre": "Inversores",
+					"descripcion": "Se encarga de transformar la corriente continua que proviene de los paneles solares en corriente alterna.",
+					"sku": "IS"
+			},
+			"precio": 6170753.0,
+			"nombre": "Inversor Cargador SPF 6000T DVM-MPV",
+			"marca": "Growatt",
+			"descripcion": "El Inversor Cargador Growatt SPF 6000T DVM contiene un controlador MPPT y es capaz de trabajar a baja frecuencia 120/240VCA. También lleva un transformador de cobre puro y no es necesario contar con aplicaciones externas para realizar la configuración.",
+			"imagen": "Inversor2.jpg",
+			"ficha_tecnica": "https://cdn.autosolar.co/pdf/fichatecnica-dvm(1).pdf",
+			"sku": "IS101",
+			"stock": 22
+	},
+	{
+			"producto_id": 15,
+			"categoria": {
+					"categoria_id": 4,
+					"nombre": "Inversores",
+					"descripcion": "Se encarga de transformar la corriente continua que proviene de los paneles solares en corriente alterna.",
+					"sku": "IS"
+			},
+			"precio": 1109912.0,
+			"nombre": "Vatímetro Smart Meter TPM-E",
+			"marca": "Growatt",
+			"descripcion": "El Vatímetro Trifásico Growatt TPM es un dispositivo de medición calibrado para saber la cantidad de energía que se demanda en la instalación eléctrica sobre la que se instala. Gracias a él también se puede configurar el inversor para realizar o no el vertido de excedentes a la red. Este vatímetro es compatible con los inversores Growatt Trifásicos.\n\nLa compra del vatímetro debe ir asociada siempre a su inversor correspondiente. Cualquier compra de este vatímetro sin el inversor será devuelta.",
+			"imagen": "Inversor3.jpg",
+			"ficha_tecnica": "https://cdn.autosolar.co/pdf/EASTROM_TRIFASICO_TMP.pdf",
+			"sku": "IS102",
+			"stock": 23
+	},
+	{
+			"producto_id": 16,
+			"categoria": {
+					"categoria_id": 4,
+					"nombre": "Inversores",
+					"descripcion": "Se encarga de transformar la corriente continua que proviene de los paneles solares en corriente alterna.",
+					"sku": "IS"
+			},
+			"precio": 3199166.0,
+			"nombre": "Inversor Cargador 4000W 48V MPPT 80A",
+			"marca": "Must Solar",
+			"descripcion": "El Inversor Cargador 4000W 48V MPPT 80A Must Solar es un convertidor cargador con controlador de carga MPPT que produce, con ayuda de su convertidor interno con bobinado de cobre, una onda senoidal pura. La onda a partir de este inversor de frecuencia baja, posee mismas propiedades que la del sistema eléctrico convencional. Tiene una fiabilidad mayor a los modelos que emplean un conmutador de frecuencia alta para crearla. El mismo inversor, integra un cargador de baterías para tener disponible un alternador auxiliar o el sistema eléctrico que aporte apoyo en caso de necesidad a la instalación solar. En caso de tener batería baja o no tiene suficiente energía solar, el Inversor Cargador 4000W 48V MPPT 80A Must Solar le sirve para realizar una carga de emergencia.",
+			"imagen": "Inversor4.jpg",
+			"ficha_tecnica": "https://cdn.autosolar.co/pdf/PV3000-120V-LMPK.pdf",
+			"sku": "IS103",
+			"stock": 24
+	},
+	{
+			"producto_id": 17,
+			"categoria": {
+					"categoria_id": 5,
+					"nombre": "Kit solar",
+					"descripcion": "Elementos que conforman una instalación fotovoltaica.",
+					"sku": "KS"
+			},
+			"precio": 3.9504825E7,
+			"nombre": "Kit Solar 6000W 48V 12800Whdía",
+			"marca": "Full Solar Energy",
+			"descripcion": "Kit Solar 6000W 48VDC 12800Whdía con Batería de litio se trata de un sistema para poder alimentar consumos propios de una vivienda habitual, de uso frecuente o de vivienda permanente. Gracias a sus 3 baterías de Litio y a su potente inversor de 6000W, podremos tener total autosuficiencia en una instalación aislada o también con conexión a la red eléctrica únicamente como respaldo. Sus 8 paneles aseguran una buena producción solar. Podremos aumentar en paneles hasta los 7000W. Además del material comentado, se adjuntan los accesorios eléctricos que puede visualizar en esta misma página para poder realizar las diferentes conexiones entre los equipos.",
+			"imagen": "KitSolar1.jpg",
+			"ficha_tecnica": "",
+			"sku": "KS100",
+			"stock": 25
+	},
+	{
+			"producto_id": 18,
+			"categoria": {
+					"categoria_id": 5,
+					"nombre": "Kit solar",
+					"descripcion": "Elementos que conforman una instalación fotovoltaica.",
+					"sku": "KS"
+			},
+			"precio": 5364777.0,
+			"nombre": "Kit Solar Basico 24V 1600Whdía",
+			"marca": "Full Solar Energy",
+			"descripcion": "Kit Solar Basico 24V 1600Whdía es un sistema solar de pequeñas dimensiones listo para alimentar consumos bajos en corriente alterna. Su inversor de onda pura puede aportar energía para consumos esporádicos a 120V. Los consumos en corriente continua a 12V se pueden alimentar directamente desde el controlador de carga.",
+			"imagen": "KitSolar2.jpg",
+			"ficha_tecnica": "",
+			"sku": "KS101",
+			"stock": 26
+	},
+	{
+			"producto_id": 19,
+			"categoria": {
+					"categoria_id": 5,
+					"nombre": "Kit solar",
+					"descripcion": "Elementos que conforman una instalación fotovoltaica.",
+					"sku": "KS"
+			},
+			"precio": 1.3620518E7,
+			"nombre": "Kit Solar OnGrid 3000W 13800Whdía",
+			"marca": "Full Solar Energy",
+			"descripcion": "Kit Solar OnGrid 3000W 13800Whdía Growatt es un kit con el cual podemos obtener una salida bifásica de hasta 3000W. Con este kit podemos obtener una energía entre los 414kWh/mes hasta 528kWh/mes considerando 5 horas solares pico de la zona en el que se ubicará el sistema. Asimismo podemos generar una reducción del costo de la factura eléctrica, ya que se aprovechara el día para alimentar las cargas de la vivienda con energía fotovoltaica.",
+			"imagen": "KitSolar3.jpg",
+			"ficha_tecnica": "",
+			"sku": "KS102",
+			"stock": 27
+	},
+	{
+			"producto_id": 20,
+			"categoria": {
+					"categoria_id": 5,
+					"nombre": "Kit solar",
+					"descripcion": "Elementos que conforman una instalación fotovoltaica.",
+					"sku": "KS"
+			},
+			"precio": 7544103.0,
+			"nombre": "Kit Solar 1000W 24V 3400Whdía con Batería de Gel",
+			"marca": "Full Solar Energy",
+			"descripcion": "Kit Solar 1000W 24V 3400Whdía con Batería de Gel es un sistema adecuado para cuando queremos tener un pequeño sistema de energía para alimentar algún refrigerador, televisor e iluminación en casetas o viviendas de uso esporádico o de fin de semana o también para consumos más constantes en época de verano. Dada la capacidad de las baterías, se recomienda que gran parte del consumo se haga de día dado que tendremos abundante producción solar gracias a sus paneles de gran potencia con tecnología PERC. Se incluye todo el material necesario para poner en marcha el sistema solar, incluyendo la estructura para los paneles y todos los componentes eléctricos ya instalados en una chapa para proteger y facilitar el montaje del sistema.",
+			"imagen": "KitSolar4.jpg",
+			"ficha_tecnica": "",
+			"sku": "KS103",
+			"stock": 28
+	},
+	{
+			"producto_id": 21,
+			"categoria": {
+					"categoria_id": 6,
+					"nombre": "Hogar",
+					"descripcion": "Elementos necesarios para la instalación de los paneles solares.",
+					"sku": "HR"
+			},
+			"precio": 701664.0,
+			"nombre": "Power Boost Clamp monofásico",
+			"marca": "WallBox",
+			"descripcion": "El WallBox Power Boost Clamp monofásico trabaja para medir la cantidad de electricidad entrante que es utilizada durante la carga del coche eléctrico. Gracias a esto se puede conocer cuál es la carga necesaria en función de la energía que se utiliza en cada sesión de carga.\n\nEl medidor cuenta con certificado MID.",
+			"imagen": "Hogar1.jpg",
+			"ficha_tecnica": "https://cdn.autosolar.co/pdf/Manual-wallbox-power-boost.pdf",
+			"sku": "HR100",
+			"stock": 29
+	},
+	{
+			"producto_id": 22,
+			"categoria": {
+					"categoria_id": 6,
+					"nombre": "Hogar",
+					"descripcion": "Elementos necesarios para la instalación de los paneles solares.",
+					"sku": "HR"
+			},
+			"precio": 2956587.0,
+			"nombre": "Pedestal Estándar",
+			"marca": "WallBox",
+			"descripcion": "El Pedestal Estándar Wallbox con un diseño exclusivo para los productos de Wallbox. El cuerpo está fabricado con materiales en acero y aluminio inoxidable para asegurar la calidad y la durabilidad en el tiempo. El pedestal Estándar permite una mono-instalación del cargador Wallbox y es compatible con: Pulsar Plus, Copper SB y Commander 2.",
+			"imagen": "Hogar2.jpg",
+			"ficha_tecnica": "https://cdn.autosolar.co/pdf/Ficha-Wallbox-pedestal.pdf",
+			"sku": "HR101",
+			"stock": 30
+	},
+	{
+			"producto_id": 23,
+			"categoria": {
+					"categoria_id": 6,
+					"nombre": "Hogar",
+					"descripcion": "Elementos necesarios para la instalación de los paneles solares.",
+					"sku": "HR"
+			},
+			"precio": 6915405.0,
+			"nombre": "Cargador Pulsar Plus Type 2 - 7.4kW",
+			"marca": "WallBox",
+			"descripcion": "El Cargador Wallbox Pulsar Plus Type 2 - 7.4kW tiene una potencia de carga de hasta 7.4kW en corriente monofásica, dispone de una manguera integrada de 5 metros, es compatible con todos los coches eléctricos de tipo 2 y cuenta con conectividad WiFi y Bluetooth.",
+			"imagen": "Hogar3.jpg",
+			"ficha_tecnica": "https://cdn.autosolar.co/pdf/Ficha-Wallbox-Pulsar-Plus.pdf",
+			"sku": "HR102",
+			"stock": 31
+	},
+	{
+			"producto_id": 24,
+			"categoria": {
+					"categoria_id": 6,
+					"nombre": "Hogar",
+					"descripcion": "Elementos necesarios para la instalación de los paneles solares.",
+					"sku": "HR"
+			},
+			"precio": 79359.0,
+			"nombre": "Caja de Proteccion IP65 20x15x10",
+			"marca": "Full Solar Energy",
+			"descripcion": "La Caja de Protección IP65 de medidas 20x15x10 centímetros es perfecta para ubicar su inversor y fijarlo en un lugar seguro de agentes externos. De la misma forma otorga unas medidas exactas para aportar seguridad e integridad a nuestro inversor fotovoltaico frente a posibles daños externos. Si tiene alguna duda o consulta o requiere de una cotización contacte con nuestro servicio técnico.",
+			"imagen": "Hogar4.jpg",
+			"ficha_tecnica": "",
+			"sku": "HR103",
+			"stock": 32
+	},
+	{
+			"producto_id": 25,
+			"categoria": {
+					"categoria_id": 7,
+					"nombre": "Industrial",
+					"descripcion": "Baterias de gran capacidad.",
+					"sku": "IL"
+			},
+			"precio": 1.0472546E7,
+			"nombre": "Inversor On Grid MAC 10KTL3-XL",
+			"marca": "Growatt",
+			"descripcion": "El Inversor On Grid Growatt MAC 10KTL3-XL es un inversor de conexión a red de gran calidad y con un diseño cómodo y compacto. Garantía del fabricante de 2 años. Este es el modelo tiene una potencia de 10kW dentro de la gama MAC. Estos inversores se conectan a la red eléctrica para poder inyectar la energía que producen las placas y ahorrar en la factura de la luz.",
+			"imagen": "Industrial1.jpg",
+			"ficha_tecnica": "https://cdn.autosolar.co/pdf/datasheet-growatt-mac-20ktl.pdf",
+			"sku": "IL100",
+			"stock": 33
+	},
+	{
+			"producto_id": 26,
+			"categoria": {
+					"categoria_id": 7,
+					"nombre": "Industrial",
+					"descripcion": "Baterias de gran capacidad.",
+					"sku": "IL"
+			},
+			"precio": 3708834.0,
+			"nombre": "Batería Estacionaria OPzV 2V 1110Ah C100 Tensite",
+			"marca": "Tensite",
+			"descripcion": "La Batería Estacionaria OPzV 800 2V 1110Ah C100 Tensite es una batería de placa tubular totalmente sellada y que no necesita de ningún tipo de mantenimiento. De la marca Tensite, la Batería Estacionaria OPzV 800 2V 1110Ah C100 Tensite ofrece grandes resultados para sistemas solares fotovoltaicos de consumos moderados altos. Los modelos de baterías solares 1100Ah 2V OPzV de la marca Tensite son unos modelos que suponen una gran inversión en los kits solares fotovoltaicos de tipo aislado, ya que ofrecen un excelente rendimiento ante cargas y descargas lentas y una larga vida útil.",
+			"imagen": "Industrial2.jpg",
+			"ficha_tecnica": "https://cdn.autosolar.co/pdf/datasheet-tensite-batteries-opzv-1110.pdf",
+			"sku": "IL101",
+			"stock": 34
+	},
+	{
+			"producto_id": 27,
+			"categoria": {
+					"categoria_id": 7,
+					"nombre": "Industrial",
+					"descripcion": "Baterias de gran capacidad.",
+					"sku": "IL"
+			},
+			"precio": 5.15625E7,
+			"nombre": "Inversor On Grid Trifásico 100kW Tauro D",
+			"marca": "Fronius",
+			"descripcion": "El Inversor On Grid Trifásico 100kW Fronius Tauro D de la gama Tauro es ideal para grandes instalaciones. El inversor ha sido desarrollado exclusivamente para su aplicación en instalaciones fotovoltaicas de conexión a red. Gracias a su construcción y su funcionamiento, el inversor ofrece un máximo de seguridad durante el montaje y el servicio. La monitorización de red se realiza mediante monitorización de tensión, de frecuencia y de situaciones independientes.",
+			"imagen": "Industrial3.jpg",
+			"ficha_tecnica": "https://cdn.autosolar.co/pdf/ficha-tecnica-fronius-tauro.pdf",
+			"sku": "IL102",
+			"stock": 35
+	},
+	{
+			"producto_id": 28,
+			"categoria": {
+					"categoria_id": 7,
+					"nombre": "Industrial",
+					"descripcion": "Baterias de gran capacidad.",
+					"sku": "IL"
+			},
+			"precio": 1.595432E7,
+			"nombre": "Batería de litio AXE LV 5.0L",
+			"marca": "Growatt",
+			"descripcion": "El Módulo Batería Litio Growatt AXE LV 5.0L sirve para poder conformar un sistema de almacenamiento Growatt AXE compatible con la familia de inversores de autoconsumo Growatt SPF LVM-ES y SPF DVM. Se asociarán a un BMS u otro en función del inversor con el que se tienen que comunicar. Con una capacidad nominal de 5.0kWh y fabricadas con litio ferrofosfato libre de cobalto.",
+			"imagen": "Industrial4.jpg",
+			"ficha_tecnica": "",
+			"sku": "IL103",
+			"stock": 36
+	}
+]
