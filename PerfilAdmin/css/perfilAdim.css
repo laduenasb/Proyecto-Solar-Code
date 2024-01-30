@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+html{
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+}
+
+/* Estilos encabezado */
+
+.logo {
+	width: 40px;
+	height: auto;
+}
+
+.nav-right {
+	justify-content: right;
+}
+
+.navbar {
+	background-color: rgb(0, 0, 0, 0.8);
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	top: 0;
+	left: 0;
+}
+
+.encabezado section .logo-encabezado {
+	max-width: 600px;
+	/* position: relative; */
+	/* z-index: 999; */
+}
+
+/* .encabezado {
+	background-image: url("../img/Carrusel_3.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+} */
+
+/* Fondo oscuro transparente */
+
+.carousel-item::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0, 0, 0, 0.8);
+}
+
+/* Fondo oscuro transparente */
+
+.encabezado section p {
+	color: #FFFFFF;
+	max-width: 500px;
+	margin: 10px auto;
+}
+
+.navbar div button {
+	color: white;
+}
+
+.dropdown .fa-user {
+	color: white;
+	font-size: 2.5rem;
+}
+
+.container .usuario {
+	justify-content: center;
+}
+
+.navbar-collapse .navegacion button {
+	font-size: 1.6rem;
+}
+
+.dropdown-menu li a {
+	font-size: 1.6rem;
+}
+
+.parrafo-encabezado {
+	font-size: 1.3rem;
+}
+
+.container button .fa-bars{
+	font-size: 2rem;
+}
+
+@media(max-width: 768px){
+	.encabezado section .logo-encabezado {
+		max-width: 300px;
+	}
+	.parrafo-encabezado{
+		display: none;
+	}
+}
+
+/* -------------------Fin Estilos Encabezado--------------------------- */
+/* -------------------Estilos Perfil Administrador--------------------------- */
+.bienvenida{
+	font-size: 1.6rem;
+	color: black;
+	margin: 2%;
+}
+.contendorPerfilAdmin{
+	display: flex;
+	font-size: 1.3rem;
+	text-align: center;
+	justify-content: center;
+	gap: 10px;
+	margin-bottom: 5%;
+	color: black;
+}
+.contendorPerfilAdmin i{
+	height:auto;
+	width: auto;
+	background-color: #d9d9d9;
+	padding: 15px;
+	border-radius: 50%;
+}
+.datosPersonales i{
+	width: 50px;
+}
+.contendorPerfilAdmin a{
+	color: black;
+}
+.contendorPerfilAdmin a:hover{
+	cursor: pointer;
+	background-color: #7699B8;
+	padding: 2px;
+	border-radius: 5px;
+	color: white;
+	transition: none;
+}
+/*-----------------Estilo de Pie de Página ---------------------------*/
+footer{
+	background-color: rgba(102, 98, 98, 0.664);
+	font-size: 1.3rem;
+}
+h5{
+	margin-top: 2%;
+	font-size: 1rem;
+}
+.parrafo{
+	font-size: 1rem;
+}
+#ComtainerI a i{
+	color: black;
+	font-size: 2rem;
+	margin-right: 6%;
+	margin-top: 6%;
+}
+

@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+html{
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+}
+
+/* Estilos encabezado */
+
+.logo {
+	width: 40px;
+	height: auto;
+}
+
+.nav-right {
+	justify-content: right;
+}
+
+.navbar {
+	background-color: rgb(0, 0, 0, 0.8);
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	top: 0;
+	left: 0;
+}
+
+.encabezado section .logo-encabezado {
+	max-width: 600px;
+	/* position: relative; */
+	/* z-index: 999; */
+}
+
+/* .encabezado {
+	background-image: url("../img/Carrusel_3.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+} */
+
+/* Fondo oscuro transparente */
+
+.carousel-item::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0, 0, 0, 0.8);
+}
+
+/* Fondo oscuro transparente */
+
+.encabezado section p {
+	color: #FFFFFF;
+	max-width: 500px;
+	margin: 10px auto;
+}
+
+.navbar div button {
+	color: white;
+}
+
+.dropdown .fa-user {
+	color: white;
+	font-size: 2.5rem;
+}
+
+.container .usuario {
+	justify-content: center;
+}
+
+.navbar-collapse .navegacion button {
+	font-size: 1.6rem;
+}
+
+.dropdown-menu li a {
+	font-size: 1.6rem;
+}
+
+.parrafo-encabezado {
+	font-size: 1.3rem;
+}
+
+.container button .fa-bars{
+	font-size: 2rem;
+}
+
+@media(max-width: 768px){
+	.encabezado section .logo-encabezado {
+		max-width: 300px;
+	}
+	.parrafo-encabezado{
+		display: none;
+	}
+}
+
+/* -------------------Fin Estilos Encabezado--------------------------- */
+/* -------------------Estilos Perfil Administrador--------------------------- */
+.contenedorMain{
+    display: grid;
+    grid-template-columns: 32% 68%;
+    text-align: left; 
+}
+.bienvenida{
+	font-size: 1.6rem;
+	color: black;
+	margin: 2%;
+}
+.contendorPerfilAdmin{
+    margin-left: 50px;
+    text-align: left;
+	font-size: 1.3rem;
+	color: black;
+}
+.contendorPerfilAdmin div{
+    margin: 10px;
+}
+.contendorPerfilAdmin i{
+	height:auto;
+	width: auto;
+	background-color: #d9d9d9;
+	padding: 15px;
+	border-radius: 50%;
+}
+.datosPersonales i{
+	width: 50px;
+    padding-left:22px ;
+}
+.contendorPerfilAdmin a{
+	color: black;
+}
+.contendorPerfilAdmin a:hover{
+	cursor: pointer;
+	background-color: #7699B8;
+	padding: 2px;
+	border-radius: 5px;
+	color: white;
+	transition: none;
+}
+.tablaDeDatos{
+    font-size: 1.3rem;
+    text-align: left;
+    margin-right: 5%;
+}
+.tablaDeDatos div{
+    margin: 10px;
+}
+.datos{
+    margin: 1%;
+    padding: 1%;
+    background-color:#d9d9d9 ;
+    border-radius: 10px;
+}
+.datos input{
+    all: unset;
+    background: #d9d9d9;
+}
+.datos ::placeholder {
+    padding-left: 20px;
+    color: black;
+    font-size: 1.3rem;
+    opacity: 0.25 !important;
+}
+.btn-enviar{
+    width: 110px;
+    text-align: center;
+	padding: 1%;
+    margin-bottom: 1%;
+    border-radius: 10px;
+    position: relative;
+    left: 750px;
+    font-size: 1rem;
+	background-color: #7699B8;
+	border-radius: 10px;
+	border: 1px solid transparent;
+	color: white;
+
+}
+.btn-enviar:hover{
+	background-color: white;
+	color: black;
+	border: 1px solid #7699B8;
+}
+/*-----------------Estilo de Pie de Página ---------------------------*/
+footer{
+	background-color: rgba(102, 98, 98, 0.664);
+	font-size: 1.3rem;
+}
+h5{
+	margin-top: 2%;
+	font-size: 1rem;
+}
+.parrafo{
+	font-size: 1rem;
+}
+#ComtainerI a i{
+	color: black;
+	font-size: 2rem;
+	margin-right: 6%;
+	margin-top: 6%;
+}
+
