@@ -412,6 +412,7 @@ h5{
         flex-direction: column;
     }
     .contenedor .contenedor-items {
+        /* Esto causa que si hay un solo elemento queda demasiado espacio sin usar */
         height: 1700px;
         display: grid;
         grid-template-columns: 100%;
