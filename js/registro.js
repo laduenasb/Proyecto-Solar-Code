@@ -6,6 +6,7 @@ signupForm.addEventListener("submit",(e)=>{
 	e.preventDefault();
 	// Inicializar una variables para que me capture los datos ingresados en los campos de entrada
 	const name = document.querySelector("#nombre").value;
+	const numero = document.querySelector("#numero").value;
 	const email = document.querySelector("#email").value;
 	const password=document.querySelector("#password").value;
 
@@ -19,8 +20,13 @@ signupForm.addEventListener("submit",(e)=>{
 	if(isUserRegistered){
 		return alert("El correo que ingresas, ya se encuentra registrado")
 	}
+	// Se verifica que el número de telefono tenga exactamente 10 digitos con una expresión regular
+	const numero_validar = /^[0-9]{10}$/;
+	if (!numero_validar.test(numero)) {
+		return alert('Por favor, introduce un número de teléfono válido con exactamente 10 dígitos.');
+	}
 	// Si el correo no existe
-	Users.push({name: name, email: email, password: password});
+	Users.push({name: name, numero: numero, email: email, password: password});
 	// Convertimos los datos en cadenas para almacenarlos
 	localStorage.setItem('users', JSON.stringify(Users));
 	// Mostraremos que el usuario se registro con exito
