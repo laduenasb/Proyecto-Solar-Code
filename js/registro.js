@@ -18,19 +18,38 @@ signupForm.addEventListener("submit",(e)=>{
 	const isUserRegistered = Users.find(user => user.email === email);
 	// Si el correo ya existe, nos mostrara un mensaje de alerta diciendo que ya se encuentra registrado el correo
 	if(isUserRegistered){
-		return alert("El correo que ingresas, ya se encuentra registrado")
+		Swal.fire({
+			icon: "error",
+			title: "Correo",
+			text: "El correo que ingresas, ya se encuentra registrado",
+		});
+		// Se deja el return vacio para detener el programa
+		return ""
 	}
 	// Se verifica que el número de telefono tenga exactamente 10 digitos con una expresión regular
 	const numero_validar = /^[0-9]{10}$/;
 	if (!numero_validar.test(numero)) {
-		return alert('Por favor, introduce un número de teléfono válido con exactamente 10 dígitos.');
+		Swal.fire({
+			icon: "error",
+			title: "Número",
+			text: "Por favor, introduce un número de teléfono válido con exactamente 10 dígitos.",
+		});
+		// Se deja el return vacio para detener el programa
+		return "";
 	}
 	// Si el correo no existe
 	Users.push({name: name, numero: numero, email: email, password: password});
 	// Convertimos los datos en cadenas para almacenarlos
 	localStorage.setItem('users', JSON.stringify(Users));
 	// Mostraremos que el usuario se registro con exito
-	alert('Registro fue exitoso');
-	// Que nos redireccione al login
-	window.location.href="login.html";
+	Swal.fire({
+		title: "Bienvenido",
+		text: "El registro fue exitoso",
+		icon: "success"
+	});
+	// Esperar 3 segundos antes de redirigir al usuario
+	setTimeout(function() {
+		// Que nos redirija al login después de 3 segundos
+		window.location.href = "login.html";
+	}, 3000); // 3000 milisegundos = 3 segundos
 })
