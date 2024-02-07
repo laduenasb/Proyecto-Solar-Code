@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos Full Solar Energy</title>
+    <!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/531ac7ac07.js" crossorigin="anonymous"></script>
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+	<!-- MDB -->
+    <!-- MDB -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="./css/estilosProyectos.css">
+  <link rel="shortcut icon" href="img/logo.svg" />
+  <script src="js/script.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <!-- Encabezado Alejandro-->
+  <header class="encabezado">
+    <nav class="navbar navbar-expand-lg">
+      <!-- Container wrapper -->
+      <div class="container">
+        <!-- Navbar brand -->
+        <a class="navbar-brand me-2" href="./index.html">
+          <img class="logo"
+            src="./img/logo.svg"
+            alt="Logo solar code"
+          />
+        </a>
+    
+        <!-- Toggle button -->
+        <button
+          data-mdb-collapse-init
+          class="navbar-toggler"
+          type="button"
+          data-mdb-target="#navbarButtonsExample"
+          aria-controls="navbarButtonsExample"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+    
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse nav-right" id="navbarButtonsExample">
+          <div class="navegacion">
+            <button onclick="window.location.href='./index.html';" data-mdb-ripple-init type="button" class="btn btn-link px-3 me-2">
+              Inicio
+            </button>
+            <button onclick="window.location.href='./productos.html';" data-mdb-ripple-init type="button" class="btn btn-link px-3 me-2">
+              Productos
+            </button>
+            <button onclick="window.location.href='./servicios.html';" data-mdb-ripple-init type="button" class="btn btn-link px-3 me-2">
+              Servicios
+            </button>
+            <button onclick="window.location.href='./index.html#contactenos';" data-mdb-ripple-init type="button" class="btn btn-link px-3 me-2">
+              Contactenos
+            </button>
+            <button onclick="window.location.href='#acercade';" data-mdb-ripple-init type="button" class="btn btn-link px-3 me-2">
+              Acerca de
+            </button>
+
+            <!-- <button data-mdb-ripple-init type="button" class="btn btn-primary me-3">
+              Iniciar sesión
+            </button> -->
+            <!-- <a
+              data-mdb-ripple-init
+              class="btn btn-dark px-3"
+              href="https://github.com/mdbootstrap/mdb-ui-kit"
+              role="button"
+              ><i class="fab fa-github"></i
+            ></a> -->
+          </div>
+          <!-- test -->
+          <!-- Right elements -->
+          <div class="d-flex align-items-center usuario">
+              <!-- Icon -->
+              <!-- <a class="text-reset me-3" href="#">
+                <i class="fas fa-shopping-cart"></i>
+              </a> -->
+
+              <!-- Notifications -->
+              <div class="dropdown">
+                <!-- <a
+                  data-mdb-dropdown-init
+                  class="text-reset me-3 dropdown-toggle hidden-arrow"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-bell"></i>
+                  <span class="badge rounded-pill badge-notification bg-danger">1</span>
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-end"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#">Some news</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another news</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+                -->
+              </div>
+              <!-- Avatar -->
+              <div class="dropdown">
+                <a
+                  data-mdb-dropdown-init
+                  class="dropdown-toggle d-flex align-items-center hidden-arrow"
+                  href="#"
+                  id="navbarDropdownMenuAvatar"
+                  role="button"
+                  aria-expanded="false"
+                >
+                  <!-- <img
+                    src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                    class="rounded-circle"
+                    height="25"
+                    alt="Black and White Portrait of a Man"
+                    loading="lazy"
+                  /> -->
+                  <i class="fa-solid fa-user"></i>
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-end"
+                  aria-labelledby="navbarDropdownMenuAvatar"
+                >
+                  <li>
+                    <a class="dropdown-item" href="./login.html">Iniciar sesión</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./registro.html">Registrarse</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" id="salir" href="#">Cerrar sesión</a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+          <!-- Right elements -->
+          <!-- test -->
+
+        </div>
+        <!-- Collapsible wrapper -->
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+ 
+
+
+  
+<!-- Carousel wrapper -->
+<div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel" data-mdb-carousel-init>
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button
+      type="button"
+      data-mdb-target="#carouselBasicExample"
+      data-mdb-slide-to="0"
+      class="active"
+      aria-current="true"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      type="button"
+      data-mdb-target="#carouselBasicExample"
+      data-mdb-slide-to="1"
+      aria-label="Slide 2"
+    ></button>
+    <button
+      type="button"
+      data-mdb-target="#carouselBasicExample"
+      data-mdb-slide-to="2"
+      aria-label="Slide 3"
+    ></button>
+  </div>
+
+  <!-- Inner -->
+  <div class="carousel-inner">
+    <!-- Single item -->
+    <div class="carousel-item active">
+      <img src="img-proyectos/Carrousel 1 copia.png" class="d-block w-100" alt="Sunset Over the City"/>
+      <div class="carousel-caption d-none d-md-block">
+        <h3>¡Bienvenidos a nuestra plataforma dedicada a proyectos con energía solar! </h3>
+        <h3>Proyecto Chocó: Comunidad Birrichao.</h3>
+        <a href="#Birrichao" ><button class="btn-carousel">Ver más.</button></a>
+      </a>
+      </div>
+    </div>
+
+    <!-- Single item -->
+    <div class="carousel-item">
+      <img src="img-proyectos/carrousel 2 copia.jpeg" class="d-block w-100" alt="Canyon at Nigh"/>
+      <div class="carousel-caption d-none d-md-block">
+        <h3>¡Bienvenidos a nuestra plataforma dedicada a proyectos con energía solar! </h3>
+        <h3>Proyecto Chocó: Comunidad Nucide.</h3>
+        <a href="#Nucide"><button class="btn-carousel">Ver más.</button></a>
+      </div>
+    </div>
+
+    <!-- Single item -->
+    <div class="carousel-item">
+      <img src="img-proyectos/carrousel 3 copia.jpeg" class="d-block w-100" alt="Cliff Above a Stormy Sea"/>
+      <div class="carousel-caption d-none d-md-block">
+        <h3>¡Bienvenidos a nuestra plataforma dedicada a proyectos con energía solar!</h3>
+        <h3>Proyecto Chocó: Comunidad Villa Nueva.</h3>
+        <a href="#Villa-Nueva"><button class="btn-carousel">Ver más.</button></a>
+      </div>
+    </div>
+  </div>
+  <!-- Inner -->
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- Carousel wrapper -->
+</header>
+	
+  <!-- Navbar -->
+  <!-- Encabezado Alejandro -->
+
+<!--Pagina Proyectos y blog-->
+<!--Proyecto Soacha-->
+
+<div class="pagina-general"> 
+  <div class="intro-page">
+    <p class="descripcion-contenido">En un mundo cada vez más consciente de la importancia de las energías renovables, la energía solar emerge como una solución prometedora y sostenible para nuestras necesidades energéticas. En esta página, nos complace presentar una colección inspiradora de proyectos innovadores que aprovechan la abundante energía del sol para generar electricidad limpia y reducir nuestra dependencia de los combustibles fósiles. </p>
+  </div>
+<div class="container-page-projects"> 
+    <div class="container-page-project1">
+       <img src="img-proyectos/Proyecto-Soacha-img1-Copia.jpg" class="img-project1"> 
+        <div class="content-project1">
+        <h5>Soacha-La Mesa</h5>
+        <p>Para el desarrollo de este proyecto, el cliente requería, el suministro, instalación y diseño de un sistema On grid para su propiedad, una finca ubicada a las afueras de Soacha, por la vía La Mesa. Por lo que se suministró un sistema que estuviera respaldado con la red de energía eléctrica de Codensa. Para lo cuál se utilizaron 26 paneles de 365 Watts, esto permitió disminuir significativamente el consumo de energía eléctrica dada por la empresa electrificadora.</p>
+        <p>Otros componentes del Sistema:</p>
+
+        <p> Inversor On-Grid:
+         Para convertir la energía solar generada en corriente alterna (CA) compatible con la red eléctrica.</p>
+          
+        <p> Medidor Bidireccional:
+          Se instaló un medidor bidireccional que registra tanto la energía consumida de la red eléctrica como la energía generada por el sistema solar y devuelta a la red.</p>
+          
+        <p> Sistema de Montaje:
+          Se utilizaron estructuras de montaje adecuadas para asegurar la estabilidad y eficiencia de los paneles solares.</p>
+        </div>
+    </div>
+</div>
+    <!--Fin Proyecto Soacha-->
+    <!--Proyecto Choco-->
+    <div class="intro-project2">
+     <h5>Proyecto Chocó: Bajo Baudó</h5>
+     <img src="img-proyectos/Poryecto-Choco-BajoBaudo-img.jpg" class="img-project2">
+     <p> Para este proyecto el cliente fueron cuatro comunidades indigenas Embera ubicadas en el departamento de Choco- Bajo Baudo, requerian un sistema Off Grid, debido a que no existe red eléctrica en la zona, por lo tanto se suministró, instaló y diseñó un sistema completo con almacenamiento energético en batería de litio. En cada comunidad se instaló un sistema individual con distribución eléctrica completa a cada una de sus viviendas.</p>
+    </div>
+
+<div class="conteiner-cards-projects">
+    <div class="card1 mb-3" style="max-width: 1000px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="img-proyectos/proyecto-Choco-img2Copia.jpg" alt="Trendy Pants and Shoes" class="img-fluid rounded-start"/>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title" id="Birrichao">Proyecto Chocó: Comunidad Birrichao.</h5>
+            <p class="subtitulo-card-title">Distribución eléctrica completa para veinticinco (25) casas.</p>
+            <p class="card-text">
+              Se instalaron paneles solares fotovoltaicos en una ubicación estratégica para maximizar la captación de energía solar. La capacidad de generación se calculará en función de las necesidades de la comunidad.
+            </p>
+            <p class="subtitulo-card-title">Foto autoria propia:Comunidad Birrichao.</p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card1 mb-3" style="max-width: 1000px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="img-proyectos/Proyecto-Choco-img4_out.jpg" alt="Trendy Pants and Shoes" class="img-fluid rounded-start"/>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title" id="Nucide">Proyecto Chocó: Comunidad Nucide.</h5>
+            <p class="subtitulo-card-title">Distribución eléctrica completa para dieciseis (16) casas.</p>
+            <p class="card-text">
+              La capacidad de las baterías se dimensionó para garantizar un suministro continuo, por lo que se cumplió el principal objetivo, una fuente de energía renovable y sostenible para mejorar la calidad de vida de sus habitantes.
+            </p>
+            <p class="subtitulo-card-title">Foto autoria propia:Comunidad Nucide.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card1 mb-3" style="max-width: 1000px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="img-proyectos/proyecto-Choco-img5.png" alt="Trendy Pants and Shoes" class="img-fluid rounded-start"/>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title" id="Villa-Nueva">Proyecto Chocó: Comunidad Villa Nueva.</h5>
+            <p class="subtitulo-card-title">Distribución eléctrica completa para cincuenta (50) casas.</p>
+            <p class="card-text">
+              Se implementaron estructuras de montaje adecuadas para asegurar la estabilidad y eficiencia de los paneles solares, teniendo en cuenta factores como la inclinación y orientación óptimas.
+            </p>
+            <p class="subtitulo-card-title">Foto autoria propia:Comunidad Villa Nueva.</p>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+   <!--Fin Proyecto Choco-->
+
+   <!--Proyecto Potosi-->
+    <div class="conteiner-project3">
+     <h5>Proyecto Pradera Potosi</h5>
+     <img src="img-proyectos/proyecto-Pradera Potosi-copia.jpg" class="img-project3">
+     <p>Para el desarrollo de este proyecto, el cliente requería, el suministro, instalación y diseño de un sistema On grid para su propiedad, una casa ubicada en Pradera Potosí, La Calera. Por lo que se suministró un sistema que estuviera respaldado con la red de energía eléctrica de Codensa. Para lo cuál se utilizaron 24 paneles de 365 Watts, esto permitió disminuir significativamente el consumo de energía eléctrica dada por la empresa electrificadora , por tanto una disminución en el cobro de la factura mensual.</p>
+    </div>
+  
+   <!--Fin Proyecto Potosi-->
+   
+   <!--Blog, articulos-->
+    <h3>Notas de interés</h3>
+   <div class="container-cards-blog">
+   <div class="card">
+    <img src="img-proyectos/Img-blog-not 1.jpg" class="card-img-top" alt="Fissure in Sandstone"/>
+    <div class="card-body">
+      <h5 class="card-title">Beneficios del uso de energía solar </h5>
+      <p class="card-text">Aprovechar el potencial de una fuente de energía inagotable, permitir una contribución para reducir la huella de carbono, ahorros económicos y recuperación de la inversión, equipos de fácil de instalación y con tecnología duradera.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img-proyectos/Img-blog-not 2.jpg" class="card-img-top" alt="Fissure in Sandstone"/>
+    <div class="card-body">
+      <h5 class="card-title">Importancia del uso de la energía solar en Colombia.</h5>
+      <p class="card-text">Implementar y promover el uso de energías renovables, permite enfrentar el cambio climático, adicionalmente contribuye al progreso y cultura de un país, permitiendo a futuro un cambio de ideologías para lograr también una economía más sostenible.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img-proyectos/Img-blog-not 3.jpg" class="card-img-top" alt="Fissure in Sandstone"/>
+    <div class="card-body">
+      <h5 class="card-title"> ¿Cómo funciona un panel solar? </h5>
+      <p class="card-text">Los paneles se componen de células, que es la estructura de la superficie que permite el paso de la luz, al realizar esta captación de luz el inversor permite transformarlo en energía, y genera por metros cuadrado entre 150 y 200 W.</p>
+    </div>
+  </div>
+</div>
+    
+  </div>
+  <!-- Pie de pagina Lizeth-->
+  <footer>
+    <!-- Grid container -->
+    <div class="container">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6">
+          <h5 class="text-uppercase">Full Solar Energy</h5>
+  
+          <p class="parrafo">
+            En nuestro equipo de expertos en fotovoltaicos, estamos comprometidos a brindarle soluciones personalizadas y sostenibles para sus necesidades energéticas.
+          </p>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div id="ComtainerI" class="col-lg-6">
+          <h5 class="text-uppercase">Siguenos</h5>
+          <section class="parrafo">
+            <!-- Facebook -->
+            <a class="boton" target="_blank" href="https://www.facebook.com/profile.php?id=100086610886425&locale=es_LA"><i class="fab fa-facebook-f fa-2xl"></i></a>
+      
+            <!-- Instagram -->
+            <a
+            target="_blank"
+              class="boton"
+              href="https://www.instagram.com/fullsolarenergyco/"
+              role="button"
+              ><i class="fab fa-instagram fa-2xl"></i
+            ></a>
+      
+            <!-- Twitter-->
+            <a
+            target="_blank"
+              class="boton"
+              href="https://twitter.com/FullsolarenerG"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fa-brands fa-x-twitter fa-2xl"></i>
+            </a>
+          
+            <!-- WhatsApp-->
+            <a
+            target="_blank"
+              class="boton"
+              href="https://wa.me/message/JNGSGM5ZSTTRG1"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fa-brands fa-whatsapp fa-2xl"></i
+            ></a>
+          </section>
+          
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="parrafo">
+      © 2024 Copyright: Solar Code
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Contactenos y pie de pagina Lizeth-->
+	<!-- MDB -->
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
+<script src="./js/index.js"></script>
+
+</body>
+</html>
