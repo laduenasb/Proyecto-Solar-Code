@@ -17,14 +17,27 @@ loginForm.addEventListener("submit",(e)=>{
 
 	// Si los datos de los usuarios no concuerdan nos mostrará un msj de alerta
 	if(!validUser) {
-		return alert("Usuario y/o contraseña son incorrectos!");
+		Swal.fire({
+			title: "Error",
+			text: "Usuario y/o contraseña son incorrectos!",
+			icon: "error"
+		});
+		return "";
 	}
 	// Si los datos de los usuarios si concuerda, nos mostrará un msj de bienvenida
-	alert(`Bienvenido de nuevo ${validUser.name}`);
+	// alert(`Bienvenido de nuevo ${validUser.name}`);
+	Swal.fire({
+		title: `Bienvenido de nuevo ${validUser.name}`,
+		icon: "success"
+	});
 	// Convertimos los datos de logeo en cadenas de texto, para que me permita ingresar al sistema
 	localStorage.setItem("login_success",JSON.stringify(validUser))
 
 	// Cuando se loguee el usuario, que nos redirija al home (index)
 
-	window.location.href='index.html';
+	// Esperar 3 segundos antes de redirigir al usuario
+	setTimeout(function() {
+		// Que nos redirija al login después de 3 segundos
+		window.location.href = "index.html";
+	}, 2000); // 2000 milisegundos = 2 segundos
 })
