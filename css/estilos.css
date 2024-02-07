@@ -115,7 +115,6 @@ body {
 }
 .card{
 	padding: 40px;
-
 }
 .card-group{
 	padding: 0 50px;
@@ -130,7 +129,7 @@ body {
 
 .card-text-content{
 	font-size: 1.3rem;
-	text-align: justify;
+	text-align: center;
 }
 .card-title-content{
 	font-size: 1.6rem;
@@ -146,35 +145,24 @@ body {
 }
 .titulo-principal{
 	font-size: 2rem;
+	padding-bottom: 20px;
 }
 .container-proyectos{
 	display: flex;
-	padding: 0 50px;
-	gap:40px;
-}
-.container-proyecto-img1{
-	text-align: center;
-}
-.container-proyecto-img{
-	text-align: center;
-}
-.container-iconos{
-	width: 100%;
-	padding: 0px 45px;
-	text-align: center;
+	padding: 0 35px;
+	gap: 40px;
 }
 .img-proyecto1{
-	width: 460px;
+	width: 455px;
 	height: auto;
-	border-radius: 5%;
+	border-radius: 2%;
 	align-items: left;
 }
 .img-proyecto2{
 	width: 460px;
 	height: auto;
-	border-radius: 5%;
+	border-radius: 2%;
 }
-
 .container-iconos h5{
 	font-size: 1.6rem;
 	font-weight: lighter;
@@ -183,11 +171,11 @@ body {
 .container-iconos p{
 	font-size: 1.3rem;
 	font-weight: lighter;
-	text-align: justify;
+	text-align: center;
 	padding-top: 8px;
 }
 #icon-cont{
-	font-size: 7rem;
+	font-size: 5rem;
 	color: white;
 	display: flex;
 	flex-direction: column;
@@ -209,14 +197,14 @@ body {
 	font-weight: lighter;
 }
 .container-parrafos-Soacha{
-	text-align: justify;
+	vertical-align: baseline;
 	font-weight: lighter;
-	width: 100%;	
+	padding: 0 15px;	
 }
 .container-parrafos-Choco{
-	text-align: justify;
+	text-align: center;
 	font-weight: lighter;
-	width: 100%;
+	padding: 0 15px;
 }
 .btn-primary-project{
 	text-align: center;
@@ -228,57 +216,40 @@ body {
 	font-weight: lighter;
 }
 
-@media only screen and (min-width: 1023px){
-	.img-proyecto1{
-		width: 320px;
-		height: auto;
-		border-radius: 5%;
-		align-items: left;
-	}
-	.img-proyecto2{
-		width: 320px;
-		height: auto;
-		border-radius: 5%;
-	}
-	.container-iconos {
-		min-width: 250px;
-		padding: 0px 5px;
-	}
-}
-
-@media only screen and (min-width: 768px) and (max-width:1023px){
+@media only screen and (min-width:1023px){
 	.card-group{
-		max-width: 90%;
-		display: flex;
-		flex-direction: column; 
-		padding-left: 17%;
+		max-width: 100%;
 	}
 	.container-proyectos{
 		max-width: 100%;
-		display: flex;
-		flex-direction: column; 
-		text-align: center;
 	}
-.container-proyecto-img{
-	max-width: 100%;
+	.container-proyecto-img{
+		max-width: 100%;
 	}
-.container-parrafos-Soacha{
-	padding: 0 17%;
+	.img-proyecto1{
+		max-width: 90%;
 	}
-.container-parrafos-Choco{
-	padding: 0 17%;
-	}
-.container-iconos{
-	padding: 0 17%;
-	}
-.img-proyecto1{
-	max-width: 100%;
-	}
-.img-proyecto2{
-	max-width: 100%;
+	.img-proyecto2{
+		max-width: 90%;
 	}
 }
-@media only screen and (max-width: 767px){
+@media only screen and (min-width: 768px) and (max-width: 835px){
+	.card-group{
+	max-width: 100%; 
+	display: flex;
+	flex-direction: column; 
+	text-align: center;
+	padding: 0 20%;
+	}
+	.container-proyectos{
+	display: flex;
+	flex-direction: column; 
+	text-align: center;
+	padding: 0 20%;
+	}
+}
+
+@media only screen and (max-width: 768px){
 .card{
 	padding: 3%;
 }
