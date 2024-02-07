@@ -8,10 +8,18 @@ const user = JSON.parse(localStorage.getItem('login_success')) || false;
 
 const logout = document.querySelector('#salir');
 
-//Inicializar un evento "click que me permita cerrr sessión"
+//Inicializar un evento "click que me permita cerrar sessión"
 logout.addEventListener("click", ()=>{
-	alert("Vuelva pronto, que estes bien");
+	Swal.fire({
+		title: "Sesión terminada",
+		icon: "success"
+	});
+
 	// Para que la sesión no quede activo, la removemos
 	localStorage.removeItem('login_success')
-	window.location.href = 'login.html'
+	// Esperar 3 segundos antes de redirigir al usuario
+	setTimeout(function() {
+		// Que nos redirija al login después de 2 segundos
+		window.location.href = "login.html";
+	}, 2000); // 2000 milisegundos = 2 segundos
 })
