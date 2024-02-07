@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+html{
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+}
+
+/* Estilos encabezado */
+
+.logo {
+	width: 40px;
+	height: auto;
+}
+
+.nav-right {
+	justify-content: right;
+}
+
+.navbar {
+	background-color: rgb(0, 0, 0, 0.8);
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	top: 0;
+	left: 0;
+}
+
+.encabezado section .logo-encabezado {
+	max-width: 600px;
+	/* position: relative; */
+	/* z-index: 999; */
+}
+
+/* .encabezado {
+	background-image: url("../img/Carrusel_3.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+} */
+
+/* Fondo oscuro transparente */
+
+.carousel-item::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0, 0, 0, 0.4);
+}
+
+/* Fondo oscuro transparente */
+
+.encabezado section p {
+	color: #FFFFFF;
+	max-width: 500px;
+	margin: 10px auto;
+}
+
+.navbar div button {
+	color: white;
+}
+
+.dropdown .fa-user {
+	color: white;
+	font-size: 2.5rem;
+}
+
+.container .usuario {
+	justify-content: center;
+}
+
+.navbar-collapse .navegacion button {
+	font-size: 1.6rem;
+}
+
+.dropdown-menu li a {
+	font-size: 1.6rem;
+}
+
+.parrafo-encabezado {
+	font-size: 1.3rem;
+}
+
+.container button .fa-bars{
+	font-size: 2rem;
+}
+
+@media(max-width: 768px){
+	.encabezado section .logo-encabezado {
+		max-width: 300px;
+	}
+	.parrafo-encabezado{
+		display: none;
+	
+	}
+}
+/*Estilos sección blog y proyectos*/
+.intro-page{
+	height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+	position: relative;
+	align-items: center;
+}
+&:before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url("../img-proyectos/logo.svg");
+	opacity: .1;
+	background-position: center;
+    background-repeat: no-repeat;
+	margin-top: 600px;
+	background-size: 700px;
+}
+.descripcion-contenido{
+	font-size: 1.3rem;
+	position: relative;
+	padding-top: 60px;
+}
+.pagina-general{
+	margin: 0 250px;
+	padding-bottom: 40px;
+}
+.carousel-inner{
+	height: 700px;
+}
+.carousel-caption h3{
+	margin-bottom: 20px;
+}
+.btn-carousel{
+	background-color: rgb(0, 0, 0);
+	color: #FFFFFF;
+	font-size: 1.3rem;
+	margin-bottom: 230px;
+	border: none;
+	box-shadow: 5px 10xp;
+	border-radius: 5px;
+	padding: 5px 30px;
+}
+/*Estilos Proyecto Soacha*/
+.container-page-projects{
+	display: flex;
+	padding-top: 30px;
+}
+.container-page-project1{
+	display: flex;
+	align-items: center;
+}
+.img-project1{
+    width: 50%;
+    border-radius: 8px;
+	filter: drop-shadow(3px 3px 3px #d0cece);
+}
+.content-project1 h5{
+    font-size: 1.6rem;
+}
+.content-project1 p{
+    font-size: 1.3rem;
+    text-align: left;
+	margin-left: 20px;
+}
+/*Estilos Proyectos Choco*/
+.intro-project2 h5{
+	font-size: 1.6rem;
+	padding: 20px 0;
+}
+.intro-project2 p{
+	font-size: 1.3rem;
+	padding: 20px 0;
+}
+.img-project2{
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	filter: drop-shadow(3px 3px 3px #d0cece);
+}
+/*Estilos Proyectos Choco-Cards*/
+.conteiner-cards-projects{
+	justify-content: center;
+}
+.card1{
+	background-color: #FFFFFF;
+	border-radius: 8px;
+	text-align: center;
+	margin: 0 30px;
+	filter: drop-shadow(3px 3px 3px #d0cece);
+}
+.card-body{
+	padding-top: 80px;
+}
+.card-title{
+	font-size: 1.6rem;
+}
+.card-text{
+	font-size: 1.3rem;
+	padding: 0 30px;
+}
+
+/*Estilos Proyecto Potosi*/
+.conteiner-project3 h5{
+	font-size: 1.6rem;
+	padding: 20px 0;
+}
+.conteiner-project3 p{
+	font-size: 1.3rem;
+	padding: 20px 0;
+}
+.img-project3{
+	width: 100%;
+	height: 20%;
+	border-radius: 8px;
+	filter: drop-shadow(3px 3px 3px #d0cece);
+}
+/*Estilos notas */
+.container-cards-blog{
+	display: flex;
+	gap: 20px;
+}
+h3{
+	padding-bottom: 30px;
+}
+.card{
+	width: 400px;
+}
+.card-body{
+	padding: 10px ;
+}
+
+@media(max-width: 834px){
+.carousel-inner{
+	background-color: black;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+.carousel-indicators{
+	padding: 0;
+	margin: 0;
+}
+.pagina-general{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+.intro-page{
+	padding: 0 10px;
+	margin: 0;
+	height: 70%;
+}
+.container-page-project1{
+	display: flex;
+	flex-direction: column;
+	padding: 0 10px;
+}
+.conteiner-project3{
+	padding: 0 20px;
+}
+.img-project1{
+	width: 90%;
+}
+.intro-project2{
+	padding: 0 30px;
+	text-align: left;
+}
+.img-project2{
+	width: 100%;
+}
+.img-project3{
+	width: 95%;
+}
+.container-cards-blog{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding-left: 30px;
+	padding-right: 30px ;
+}
+
+&:before{
+	width: 100%;
+	margin-top: 100px;
+}
+.card{
+	width: 100%;
+}
+}
+
+
+
+/*-----------------Estilo de Pie de Página ---------------------------*/
+footer{
+	background-color: rgba(102, 98, 98, 0.664);
+	font-size: 1.3rem;
+}
+h5{
+	margin-top: 2%;
+	font-size: 1rem;
+}
+.parrafo{
+	font-size: 1rem;
+}
+#ComtainerI a i{
+	color: black;
+	font-size: 2rem;
+	margin-right: 6%;
+	margin-top: 6%;
+}
