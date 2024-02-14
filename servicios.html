@@ -4,8 +4,394 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Servicios</title>
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/531ac7ac07.js" crossorigin="anonymous"></script>
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+	<!-- MDB -->
+	<link
+	href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css"
+	rel="stylesheet"
+	/>
+	<link rel="stylesheet" href="./css/estiloServicios.css">
+  <link rel="shortcut icon" href="img/logo.svg" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
+  <!-- Encabezado Alejandro-->
+  <header class="encabezado">
+    <nav class="navbar navbar-expand-lg">
+      <!-- Container wrapper -->
+      <div class="container">
+        <!-- Navbar brand -->
+        <a class="navbar-brand me-2" href="./index.html">
+          <img class="logo"
+            src="./img/logo.svg"
+            alt="Logo solar code"
+          />
+        </a>
+    
+        <!-- Toggle button -->
+        <button
+          data-mdb-collapse-init
+          class="navbar-toggler"
+          type="button"
+          data-mdb-target="#navbarButtonsExample"
+          aria-controls="navbarButtonsExample"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+    
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse nav-right" id="navbarButtonsExample">
+          <div class="navegacion">
+            <button onclick="window.location.href='./index.html';" data-mdb-ripple-init type="button" class="btn btn-link px-3 me-2">
+              Inicio
+            </button>
+            <button onclick="window.location.href='./productos.html';" data-mdb-ripple-init type="button" class="btn btn-link px-3 me-2">
+              Productos
+            </button>
+            <button onclick="window.location.href='./servicios.html';" data-mdb-ripple-init type="button" class="btn btn-link px-3 me-2">
+              Servicios
+            </button>
+            <button onclick="window.location.href='./index.html#contactenos';" data-mdb-ripple-init type="button" class="btn btn-link px-3 me-2">
+              Contactenos
+            </button>
+            <button onclick="window.location.href='./index.html#acercade';" data-mdb-ripple-init type="button" class="btn btn-link px-3 me-2">
+              Acerca de
+            </button>
+
+            <!-- <button data-mdb-ripple-init type="button" class="btn btn-primary me-3">
+              Iniciar sesión
+            </button> -->
+            <!-- <a
+              data-mdb-ripple-init
+              class="btn btn-dark px-3"
+              href="https://github.com/mdbootstrap/mdb-ui-kit"
+              role="button"
+              ><i class="fab fa-github"></i
+            ></a> -->
+          </div>
+          <!-- test -->
+          <!-- Right elements -->
+          <div class="d-flex align-items-center usuario">
+              <!-- Icon -->
+              <!-- <a class="text-reset me-3" href="#">
+                <i class="fas fa-shopping-cart"></i>
+              </a> -->
+
+              <!-- Notifications -->
+              <div class="dropdown">
+                <!-- <a
+                  data-mdb-dropdown-init
+                  class="text-reset me-3 dropdown-toggle hidden-arrow"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-bell"></i>
+                  <span class="badge rounded-pill badge-notification bg-danger">1</span>
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-end"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#">Some news</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another news</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+                -->
+              </div>
+              <!-- Avatar -->
+              <div class="dropdown">
+                <a
+                  data-mdb-dropdown-init
+                  class="dropdown-toggle d-flex align-items-center hidden-arrow"
+                  href="#"
+                  id="navbarDropdownMenuAvatar"
+                  role="button"
+                  aria-expanded="false"
+                >
+                  <!-- <img
+                    src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                    class="rounded-circle"
+                    height="25"
+                    alt="Black and White Portrait of a Man"
+                    loading="lazy"
+                  /> -->
+                  <i class="fa-solid fa-user"></i>
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-end"
+                  aria-labelledby="navbarDropdownMenuAvatar"
+                >
+                  <li>
+                    <a class="dropdown-item" href="./login.html">Iniciar sesión</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./registro.html">Registrarse</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#" id="salir">Cerrar sesión</a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+          <!-- Right elements -->
+          <!-- test -->
+
+        </div>
+        <!-- Collapsible wrapper -->
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <section>
+      <!-- <img src="./img/logo-encabezado.svg" alt="imagen grande del logo solar code" class="logo-encabezado">
+      <p id="parrafo" class="parrafo-encabezado">Encendiendo el Futuro con Energía Solar: Innovamos Sostenibilidad, Iluminamos Tu Mundo.</p> -->
+      <!-- Carousel wrapper -->
+      <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel" data-mdb-carousel-init>
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-mdb-target="#carouselBasicExample"
+            data-mdb-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-mdb-target="#carouselBasicExample"
+            data-mdb-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-mdb-target="#carouselBasicExample"
+            data-mdb-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <!-- Inner -->
+        <div class="carousel-inner">
+          <!-- Single item -->
+          <div class="carousel-item active">
+            <img src="img/Carrusel_1.png" class="d-block w-100" alt="Sunset Over the City" loading="lazy"/>
+            <!-- <div class="carousel-caption d-none d-md-block"> -->
+            <div class="carousel-caption d-md-block">
+              <!-- <h5>First slide label</h5> -->
+              <img src="./img/logo-encabezado.svg" alt="imagen grande del logo solar code" class="logo-encabezado">
+              <p id="parrafo" class="parrafo-encabezado">Encendiendo el Futuro con Energía Solar: Innovamos Sostenibilidad, Iluminamos Tu Mundo.</p>
+            </div>
+          </div>
+
+          <!-- Single item -->
+          <div class="carousel-item">
+            <img src="img/Carrusel_2.png" class="d-block w-100" alt="Canyon at Nigh" loading="lazy"/>
+            <div class="carousel-caption d-md-block">
+              <!-- <h5>Second slide label</h5> -->
+              <img src="./img/logo-encabezado.svg" alt="imagen grande del logo solar code" class="logo-encabezado">
+              <p id="parrafo" class="parrafo-encabezado">Encendiendo el Futuro con Energía Solar: Innovamos Sostenibilidad, Iluminamos Tu Mundo.</p>
+            </div>
+          </div>
+
+          <!-- Single item -->
+          <div class="carousel-item">
+            <img src="img/Carrusel_3.png" class="d-block w-100" alt="Cliff Above a Stormy Sea" loading="lazy"/>
+            <div class="carousel-caption d-md-block">
+              <!-- <h5>Third slide label</h5> -->
+              <img src="./img/logo-encabezado.svg" alt="imagen grande del logo solar code" class="logo-encabezado">
+              <p id="parrafo" class="parrafo-encabezado">Encendiendo el Futuro con Energía Solar: Innovamos Sostenibilidad, Iluminamos Tu Mundo.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Inner -->
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Carousel wrapper -->
+    </section>
+  </header>
+	<!-- Navbar -->
 	
+  <!-- Navbar -->
+  <!-- Encabezado Alejandro -->
+  <main>
+    <section>
+      <h1 class="serviciosTitulo">Servicios</h1>
+      <h2 class="lema">"Transformando tu mundo con energía sostenible. Diseñamos, instalamos y cuidamos de tu inversión en energía solar para un futuro más brillante y sostenible."</h2>
+    </section>
+    <section class="diseño">
+      <h2 class="tituloDiseño" >Diseño Hogar</h2>
+      <div class="diseñoGrid">
+        <div class="hogarOnGrid">
+          <img src="img/servicioDiseñoCasaOn-Grid.png" alt="hogaronGrid">
+          <p>Instalación personalizada para un diseño estructural y máxima eficiencia. Colaboramos contigo en la distribución óptima de los equipos, internos y externos.</p>
+        </div>      
+        <div class="hogarOnGrid">
+          <img src="img/servicioDiceñoCasaBaterias.jpg" alt="hogarofGrid">
+          <p>Al igual que con el diseño para hogar conectado a la red, contamos contigo para obtener un diseño óptimo, con distribución ideal para los equipos internos, incluyendo la disposición de las baterías y los equipos externos.</p>
+        
+        </div>
+        
+        </div>  
+        <button onclick="window.location.href='index.html#contactenos'; " data-mdb-ripple-init type="button" class="">
+          
+          Click Aquí
+         </button>
+    </section>
+    <div class="instalacionTitulo">
+      <h2>Instalacion Hogar</h2>
+    </div> 
+    <div class="imagenesInstalacion">
+      <img src="img/Instalacion hogar.jpg" alt="instalacionHogar">
+      <p>Todas nuestras instalaciones cuentan con equipos de banguardia, finalizadas a satisfaccion por profecionales. Te ofrecemos varias opciones de equipos dependiendo tu nesecidad o requerimiento.</p>
+    </div>
+      <div class="diseñoGridIntalacion">
+            <div class="imagenesInstalacionp">    
+              <p class="parrafoIntalacion1" >Realizamos instalaciones completas, que con conexion a la red electrica, se consigue desde reducciones en el costo mensual, hasta, dependiendo a la capacidad solicitada, generar posibles remuneraciones por parte de la red electrica.</p>
+              <img class="ImagenIntalacion1" src="img/Instalacion hogar on-grid.jpeg" alt="insHogarOnGrid">    
+            </div>
+            <div class="imagenesInstalacionp">
+              <img src="img/Instalacion-de-energia-solar-con-baterias-Hogar.webp" alt="insHogarOffGrid">
+              <p>Sabemos de las diferentes nesecidades que tienen nuestros clientes, por eso tambien hacemos instalaciones con almacenamiento de energia en baterías, con equipos de vanguardia que se acomodan a tu necesidad con una instalacion profesional. </p>
+            </div>
+            <button onclick="window.location.href='index.html#contactenos'; " data-mdb-ripple-init type="button" class="">
+          
+              Click Aquí
+             </button>
+      </div>
+      <div class="mantenimientoContenedor">
+      <div class="tituloMantenimiento">
+        <h2>Mantenimiento</h2>
+      </div>
+      <div class="mantenimiento">
+        <div class="imagenesMantenimiento">
+          <img src="img/mantenimiento paneles.webp" alt="mantenimientoPanel">
+          <img src="img/MAntenimiento.jpeg" alt="mantenimientoMedidas">
+          <p>El compromiso de Full Solar Energy no termina con la instalación; ofrecemos un mantenimiento impecable para asegurar que su inversión en energía solar siga generando beneficios a largo plazo. Confíe en nosotros para mantener su futuro brillando con energía renovable.</p>
+        </div>
+        
+      </div>
+      <button onclick="window.location.href='index.html#contactenos'; " data-mdb-ripple-init type="button" class="">
+          
+        Click Aquí
+       </button>
+      </div>
+      <section class="industrialCompleto">
+        <h2 >Industrial</h2>
+          <div class="diseñoGrid">
+            <div class="imagenesIndustrial"> 
+              <img src="img/servicioDiseñoIndustria.jpg" alt="diseñoIndustria">
+              <h3>Diseño Industrial</h3>
+              <p class="parrafoIndustrial"> Realizamos un diseño profesional completo para obtener la eficiencia deseada, con una distribución eficiente creando el diseño ideal en los espacios dispuestos, tanto internos como externos.</p>
+            </div>
+            <div class="imagenesIndustrial">
+              <img src="img/Instalacion industris.jpg" alt="instalacionIndus">
+              <h3>Instalacion Industria</h3>
+              <p class="parrafoIndustrial">Brindándole no solo energía sostenible, sino también un impulso estratégico para la eficiencia y la rentabilidad de su empresa. Haga que su industria brille con nuestra experiencia en energía solar. Reciba incentivos tributarios por tener energia limpia, conectados a la red, con sistemas independientes o sistemas híbridos."</p>
+              
+            </div>
+          </div>
+          <button onclick="window.location.href='index.html#contactenos'; " data-mdb-ripple-init type="button" class="">
+          
+            Click Aquí
+           </button>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <!-- Grid container -->
+    <div class="container">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6">
+          <h5 class="text-uppercase">Full Solar Energy</h5>
+  
+          <p class="parrafo">
+            En nuestro equipo de expertos en fotovoltaicos, estamos comprometidos a brindarle soluciones personalizadas y sostenibles para sus necesidades energéticas.
+          </p>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div id="ComtainerI" class="col-lg-6">
+          <h5 class="text-uppercase">Siguenos</h5>
+          <section class="parrafo">
+            <!-- Facebook -->
+            <a class="boton" target="_blank" href="https://www.facebook.com/profile.php?id=100086610886425&locale=es_LA"><i class="fab fa-facebook-f fa-2xl"></i></a>
+      
+            <!-- Instagram -->
+            <a
+            target="_blank"
+              class="boton"
+              href="https://www.instagram.com/fullsolarenergyco/"
+              role="button"
+              ><i class="fab fa-instagram fa-2xl"></i
+            ></a>
+      
+            <!-- Twitter-->
+            <a
+            target="_blank"
+              class="boton"
+              href="https://twitter.com/FullsolarenerG"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fa-brands fa-x-twitter fa-2xl"></i>
+            </a>
+          
+            <!-- WhatsApp-->
+            <a
+            target="_blank"
+              class="boton"
+              href="https://wa.me/message/JNGSGM5ZSTTRG1"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fa-brands fa-whatsapp fa-2xl"></i
+            ></a>
+          </section>
+          
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="parrafo">
+      © 2024 Copyright: Solar Code
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Contactenos y pie de pagina Lizeth-->
+	<!-- MDB -->
+	<script
+	type="text/javascript"
+	src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"
+	></script>
+  <script src="./js/index.js"></script>
 </body>
 </html>
