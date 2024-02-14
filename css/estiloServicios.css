@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+html{
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	overflow-x: hidden;
+}
+
+/* Estilos encabezado */
+
+.logo {
+	width: 40px;
+	height: auto;
+}
+
+.nav-right {
+	justify-content: right;
+}
+
+.navbar {
+	background-color: rgb(0, 0, 0, 0.8);
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	top: 0;
+	left: 0;
+}
+
+.encabezado section .logo-encabezado {
+	max-width: 600px;
+	/* position: relative; */
+	/* z-index: 999; */
+}
+
+/* .encabezado {
+	background-image: url("../img/Carrusel_3.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+} */
+
+/* Fondo oscuro transparente */
+
+.carousel-item::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0, 0, 0, 0.8);
+}
+
+/* Fondo oscuro transparente */
+
+.encabezado section p {
+	color: #FFFFFF;
+	max-width: 500px;
+	margin: 10px auto;
+}
+
+.navbar div button {
+	color: white;
+}
+
+.dropdown .fa-user {
+	color: white;
+	font-size: 2.5rem;
+}
+
+.container .usuario {
+	justify-content: center;
+}
+
+.navbar-collapse .navegacion button {
+	font-size: 1.6rem;
+}
+
+.dropdown-menu li a {
+	font-size: 1.6rem;
+}
+
+.parrafo-encabezado {
+	font-size: 1.3rem;
+}
+
+.container button .fa-bars{
+	font-size: 2rem;
+}
+
+@media(max-width: 768px){
+	.encabezado section .logo-encabezado {
+		max-width: 300px;
+	}
+	.parrafo-encabezado{
+		display: none;
+	}
+}
+
+/* -------------------Fin Estilos Encabezado--------------------------- */
+/*Estilo Servicios*/
+
+.serviciosTitulo {
+    font-size: 2rem;
+    text-align: center;
+	padding: 4px;
+	margin: 40px;
+	color: #4f4f4f;;
+}
+
+.lema {
+    font-size: 1.3rem;
+    text-align: center;
+	margin-left: 250px;
+	margin-right: 250px;
+
+}
+
+.tituloDiseño{ 
+    font-size: 1.6rem;
+	margin-top: 30px;
+	padding-top: 30px;
+	margin-bottom: 30px;
+	color: white;
+}
+.diseño {
+	background-color: #333;
+}
+
+.diseño button {
+	background-color: darkgray;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+.diseño button:before {
+	content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #f06, #9f6);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  transform: scale(0.8);
+  }
+  .diseño button:hover:before {
+	opacity: 1;
+  transform: scale(1);
+  }
+
+.diseñoGrid{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	gap: 10px;
+	height: auto;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.hogarOnGrid{
+	display: block;
+}
+.hogarOnGrid img { 
+	height: 390px;
+	margin-left: 40px;
+	border-radius: 20px;
+}
+
+.hogarOnGrid p {
+    font-size: 1.3rem;
+	justify-content: justify;
+    padding: 30px;
+	color: white;
+	margin-left: 100px;
+	margin-right: 50px;
+}
+.instalacionTitulo{
+	font-size: 1.6rem;
+	margin-bottom: 30px;
+	padding-top: 30px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.diseñoGridIntalacion{
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.diseñoGridIntalacion button{
+	background-color: darkgray;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+.diseñoGridIntalacion button:before {
+	content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #f06, #9f6);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  transform: scale(0.8);
+  }
+  .diseñoGridIntalacion button:hover:before {
+	opacity: 1;
+  transform: scale(1);
+  }
+
+.imagenesInstalacion img {
+	height: 390px;
+	margin-left: 40px;
+	border-radius: 20px;
+}
+
+.imagenesInstalacion p {
+	font-size: 1.3rem;
+	justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin-top: 5px;
+	margin-bottom: 50px;
+	color: #333;
+	margin-left: 280px;
+	margin-right: 240px;
+}
+.imagenesInstalacionp{
+	display: flex;
+	align-items: center;
+}
+.imagenesInstalacionp img{
+	height:400px;
+	margin-right: 60px;
+	border-radius: 20px;
+}
+.imagenesInstalacionp p{
+	font-size: 1.3rem;
+	justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin-top: 5px;
+	margin-bottom: 50px;
+	color: #333;
+	margin-left: 50px;
+}
+
+.mantenimientoContenedor {
+	background-color: #333;
+}
+.mantenimientoContenedor button{
+	background-color: darkgray;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+.mantenimientoContenedor button:before {
+	content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #f06, #9f6);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  transform: scale(0.8);
+  }
+  .mantenimientoContenedor button:hover:before {
+	opacity: 1;
+  transform: scale(1);
+  } 
+.tituloMantenimiento {
+	font-size: 1.6rem;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding-top: 30px;
+	color: white;
+}
+.mantenimiento {
+	display: flex;
+}
+.imagenesMantenimiento img,
+.imagenesIndustrial img {
+	height: 300px;
+	margin-left: 40px;
+	border-radius: 20px;
+	margin-bottom: 30px;
+}
+.mantenimiento p{
+	font-size: 1.3rem;
+	color: white;
+	margin-bottom: 50px;
+	margin-left: 220px;
+	margin-right: 200px;
+}
+.industrialCompleto{
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+.industrialCompleto  h2{
+	font-size: 1.6rem;
+	margin-bottom: 30px;
+	padding-top: 30px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.industrialCompleto button{
+	background-color: darkgray;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+.industrialCompleto button:before {
+	content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #f06, #9f6);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  transform: scale(0.8);
+}
+  .industrialCompleto button:hover:before {
+	opacity: 1;
+  transform: scale(1);
+  }
+.imagenesMantenimiento p{
+	font-size: 1.3rem;
+	margin-bottom: 50px;
+	margin-left: 90px;
+	margin-right: 80px;
+}
+/*-----------------Estilo de Pie de Página ---------------------------*/
+footer{
+	background-color: rgba(102, 98, 98, 0.664);
+	font-size: 1.3rem;
+}
+h5{
+	margin-top: 2%;
+	font-size: 1rem;
+}
+.parrafo{
+	font-size: 1rem;
+}
+#ComtainerI a i{
+	color: black;
+	font-size: 2rem;
+	margin-right: 6%;
+	margin-top: 6%;
+}
+/*----------------------------------------------Responsive de contactenos-------------------*/
+
+/*-------Desing Responsive Ipad 11Pro-------*/
+@media only screen and (max-width: 1023px) {
+	.lema{
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.hogarOnGrid img { 
+		height: 290px;
+		margin-left: 9px;
+		border-radius: 20px;
+	}
+	.hogarOnGrid p{
+		margin-left: 10px;
+		margin-right: 2px;
+	}
+	.imagenesMantenimiento img{
+		height: 200px;
+		margin-left: 9px;
+		border-radius: 10px;
+	}
+}
+@media screen and (max-width: 768px){
+	.diseñoGrid{
+		display: inline-block;
+	}
+	.hogarOnGrid img { 
+		height: 250px;
+		margin-left: 9px;
+		border-radius: 20px;
+	}
+	.imagenesInstalacion img{
+		width: 350px;
+		height: auto;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-bottom: 20px;
+		border-radius: 20px;
+	}
+	.imagenesInstalacion p{
+		margin-left: 25px;
+		margin-right: 25px;
+		margin-bottom: 20px;
+	}
+	.imagenesInstalacionp{
+		display: grid;
+		grid-template-columns: 100%;
+	}
+	.ImagenIntalacion1{
+		position: relative;
+		bottom: 300px;
+	}
+	.parrafoIntalacion1{
+		position: relative;
+		bottom: -360px;
+	}
+	.imagenesInstalacionp img{
+		height:300px;
+		border-radius: 20px;
+		margin-left: 20px;
+	}
+	.imagenesInstalacionp p {
+		margin-left: 10px;
+		margin-right: 2px;
+	}
+	.imagenesMantenimiento p{
+		margin-left: 40px;
+		margin-right: 50px;
+
+	}
+	.parrafoIndustrial p{
+		margin-left: 10px;
+		margin-right: 50px;
+	}
+	.imagenesIndustrial img{
+		width: 300px;
+		height: auto;
+		margin-left: 1px;
+		border-radius: 20px;
+	}
+	.imagenesIndustrial p{
+		justify-content: center; 
+		text-align: center;
+	}
+}
+
