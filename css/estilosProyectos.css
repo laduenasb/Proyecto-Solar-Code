@@ -85,7 +85,7 @@ body {
 
 .parrafo-encabezado {
 	font-size: 1.3rem;
-}
+}s
 
 .container button .fa-bars{
 	font-size: 2rem;
@@ -97,7 +97,6 @@ body {
 	}
 	.parrafo-encabezado{
 		display: none;
-	
 	}
 }
 /*Estilos sección blog y proyectos*/
@@ -211,7 +210,7 @@ body {
 }
 .conteiner-project3 p{
 	font-size: 1.3rem;
-	padding: 20px 0;
+	padding-top: 20px;
 }
 .img-project3{
 	width: 100%;
@@ -223,15 +222,48 @@ body {
 .container-cards-blog{
 	display: flex;
 	gap: 20px;
+	padding-bottom: 10px;
 }
 h3{
-	padding-bottom: 30px;
+	padding: 20px;
 }
 .card{
 	width: 400px;
 }
 .card-body{
 	padding: 10px ;
+}
+/*Estilos Texto 1*/
+.contenedor-texto-inf{
+	display: flex;
+	align-items: center;
+}
+.imagen-art-2{
+	width: 90%;
+}
+.edit-img-art2{
+	width: 100%;
+	border-radius: 8px;
+	filter: drop-shadow(3px 3px 3px #d0cece);
+}
+.text-art-2{
+	width: 100%;
+	padding-left: 20px;
+	font-size: 1.3rem;
+	text-align: left;
+}
+/*Estilos acordion inf*/
+.accordion{
+	margin: 0 20px;
+	text-align: left;
+	align-items: left ;
+}
+.accordion-button{
+	font-size: 1.3rem;
+}
+strong{
+	font-size: 1.3rem;
+	font-weight: 500;
 }
 
 @media(max-width: 834px){
@@ -283,12 +315,16 @@ h3{
 	padding-left: 30px;
 	padding-right: 30px ;
 }
-
 &:before{
 	width: 100%;
 	margin-top: 100px;
 }
 .card{
+	width: 100%;
+}
+.contenedor-texto-inf{
+	display: flex;
+	flex-direction: column;
 	width: 100%;
 }
 }
