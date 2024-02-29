@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 
 html{
-	font-size: 62.5%;
+	font-size: 70%;
 }
 
 body {
@@ -155,8 +155,13 @@ body {
 .tablaDeDatos {
 	font-size: 1.3rem;
 	text-align: left;
-	margin-right: 5%;
-	width: 100%;
+	/* margin-right: 5%; */
+	margin: 10px auto;
+	width: 50%;
+	/* max-width: 550px; */
+	display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .tablaDeDatos div {
@@ -165,9 +170,16 @@ body {
 
 .datos {
 	margin: 1%;
-	padding: 1%;
+	padding: 10px;
 	background-color: #d9d9d9;
 	border-radius: 10px;
+	display: flex;
+  align-items: center;
+}
+
+.datos span {
+  flex: 0 0 auto;
+  margin-right: 10px;
 }
 
 .datos ::placeholder {
@@ -183,18 +195,28 @@ body {
 	/* width: 100%; */
 }
 
+.tablaDeDatos input {
+	width: 100%;
+}
+
 .btn-producto {
 	width: 180px;
-	text-align: center;
+	align-self: center;
 	padding: 1%;
-	margin-bottom: 1%;
-	margin-left: 20px;
+	/* margin-bottom: 1%;
+	margin-left: 20px; */
+	/* margin: 10px auto; */
 	border-radius: 10px;
-	font-size: 1rem;
+	font-size: 1.5rem;
 	background-color: #7699B8;
 	border: 1px solid transparent;
 	color: white;
 	cursor: pointer;
+	max-width: 300px;
+}
+
+.tablaDeDatos .btn-producto {
+	text-align: center;
 }
 
 .btn-producto:hover {
@@ -205,7 +227,7 @@ body {
 /*-----------------Estilo de Pie de Página ---------------------------*/
 footer{
 	background-color: rgba(102, 98, 98, 0.664);
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 }
 h5{
 	margin-top: 2%;

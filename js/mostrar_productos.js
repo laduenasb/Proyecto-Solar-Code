@@ -29,7 +29,7 @@ function mostrar_productos(productos,id_categoria) {
 				<!--Un elemento de texto con la clase "precio-item" que muestra el precio "$15.000".-->
 				<span class="precio-item">$ ${precioFormateado}</span>
 				<!-- Un botón con la clase "boton-item" que muestra el texto "Agregar al Carrito".-->
-				<button class="boton-item">Agregar al Carrito <i class="fa-solid fa-cart-shopping" style="color: black"></i></button>
+				<button class="boton-item" onclick="alerta()">Agregar al Carrito <i class="fa-solid fa-cart-shopping" style="color: black"></i></button>
 			</div>
 			`
 	}
@@ -40,6 +40,14 @@ function mostrar_productos(productos,id_categoria) {
         let button = botonesAgregarAlCarrito[i];
         button.addEventListener('click', agregarAlCarritoClicked);
     }
+}
+function alerta(){
+	Swal.fire({
+		icon: "success",
+		title: "El producto ha sido agregado al carrito",
+		showConfirmButton: false,
+		timer: 1500
+	});
 }
 async function main(){
 

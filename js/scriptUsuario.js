@@ -30,14 +30,27 @@ function guardar() {
     console.log(isProductoGuardado);
 
     if (isProductoGuardado) {
-      return alert("El producto ya existe");
+      Swal.fire({
+        icon: "error",
+        title: "El producto ya existe",
+        showConfirmButton: false,
+        timer: 1500
+      });
+      return "";
+      // return alert("El producto ya existe");
     }
 
     Productos.push(usuarioAdm);
     console.log(Productos);
 
     localStorage.setItem('productos', JSON.stringify(Productos));
-    alert("Producto guardado exitosamente");
+    // alert("Producto guardado exitosamente");
+    Swal.fire({
+      icon: "success",
+      title: "Producto guardado exitosamente",
+      showConfirmButton: false,
+      timer: 1500
+    });
   };
 
   reader.readAsDataURL(file); // Convierte la imagen a base64
