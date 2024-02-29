@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 
 html{
-	font-size: 62.5%;
+	font-size: 70%;
 }
 
 body {
@@ -104,6 +104,7 @@ body {
 /* -------------------Fin Estilos Encabezado--------------------------- */
 /*Estilo Servicios*/
 
+
 .serviciosTitulo {
     font-size: 2rem;
     text-align: center;
@@ -139,6 +140,10 @@ body {
   border-radius: 5px;
   position: relative;
   overflow: hidden;
+	margin-bottom: 30px;
+	width: 200px;
+	height: 50px;
+	font-size: 1.5rem;
 }
 .diseño button:before {
 	content: '';
@@ -202,6 +207,9 @@ body {
   border-radius: 5px;
   position: relative;
   overflow: hidden;
+	width: 200px;
+	height: 50px;
+	font-size: 1.5rem;
 }
 .diseñoGridIntalacion button:before {
 	content: '';
@@ -261,7 +269,7 @@ body {
 .mantenimientoContenedor {
 	background-color: #333;
 }
-.mantenimientoContenedor button{
+.mantenimientoContenedor .btn-servicios{
 	background-color: darkgray;
   color: #fff;
   padding: 10px 20px;
@@ -269,8 +277,12 @@ body {
   border-radius: 5px;
   position: relative;
   overflow: hidden;
+	margin-bottom: 30px;
+	width: 200px;
+	height: 50px;
+	font-size: 1.5rem;
 }
-.mantenimientoContenedor button:before {
+.mantenimientoContenedor .btn-servicios:before {
 	content: '';
   position: absolute;
   top: 0;
@@ -331,6 +343,10 @@ body {
   border-radius: 5px;
   position: relative;
   overflow: hidden;
+	margin-bottom: 30px;
+	width: 200px;
+	height: 50px;
+	font-size: 1.5rem;
 }
 .industrialCompleto button:before {
 	content: '';
@@ -354,6 +370,9 @@ body {
 	margin-bottom: 50px;
 	margin-left: 90px;
 	margin-right: 80px;
+}
+div .parrafo {
+	font-size: 1.3rem;
 }
 /*-----------------Estilo de Pie de Página ---------------------------*/
 footer{
