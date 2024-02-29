@@ -88,7 +88,13 @@ function agregarItemAlCarrito(titulo, precio, imagenSrc){
     let nombresItemsCarrito = itemsCarrito.getElementsByClassName('carrito-item-titulo');
     for(var i=0;i < nombresItemsCarrito.length;i++){
         if(nombresItemsCarrito[i].innerText==titulo){
-            alert("El item ya se encuentra en el carrito");
+            // alert("El item ya se encuentra en el carrito");
+            Swal.fire({
+                icon: "error",
+                title: "El producto ya se encuentra en el carrito",
+                showConfirmButton: false,
+                timer: 1500
+              });
             return;
         }
     }
