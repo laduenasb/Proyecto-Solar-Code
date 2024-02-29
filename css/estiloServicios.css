@@ -438,21 +438,26 @@ h5{
 		margin-bottom: 20px;
 	}
 	.imagenesInstalacionp{
-		display: grid;
-		grid-template-columns: 100%;
+		display: flex;
+		flex-direction: column;
+		/* grid-template-columns: 100%; */
+		justify-content: center;
 	}
-	.ImagenIntalacion1{
-		position: relative;
-		bottom: 300px;
+	div .ImagenIntalacion1{
+		margin-bottom: 30px;
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: 0;
 	}
-	.parrafoIntalacion1{
+	/* .parrafoIntalacion1{
 		position: relative;
 		bottom: -360px;
-	}
+	} */
 	.imagenesInstalacionp img{
 		height:300px;
 		border-radius: 20px;
-		margin-left: 20px;
+		/* margin-left: 20px; */
+		margin-right: 0;
 	}
 	.imagenesInstalacionp p {
 		margin-left: 10px;
