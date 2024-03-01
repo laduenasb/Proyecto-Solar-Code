@@ -161,20 +161,17 @@ footer{
 	height: 147px;
 }
 
-/* @media(min-width: 768px){
+@media(max-width: 992px){
 	footer{
-
-		position: absolute;
-		bottom: 0;
-		width: 100%;
+		height: auto;
 	}
-} */
+}
 h5{
 	margin-top: 2%;
-	font-size: 1rem;
+	font-size: 1.5rem;
 }
 .parrafo{
-	font-size: 1rem;
+	font-size: 1.3rem;
 }
 #ComtainerI a i{
 	color: black;
