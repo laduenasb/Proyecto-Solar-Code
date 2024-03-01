@@ -184,6 +184,7 @@ body {
     padding-bottom: 20px;
     /* margin-left: 15px; */
     /* margin-right: 15px; */
+    margin-bottom: 30px;
     border-radius: 0px 0px 10px 10px;
     gap: 25px
 }
@@ -415,7 +416,7 @@ h5{
     }
     .contenedor .contenedor-items {
         /* Esto causa que si hay un solo elemento queda demasiado espacio sin usar */
-        height: 1700px;
+        /* height: 1700px; */
         display: grid;
         grid-template-columns: 100%;
         /* padding-left: 20%; */
