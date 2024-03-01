@@ -164,12 +164,16 @@ body {
   }
 
 .diseñoGrid{
-	display: grid;
+	/* display: grid;
 	grid-template-columns: 50% 50%;
 	gap: 10px;
 	height: auto;
 	margin-left: 50px;
-	margin-right: 50px;
+	margin-right: 50px; */
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin: 0 10px;
 }
 .hogarOnGrid{
 	display: block;
@@ -425,7 +429,7 @@ h5{
 		border-radius: 20px;
 	}
 	.imagenesInstalacion img{
-		width: 350px;
+		width: 298px;
 		height: auto;
 		margin-left: 20px;
 		margin-right: 20px;
