@@ -171,7 +171,12 @@ h5{
 	footer{
 		/* margin-top: 55px; */
 		width: 100%;
-		/* height: 188px; */
+		height: 188px;
+	}
+}
+@media(max-width: 992px){
+	footer{
+		height: auto;
 	}
 }
 /*----------------------------------------------Responsive de contactenos-------------------*/
