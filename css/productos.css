@@ -190,8 +190,10 @@ body {
 .contenedor .contenedor-items .item{
     text-align: center;
     /* margin: 30px 30px; */
-    width: 170px;
-    height: 390px;
+    /* width: 170px; */
+    width: 17.0rem;
+    /* height: 390px; */
+    height: 35.0rem;
     /* min-width: 200px; */
     border: 0.5px solid #66666677;
     transition: .3s;
