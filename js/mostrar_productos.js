@@ -10,7 +10,9 @@ async function obtener_productos (productos_json,categoria) {
 }
 
 
-function mostrar_productos(productos,id_categoria) {
+function mostrar_productos(productos,id_categoria,ruta) {
+	const Productos = JSON.parse(localStorage.getItem('productos')) || [];
+
 	const categoria=document.getElementById(id_categoria).querySelector("div")
 	// console.log(categoria);
 	let div_productos=``
@@ -24,7 +26,7 @@ function mostrar_productos(productos,id_categoria) {
 			});
 			div_productos+=`
 			<div class="item">
-				<img src="img/${productos[i].imagen}" alt="" class="img-item">
+				<img src="${ruta}${productos[i].imagen}" alt="" class="img-item">
 				<span class="titulo-item">${productos[i].nombre}</span>
 				<!--Un elemento de texto con la clase "precio-item" que muestra el precio "$15.000".-->
 				<span class="precio-item">$ ${precioFormateado}</span>
@@ -63,13 +65,38 @@ async function main(){
 	const productos_categoria_5 = await obtener_productos(productos_json,"KS"); // Kit Solar
 	const productos_categoria_6 = await obtener_productos(productos_json,"HR"); // Hogar
 	const productos_categoria_7 = await obtener_productos(productos_json,"IL"); // Industrial}
-	mostrar_productos(productos_categoria_1,"PX");
-	mostrar_productos(productos_categoria_2,"BS");
-	mostrar_productos(productos_categoria_3,"CX");
-	mostrar_productos(productos_categoria_4,"IS");
-	mostrar_productos(productos_categoria_5,"KS");
-	mostrar_productos(productos_categoria_6,"HR");
-	mostrar_productos(productos_categoria_7,"IL");
-	
+	mostrar_productos(productos_categoria_1,"PX","img/");
+	mostrar_productos(productos_categoria_2,"BS","img/");
+	mostrar_productos(productos_categoria_3,"CX","img/");
+	mostrar_productos(productos_categoria_4,"IS","img/");
+	mostrar_productos(productos_categoria_5,"KS","img/");
+	mostrar_productos(productos_categoria_6,"HR","img/");
+	mostrar_productos(productos_categoria_7,"IL","img/");
+
+	// Mostrar productos guardado en la base de datos
+	// fetch para obtener productos
+	url_productos = "https://solar-code.up.railway.app/api/v1/producto/obtenerProductos"
+	//Enviar petición de tipo Get
+	const productos_db_resp = await fetch(url_productos)
+	// console.log(productos_resp)
+	const productos_db_json = await productos_db_resp.json()
+	console.log(productos_db_json);
+
+	const productos_categoria_db_1 = await obtener_productos(productos_db_json,"PX"); // Paneles
+	const productos_categoria_db_2 = await obtener_productos(productos_db_json,"BS"); // Baterias
+	const productos_categoria_db_3 = await obtener_productos(productos_db_json,"CX"); // Controladores
+	const productos_categoria_db_4 = await obtener_productos(productos_db_json,"IS"); // Inversores
+	const productos_categoria_db_5 = await obtener_productos(productos_db_json,"KS"); // Kit Solar
+	const productos_categoria_db_6 = await obtener_productos(productos_db_json,"HR"); // Hogar
+	const productos_categoria_db_7 = await obtener_productos(productos_db_json,"IL"); // Industrial}
+
+	categorias = ["PX","BS","CX","IS","KS","HR","IL"];
+	mostrar_productos(productos_categoria_db_1,"PX","");
+	mostrar_productos(productos_categoria_db_2,"BS","");
+	mostrar_productos(productos_categoria_db_3,"CX","");
+	mostrar_productos(productos_categoria_db_4,"IS","");
+	mostrar_productos(productos_categoria_db_5,"KS","");
+	mostrar_productos(productos_categoria_db_6,"HR","");
+	mostrar_productos(productos_categoria_db_7,"IL","");
 }
 main();
