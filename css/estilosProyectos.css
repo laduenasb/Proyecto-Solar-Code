@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 
 html{
-	font-size: 62.5%;
+	font-size: 70%;
 }
 
 body {
@@ -338,10 +338,10 @@ footer{
 }
 h5{
 	margin-top: 2%;
-	font-size: 1rem;
+	font-size: 1.5rem;
 }
 .parrafo{
-	font-size: 1rem;
+	font-size: 1.3rem;
 }
 #ComtainerI a i{
 	color: black;

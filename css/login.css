@@ -75,6 +75,7 @@ main {
 	flex-direction: row;
 	justify-content: space-around;
 	height: 450px;
+	margin-bottom: 20px;
 }
 
 main .login label {
@@ -146,13 +147,14 @@ main .registro-r h2 {
 footer{
 	background-color: rgba(102, 98, 98, 0.664);
 	font-size: 1.3rem;
+	height: 188px;
 }
 h5{
 	margin-top: 2%;
-	font-size: 1rem;
+	font-size: 1.5rem;
 }
 .parrafo{
-	font-size: 1rem;
+	font-size: 1.3rem;
 }
 #ComtainerI a i{
 	color: black;
@@ -162,10 +164,13 @@ h5{
 }
 
 @media(min-width: 768px){
+	main{
+		margin-bottom: 0;
+	}
 	footer{
 		/* margin-top: 55px; */
 		width: 100%;
-		height: 188px;
+		/* height: 188px; */
 	}
 }
 /*----------------------------------------------Responsive de contactenos-------------------*/
