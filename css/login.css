@@ -74,6 +74,7 @@ main {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	height: 450px;
 }
 
 main .login label {
@@ -162,8 +163,9 @@ h5{
 
 @media(min-width: 768px){
 	footer{
-		margin-top: 215px;
+		/* margin-top: 55px; */
 		width: 100%;
+		height: 188px;
 	}
 }
 /*----------------------------------------------Responsive de contactenos-------------------*/

@@ -154,10 +154,11 @@ footer{
 	background-color: rgba(102, 98, 98, 0.664);
 	font-size: 1.3rem;
 	/* position: fixed; */
-	margin-top: 55px;
+	/* margin-top: 55px; */
 	/* bottom: 0; */
 	width: 100%;
 	/* z-index: 999; */
+	height: 147px;
 }
 
 /* @media(min-width: 768px){
