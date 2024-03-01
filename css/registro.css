@@ -12,6 +12,9 @@ html{
 body {
 	font-family: 'Poppins', sans-serif;
 	text-align: center;
+	display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .logo {
@@ -71,6 +74,7 @@ main .login-r {
 
 main {
 	margin-top: 50px;
+	/* margin-bottom: 80px; */
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -149,15 +153,21 @@ main .login-r h2 {
 footer{
 	background-color: rgba(102, 98, 98, 0.664);
 	font-size: 1.3rem;
+	/* position: fixed; */
+	margin-top: 55px;
+	/* bottom: 0; */
+	width: 100%;
+	/* z-index: 999; */
 }
-@media(min-width: 768px){
+
+/* @media(min-width: 768px){
 	footer{
-		/* Dejar el footer al final de la pagina */
+
 		position: absolute;
 		bottom: 0;
 		width: 100%;
 	}
-}
+} */
 h5{
 	margin-top: 2%;
 	font-size: 1rem;

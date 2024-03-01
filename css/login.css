@@ -162,9 +162,7 @@ h5{
 
 @media(min-width: 768px){
 	footer{
-		/* Dejar el footer al final de la pagina */
-		position: absolute;
-		bottom: 0;
+		margin-top: 215px;
 		width: 100%;
 	}
 }
