@@ -404,7 +404,8 @@ body {
 .perfil img{
 	margin-bottom: 2%;
 	align-items: center;
-	height: 220px;
+	height: auto;
+	width: 150px;
 	border-radius: 50%;
 }
 .perfil p{
@@ -522,7 +523,7 @@ h5{
 		align-items: center;
 	}
 	.perfil img{
-		width: auto;
+		width: 100px;
 	}
 	.section-contactenos{
 		margin-left: 2%;
