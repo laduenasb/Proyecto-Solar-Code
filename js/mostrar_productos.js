@@ -75,6 +75,7 @@ async function main(){
 
 	// Mostrar productos guardado en la base de datos
 	// fetch para obtener productos
+	/*
 	url_productos = "https://solar-code.up.railway.app/api/v1/producto/obtenerProductos"
 	//Enviar petición de tipo Get
 	const productos_db_resp = await fetch(url_productos)
@@ -98,5 +99,7 @@ async function main(){
 	mostrar_productos(productos_categoria_db_5,"KS","");
 	mostrar_productos(productos_categoria_db_6,"HR","");
 	mostrar_productos(productos_categoria_db_7,"IL","");
+	*/
+
 }
 main();
