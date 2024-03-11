@@ -50,6 +50,7 @@ function guardar() {
       timer: 1500
     });
 
+    /*
     // fetch para obtener un categoria
     url_categoria = "https://solar-code.up.railway.app/api/v1/categoria/encontrarCategoriaPorSku"+`/${usuarioAdm.categoria}`
     //Enviar petición de tipo Get
@@ -116,6 +117,7 @@ function guardar() {
         console.error('Error:', error);
     });
     // fetch guardar producto
+    */
   };
 
   reader.readAsDataURL(file); // Convierte la imagen a base64
